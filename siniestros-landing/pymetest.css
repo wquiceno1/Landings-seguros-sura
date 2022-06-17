@@ -1,0 +1,1672 @@
+#preheader,
+.sura-wrap header,
+footer {
+  display: none !important;
+}
+
+@media screen and (max-width: 950px) {
+  .seguro-pyme {
+    margin-top: 104px !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.sura-wrap .seguro-pyme button.slick-next,
+.sura-wrap .seguro-pyme button.slick-prev {
+  top: 100%;
+  min-width: 35px;
+  max-width: 35px;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.sura-wrap .seguro-pyme .slick-dots {
+  bottom: -10px;
+  padding: 0;
+  padding-inline-start: 0;
+}
+
+.sura-wrap .seguro-pyme .slick-dots li {
+  width: 16px;
+  height: 16px;
+}
+
+.sura-wrap .seguro-pyme .slick-dots li button {
+  margin: 0;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  max-width: 16px;
+  min-width: 16px;
+  border-radius: 50%;
+  position: relative;
+  background-color: rgba(224, 224, 224, 0.5);
+}
+
+.sura-wrap .seguro-pyme .slick-dots li.slick-active button {
+  background-color: #00aec7;
+  transition: all 0.5s ease-out;
+}
+
+.sura-wrap .seguro-pyme .slick-dots li.slick-active button:before {
+  background-color: #00aec7;
+  box-shadow: 0px 0px 1px 5px rgba(0, 174, 199, 0.2);
+  border-radius: 50%;
+}
+
+.sura-wrap .seguro-pyme .slick-dots li button:before {
+  font-family: "slick";
+  font-size: 16px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  content: "";
+  text-align: center;
+  color: #00aec7;
+  border-radius: 50%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sura-wrap .seguro-pyme .slick-next:before,
+.sura-wrap .seguro-pyme .slick-prev:before {
+  display: none;
+}
+
+.sura-wrap .seguro-pyme button.slick-prev,
+.sura-wrap .seguro-pyme button.slick-next {
+  z-index: 1;
+}
+
+.sura-wrap .seguro-pyme button.slick-prev {
+  background: url(https://seguros.sura.cl/docs/default-source/landing-conductor-pro/sura-icon-arrow-prev.svg?sfvrsn=2)
+    no-repeat center center;
+  width: 20px;
+  height: 20px;
+  left: 35%;
+}
+
+.sura-wrap .seguro-pyme button.slick-prev:hover {
+  background: url(https://seguros.sura.cl/docs/default-source/landing-conductor-pro/sura-icon-arrow-prev.svg?sfvrsn=2)
+    no-repeat center center;
+}
+
+.sura-wrap .seguro-pyme button.slick-next {
+  background: url(https://seguros.sura.cl/docs/default-source/landing-conductor-pro/sura-icon-arrow-next.svg?sfvrsn=2)
+    no-repeat center center;
+  width: 20px;
+  height: 20px;
+  right: 35%;
+}
+
+.sura-wrap .seguro-pyme button.slick-next:hover {
+  background: url(https://seguros.sura.cl/docs/default-source/landing-conductor-pro/sura-icon-arrow-next.svg?sfvrsn=2)
+    no-repeat center center;
+}
+
+@media screen and (max-width: 768px) {
+  .sura-wrap .seguro-pyme button.slick-prev {
+    left: 30%;
+  }
+
+  .sura-wrap .seguro-pyme button.slick-next {
+    right: 30%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .sura-wrap .seguro-pyme button.slick-prev {
+    left: 20%;
+  }
+
+  .sura-wrap .seguro-pyme button.slick-next {
+    right: 20%;
+  }
+}
+
+.sura-wrap .seguro-pyme .coberturas .slick-dots {
+  bottom: -24px;
+}
+
+.sura-wrap .seguro-pyme .coberturas button.slick-prev,
+.sura-wrap .seguro-pyme .coberturas button.slick-next {
+  position: absolute;
+  top: 104%;
+}
+
+.sura-wrap .seguro-pyme .coberturas-opcionales button.slick-prev,
+.sura-wrap .seguro-pyme .coberturas-opcionales button.slick-next {
+  position: absolute;
+  top: 98%;
+}
+
+@media screen and (max-width: 575px) {
+  .sura-wrap .seguro-pyme .coberturas-opcionales button.slick-next,
+  .sura-wrap .seguro-pyme .coberturas-opcionales button.slick-prev {
+    top: 50%;
+    position: absolute;
+  }
+
+  .sura-wrap .seguro-pyme .coberturas-opcionales button.slick-next {
+    right: 10%;
+  }
+
+  .sura-wrap .seguro-pyme .coberturas-opcionales button.slick-prev {
+    left: 10%;
+  }
+}
+
+@import "https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&display=swap";
+
+@font-face {
+  font-family: "FS Joey";
+  src: url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.woff2)
+      format("woff2"),
+    url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.woff)
+      format("woff"),
+    url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.eot)
+      format("eot"),
+    url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.svg)
+      format("svg"),
+    url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.ttf)
+      format("truetype");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FS Joey";
+  src: url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.woff2)
+      format("woff2"),
+    url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.woff)
+      format("woff"),
+    url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.eot)
+      format("eot"),
+    url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.svg)
+      format("svg"),
+    url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.ttf)
+      format("truetype");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/******************************
+  ESTILOS GENERALES
+  *******************************/
+
+.sura-wrap .seguro-pyme {
+  width: 100%;
+  max-width: 1920px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+
+.sura-wrap .seguro-pyme .container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+@media (min-width: 769px) {
+  .seguro-pyme .container {
+    width: 100%;
+    max-width: 1199px;
+    height: auto;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .seguro-pyme .container {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.sura-wrap .seguro-pyme section {
+  width: 100%;
+  max-width: 1920px;
+}
+
+.sura-wrap .seguro-pyme p {
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #53565a;
+}
+
+.sura-wrap .seguro-pyme p.sub {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+}
+
+.sura-wrap .seguro-pyme h1 {
+  font: normal 700 42px/1 "FS Joey", serif !important;
+}
+
+.sura-wrap .seguro-pyme h2 {
+  font: normal 700 38px/1 "FS Joey", serif !important;
+}
+
+.sura-wrap .seguro-pyme h3 {
+  font: normal 700 36px/1 "FS Joey", serif !important;
+}
+
+.sura-wrap .seguro-pyme h4 {
+  font-family: "Barlow", sans-serif;
+  font-size: 28px !important;
+}
+
+.sura-wrap .seguro-pyme h5 {
+  font-family: "Barlow", sans-serif;
+  font-size: 22px !important;
+}
+
+.sura-wrap .seguro-pyme h5.subtitle {
+  width: 100%;
+  max-width: 360px;
+}
+
+@media screen and (max-width: 575px) {
+  .sura-wrap .seguro-pyme h1,
+  .sura-wrap .seguro-pyme h2,
+  .sura-wrap .seguro-pyme h3 {
+    font-size: 28px !important;
+  }
+}
+
+input.button a.button,
+.button {
+  display: block;
+  text-align: center;
+  width: 100%;
+  max-width: 240px;
+  min-width: 140px;
+  border-radius: 50px;
+  margin: 8px 5px;
+  padding: 12px 0;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  outline: 0;
+  transition: all 0.3s ease;
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+}
+
+input.button a.button:hover,
+input.button a.button:focus,
+.button:hover,
+.button:focus,
+button:hover,
+button:focus {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 575px) {
+  input.button a.button,
+  .button {
+    margin: 0 auto;
+  }
+}
+
+input.button a.button.button-small,
+.button.button-small,
+button.button-small {
+  max-width: 150px !important;
+  min-width: 150px !important;
+  line-height: 1.4;
+  padding: 10px 0;
+  height: 47px;
+}
+
+.button-yellow::before,
+.button-secondary::before,
+.button-primary::before {
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50% 0;
+  -ms-transform-origin: 0 50% 0;
+  transform-origin: 0 50% 0;
+  transition: all 0.3s ease-in;
+  z-index: -1;
+  border-bottom-right-radius: 3px;
+  border-radius: 3px;
+  outline: 0;
+}
+
+.button-yellow:hover::before,
+.button-secondary:hover::before,
+.button-primary:hover::before {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+  color: #fff;
+}
+
+.button-primary {
+  background: #0033a0;
+  color: #fff;
+  -webkit-transform: translateZ(0px);
+  transform: translateZ(0px);
+  outline: 0;
+  transition: all 0.3s ease;
+}
+
+.button-primary:hover {
+  background: #e3e829;
+  color: #0033a0;
+}
+
+.button-primary::before {
+  background: #e3e829;
+  color: #0033a0;
+}
+
+.button-secondary {
+  background: #00aec7;
+  color: #fff !important;
+  transition: all 0.3s ease;
+  outline: 0;
+  font-size: 18px;
+}
+
+.button-secondary:hover {
+  background: #0033a0;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.button-secondary::before {
+  background-color: #0033a0;
+}
+
+.button-yellow {
+  background: #e3e829;
+  color: #0033a0 !important;
+  -webkit-transform: translateZ(0px);
+  transform: translateZ(0px);
+  outline: 0;
+  transition: all 0.3s ease;
+}
+
+.button-yellow:hover {
+  background: #0033a0;
+  color: #fff !important;
+}
+
+.button-yellow::before {
+  background-color: #0033a0;
+}
+
+.button-yellow:hover::before {
+  color: #fff;
+}
+
+.button-border {
+  margin-bottom: 10px;
+  max-width: 180px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  color: #00aec7 !important;
+  border: 2px solid #00aec7;
+}
+
+.button-border:hover {
+  transition: all 0.3s ease;
+  border: 2px solid #00aec7;
+  color: #00aec7 !important;
+  background-color: #e8f4f6;
+}
+
+/******************************
+  BANNER
+  *******************************/
+
+.banner {
+  height: 470px;
+  background-image: url(https://seguros.sura.cl/images/default-source/banner_landings/banner-desktop-seguro-pymes_0106.jpg?sfvrsn=3afb5f6d_2);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-color: #0033a0;
+}
+
+.banner .container {
+  display: flex;
+  align-items: center;
+}
+
+.banner-box {
+  width: 100%;
+  max-width: 440px;
+}
+
+.banner-box img {
+  width: 100%;
+  max-width: 320px;
+}
+
+.banner-box h5 {
+  color: #ffffff;
+  font-weight: 500;
+  margin-top: 0px;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 470px;
+    background-image: url(https://seguros.sura.cl/images/default-source/banner_landings/banner-mobile-seguro-pymes_0106.jpg?sfvrsn=cfb5f6d_2);
+    background-position-x: 65%;
+    background-position-y: 0;
+    background-size: cover;
+  }
+
+  .banner .container {
+    align-items: flex-start;
+  }
+
+  .banner-box {
+    width: 100%;
+    max-width: 400px;
+    margin: 2rem auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banner-box-button {
+    display: none;
+  }
+
+  .banner-box img {
+    max-width: 250px;
+  }
+
+  .sura-wrap .seguro-pyme h5.subtitle {
+    text-align: center;
+    font-size: 20px !important;
+  }
+}
+
+/******************************
+  CONTRATAR
+  *******************************/
+
+.contratar-pyme {
+  margin: 0 auto;
+  padding: 40px 0px;
+  position: relative;
+}
+
+.contratar-pyme:before {
+  content: "";
+  width: 45%;
+  height: 88%;
+  background-color: #ecf0f1;
+  position: absolute;
+  right: 0;
+  top: 8%;
+  z-index: -1;
+}
+
+.contratar-pyme-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contratar-pyme-box-info {
+  width: 100%;
+  max-width: 512px;
+}
+
+.contratar-pyme-box-info h1 {
+  color: #0033a0;
+  text-transform: uppercase;
+}
+
+.contratar-pyme-box-info ul {
+  width: 100%;
+  max-width: 480px;
+  margin: 16px 0px 24px 32px;
+}
+
+.contratar-pyme-box-info ul li {
+  color: #53565a;
+  font-size: 18px;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.contratar-pyme-box-info ul li::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: url(https://seguros.sura.cl/docs/default-source/landing-seguro-auto-flexible-2020/icon-ticket.svg)
+    no-repeat center center;
+  background-size: 20px;
+  position: absolute;
+  top: 0;
+  left: -32px;
+}
+
+.contratar-pyme-box-img {
+  width: 100%;
+  max-width: 560px;
+  margin: 24px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contratar-pyme-box-img img {
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .contratar-pyme:before {
+    width: 95%;
+    height: 40%;
+    right: 0;
+    top: 55%;
+  }
+
+  .contratar-pyme-box {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contratar-pyme-box-info {
+    max-width: 640px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contratar-pyme-box-info h1 {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .contratar-pyme-box-info ul {
+    margin: 16px 0px 24px 42px;
+  }
+}
+
+@media (max-width: 575px) {
+  .contratar-pyme-box-info ul {
+    max-width: 320px;
+  }
+}
+
+/**********************
+  COBERTURAS
+  **********************/
+
+.coberturas {
+  min-height: 480px;
+  margin: 2rem auto 0;
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #ffffff 50%,
+    #ecf0f1 50%,
+    #ecf0f1 100%
+  );
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .coberturas {
+    margin: 0 auto;
+  }
+}
+
+.coberturas-box {
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 1920px;
+  position: relative;
+}
+
+.coberturas-box-title h2 {
+  color: #0033a0;
+  text-align: center;
+}
+
+.coberturas-box-slider {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.coberturas-box-slider-item {
+  width: 280px;
+  height: 280px;
+  margin: 16px 24px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 16px 48px 0 rgba(0, 45, 84, 0.13);
+}
+
+.coberturas-card {
+  width: 100%;
+  height: 280px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.coberturas-card img {
+  width: 100%;
+  max-width: 120px;
+  max-height: 80px;
+  margin: 0px auto 16px;
+}
+
+.coberturas-card h5 {
+  color: #0033a0;
+  font-weight: 500;
+  text-align: center;
+}
+
+.coberturas-card span {
+  width: 40px;
+  border: 2px solid #00aec7;
+  border-radius: 8px;
+  margin: 16px auto;
+}
+
+@media (max-width: 991px) {
+  .coberturas {
+    min-height: 440px;
+  }
+
+  .coberturas-box-slider-item {
+    margin: 16px 16px 8px 16px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .sura-wrap .seguro-pyme .coberturas button.slick-prev,
+  .sura-wrap .seguro-pyme .coberturas button.slick-next {
+    display: none !important;
+  }
+}
+
+/******************************
+  COBERTURAS OPCIONALES
+  *******************************/
+
+.card-coberturas-opcionales {
+  width: 100%;
+  min-height: 400px;
+  margin: 64px auto;
+  padding: 32px 32px 0px;
+  border-radius: 8px;
+  box-shadow: 0 16px 48px 0 rgba(0, 45, 84, 0.13);
+}
+
+.title-card-coberturas-opcionales h2 {
+  color: #0033a0;
+  text-align: center;
+}
+
+.coberturas-opcionales-box-slider {
+  width: 100%;
+  margin: 0 auto 64px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.coberturas-opcionales-box-slider-item {
+  width: 200px;
+  margin: 16px;
+}
+
+.coberturas-opcionales-card {
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.coberturas-opcionales-card img {
+  width: 100%;
+  max-width: 72px;
+  max-height: 72px;
+  margin: 0px auto 16px;
+}
+
+.coberturas-opcionales-card p.sub {
+  color: #0033a0;
+  text-align: center;
+}
+
+.coberturas-opcionales-card span {
+  width: 40px;
+  border: 2px solid #00aec7;
+  border-radius: 8px;
+  margin: 16px auto;
+}
+
+@media (max-width: 991px) {
+  .coberturas-opcionales-box-slider-item {
+    margin: 16px 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .coberturas-opcionales-box-slider-item {
+    width: 160px;
+    margin: 16px 2px;
+  }
+}
+
+@media (max-width: 767px) {
+  .sura-wrap .seguro-pyme .card-coberturas-opcionales button.slick-next,
+  .sura-wrap .seguro-pyme .card-coberturas-opcionales button.slick-prev {
+    top: 50%;
+  }
+
+  .sura-wrap .seguro-pyme .card-coberturas-opcionales button.slick-next {
+    right: 10%;
+  }
+
+  .sura-wrap .seguro-pyme .card-coberturas-opcionales button.slick-prev {
+    left: 10%;
+  }
+}
+
+/******************************
+  COTIZAR 
+  *******************************/
+
+.cotizar {
+  margin: 32px auto 0px;
+  padding: 32px 0 64px;
+  background-color: #ffffff;
+}
+
+.cotizar .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.cotizar-box-info {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cotizar-box-info h4 {
+  text-align: center;
+}
+
+.cotizar-box-info ul {
+  margin: 16px 0px 32px 56px;
+}
+
+.cotizar-box-info ul li {
+  color: #53565a;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.cotizar-box-info ul li::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: url(https://seguros.sura.cl/docs/default-source/landing-seguro-auto-flexible-2020/icon-ticket.svg)
+    no-repeat center center;
+  background-size: 20px;
+  position: absolute;
+  top: 0;
+  left: -32px;
+}
+
+@media (max-width: 991px) {
+  .cotizar-box-form {
+    max-width: 560px;
+    margin: 0 auto 32px;
+  }
+
+  .cotizar-box-info {
+    max-width: 560px;
+    margin: 32px auto;
+  }
+}
+
+.cotizar-box-form-title {
+  max-width: 100%;
+}
+
+@media (max-width: 575px) {
+  .cotizar-box-form-title {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .sura-wrap .seguro-pyme .cotizar-box-form-title h2 {
+    text-align: center;
+  }
+
+  .cotizar-box-info ul {
+    max-width: 320px;
+    margin: 16px 0px 32px 40px;
+  }
+}
+
+/******************************
+  LINKS 
+  *******************************/
+
+.links {
+  margin: 0 auto 64px;
+}
+
+.links .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.links-title h2 {
+  color: #0033a0;
+}
+
+.links-card {
+  width: 100%;
+  max-width: 1040px;
+  margin: 32px auto;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 16px 48px 0 rgba(0, 45, 84, 0.13);
+}
+
+.compartir-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.compartir-links:nth-child(1) {
+  border-bottom: 1px solid #ecf0f1;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+}
+
+.compartir-links-logo {
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.compartir-links-logo p.sub {
+  text-align: center;
+  max-width: 180px;
+}
+
+.compartir-links-logo-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.compartir-links-logo-box .heart {
+  margin-right: 16px;
+  box-shadow: 0 0 0 0 #fa5f5f;
+  transform: scale(1.1);
+  animation: pulse 1.5s infinite;
+  border-radius: 50%;
+}
+
+.compartir-links-logo-box .logo {
+  max-width: 200px;
+  margin: 4px 0 0;
+  z-index: 0;
+}
+
+.compartir-links-rrss {
+  width: 100%;
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.compartir-links-rrss-icons {
+  width: 100%;
+  margin: 0px auto 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.compartir-links-rrss-icons-tw,
+.compartir-links-rrss-icons-fb,
+.compartir-links-rrss-icons-wa {
+  opacity: 0.5;
+  filter: grayscale(2);
+  transition: all 0.3s ease-out;
+}
+
+.compartir-links-rrss-icons-tw:hover,
+.compartir-links-rrss-icons-fb:hover,
+.compartir-links-rrss-icons-wa:hover {
+  cursor: pointer;
+  opacity: 1;
+  filter: grayscale(0);
+  transition: all 0.3s ease-out;
+}
+
+.compartir-links-rrss-icons-tw img {
+  width: 36px;
+}
+
+.compartir-links-rrss-icons-fb img {
+  height: 30px;
+}
+
+.compartir-links-rrss-icons-wa img {
+  height: 32px;
+}
+
+.compartir-links-rrss-copy {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.compartir-links-rrss-copy a {
+  color: #00aec7 !important;
+  margin: 0 0 0 16px;
+  font-size: 18px;
+  position: relative;
+  cursor: pointer;
+}
+
+.compartir-links-rrss-copy a:before {
+  content: "";
+  position: absolute;
+  background: url(https://seguros.sura.cl/docs/default-source/landing-seguro-vive/enlazar.svg)
+    no-repeat center center;
+  background-size: 20px;
+  width: 20px;
+  height: 20px;
+  left: -30px;
+  top: 2px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 65, 65, 0.7);
+  }
+
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+.compartir-links ul {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 0 0 140px;
+}
+
+.compartir-links ul li {
+  min-height: 56px;
+  display: flex;
+  position: relative;
+}
+
+.compartir-links ul li::before {
+  content: "";
+  width: 24px;
+  height: 16px;
+  background: url(https://seguros.sura.cl/docs/default-source/landing-seguro-auto-flexible-2020/arrow-pointing-to-right.svg)
+    no-repeat center center;
+  background-size: 24px;
+  position: absolute;
+  left: -40px;
+}
+
+.compartir-links ul li a {
+  color: #00aec7;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .compartir-links ul {
+    max-width: 240px;
+    margin: 0 16px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .compartir-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .compartir-links-rrss {
+    margin: 32px auto 8px;
+  }
+
+  .compartir-links ul {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+}
+
+/******************************
+  APOYAR PYMES
+  *******************************/
+
+.empresa-sura {
+  margin: 50px auto !important;
+}
+
+.empresa-sura-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.empresa-sura-box-img {
+  width: 100%;
+  max-width: 630px;
+}
+
+.empresa-sura-box-img img {
+  width: 100%;
+}
+
+.empresa-sura-box-info {
+  width: 100%;
+  max-width: 540px;
+}
+
+.title-empresa-sura-box-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.title-empresa-sura-box-info h5 {
+  color: #0033a0;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.text-empresa-sura-box-info {
+  padding: 10px 40px;
+  text-align: center;
+}
+
+.list-empresa-sura-box-info {
+  margin: 10px auto;
+}
+
+.list-empresa-sura-box-info ul {
+  margin-left: 80px;
+}
+
+.list-empresa-sura-box-info ul li {
+  height: auto;
+  margin: 5px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  color: #53565a;
+  font-family: "Barlow" sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  position: relative;
+}
+
+.list-empresa-sura-box-info ul li::before {
+  content: "";
+  position: absolute;
+  background: url(https://seguros.sura.cl/docs/default-source/landing-pyme-2020/icon-ticket.svg)
+    no-repeat center center;
+  background-size: 25px;
+  width: 25px;
+  height: 25px;
+  top: 0px;
+  left: -35px;
+}
+
+.list-empresa-sura-box-info li a {
+  color: #0033a0;
+  text-decoration: underline !important;
+  transition: all 0.2s ease;
+  font-weight: 700;
+}
+
+.list-empresa-sura-box-info li a:hover {
+  color: #00aec7;
+  transition: all 0.2s ease;
+}
+
+.btn-empresa-sura-box-info a {
+  margin: 30px auto 0px;
+  max-width: 140px;
+}
+
+@media (max-width: 991px) {
+  .empresa-sura-box {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .empresa-sura-box-info {
+    margin: 0 auto 30px;
+    max-width: 700px;
+  }
+}
+
+/* COTIZADOR */
+.cotizar {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  height: 100%;
+  margin: 2rem auto;
+  padding: 2rem 0;
+  background: linear-gradient(
+    to left,
+    white 0%,
+    white 55%,
+    #ecf0f1 55%,
+    #ecf0f1 100%
+  );
+}
+
+@media screen and (max-width: 991px) {
+  .cotizar {
+    margin: 32px auto 0;
+    padding: 0;
+    background: linear-gradient(
+      to top,
+      white 0%,
+      white 35%,
+      #ecf0f1 35%,
+      #ecf0f1 100%
+    );
+  }
+
+  .cotizar .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cotizar-box-info {
+    margin-top: 40px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
+.cotizar-box-form {
+  width: 100%;
+  max-width: 440px;
+  margin: 2rem 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.cotizar-box-form-title h2 {
+  font: normal 700 36px/1 "FS Joey", sans-serif !important;
+  color: #0033a0;
+  margin: -0.5rem auto 0.5rem;
+}
+
+.cotizar-box-form-formulario {
+  width: 100%;
+}
+
+.cotizar-box-form-formulario fieldset {
+  padding: 0.35em 0 0.625em;
+}
+
+.cotizar-box-form-formulario .box-form {
+  width: 100%;
+  max-width: 330px;
+  margin-bottom: 0;
+}
+
+.cotizar-box-form-formulario .box-form .box-form-input-rut {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.cotizar-box-form-formulario .box-form .box-form-input-rut span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 52px;
+  margin: 0 5px;
+}
+
+.cotizar-box-form-formulario .box-form label {
+  color: #0033a0;
+  font-family: "Barlow", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  margin-left: 20px;
+}
+
+.cotizar-box-form-formulario .box-form input {
+  width: 100%;
+  height: 56px;
+  border-radius: 100px;
+  background-color: #fff;
+  border: 1px solid #ecf0f1 !important;
+  padding: 0 20px;
+}
+
+.cotizar-box-form-formulario .box-form input::placeholder {
+  color: #adadad !important;
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+}
+
+.cotizar-box-form-formulario .box-form input::-webkit-input-placeholder {
+  color: #adadad;
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+}
+
+.cotizar-box-form-formulario .box-form input::-moz-placeholder {
+  color: #adadad;
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+}
+
+.cotizar-box-form-formulario .bn {
+  width: 270px;
+  margin-left: 0;
+  margin-top: 0.5rem;
+}
+
+/* FIN COTIZADOR */
+button.bn,
+.bn {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 12px 35px;
+  text-align: center;
+  border-radius: 50px;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  overflow: hidden;
+  border: none;
+}
+
+button.bn.bn-yellow,
+.bn.bn-yellow {
+  background-color: #e3e829;
+  color: #0033a0;
+  margin: 2rem 0;
+  max-width: 100%;
+}
+
+button.bn.bn-yellow:hover,
+.bn.bn-yellow:hover {
+  background-color: #0033a0;
+  color: #fff;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 22%);
+  transition: all 0.3s ease;
+}
+
+.cotizar-box-info {
+  width: 100%;
+  max-width: 560px;
+  margin: 0 0 0 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sura-wrap .cotizar-box-info h2,
+.cotizar-box-info h2 {
+  font: normal 700 28px/1.2 "Barlow", sans-serif !important;
+  color: #53565a;
+  margin: 0 0 1rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .cotizar-box-info {
+    margin: 0 auto;
+  }
+}
+
+.cotizar-box-info ul {
+  margin: 16px 0 32px 56px;
+}
+
+.cotizar-box-info ul li {
+  color: #53565a;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.cotizar-box-info ul li::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: url(https://seguros.sura.cl/docs/default-source/landing-seguro-auto-flexible-2020/icon-ticket.svg)
+    no-repeat center center;
+  background-size: 20px;
+  position: absolute;
+  top: 0;
+  left: -32px;
+}
+
+.cotizar-box-info p {
+  font: normal 400 22px/1.2 "Barlow", sans-serif;
+  color: #53565a;
+  text-align: center;
+  max-width: 510px;
+}
+
+.cotizar-box-info img {
+  width: 100%;
+  margin: 32px auto;
+}
+
+.spin {
+  display: block;
+  text-align: center;
+  transition: all 1s ease;
+  margin: 0 auto;
+}
+
+.spin .spinner {
+  display: block;
+  position: absolute;
+  width: 20px;
+  top: 11px;
+  left: 92%;
+  right: 15px;
+  z-index: 1;
+  transform: translateX(-50%);
+}
+
+.spin .spinner:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  border-radius: 50%;
+  border: solid 0.15em #0033a0;
+  border-bottom-color: #0033a0;
+  border-bottom-color: #fff;
+  animation: 0.8s linear infinite spinner;
+  will-change: transform;
+}
+
+.cpro-cotizar .bn.bn-yellow {
+  text-align: center;
+  transition: all 1s ease;
+  min-width: 300px;
+  padding: 15px 0;
+  border: 2px solid #e3e829;
+}
+
+.cpro-cotizar .bn.bn-yellow.spin {
+  text-align: left;
+  padding-left: 40px;
+  transition: all 1s ease;
+  display: block;
+}
+
+.cpro-cotizar .bn.bn-yellow.spin:hover {
+  border: 2px solid #e3e829;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*!** CORIZADOR FIX ***/
+.cotizador-fix {
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  background-color: #ecf0f1;
+  border: 2px solid #0033a0;
+  margin: -3rem auto 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -4rem;
+  z-index: 1;
+}
+
+.cotizador-fix a.bn {
+  position: relative;
+  top: -24px;
+  width: 132px;
+  font-size: 16px;
+  padding: 15px 25px;
+  margin: 0 auto;
+}
+
+.cotizador-fix-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 1rem 2rem;
+  margin-top: -0.8rem;
+}
+
+.cotizador-fix-content img {
+  width: 158px;
+}
+
+.cotizador-fix-content p {
+  font: normal 400 22px/1.1 "Barlow", sans-serif;
+  color: #0033a0 !important;
+  text-align: right;
+  margin: 0;
+}
+
+.cotizador-fix.affix-top {
+  bottom: -1rem;
+  z-index: 1000;
+  position: fixed;
+}
+
+#countNumber {
+  font-family: "FS Joey", serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1;
+  fill: #00aec7;
+}
+
+.fixed.affix {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  transition: top 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    left 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    right 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    bottom 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    width 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    height 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    background 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+  left: 0;
+  transform: translateX(0%);
+  z-index: 0;
+  bottom: -4rem;
+}
+
+@media (max-width: 768px) {
+  .cotizador-fix {
+    max-width: 375px;
+    height: auto;
+  }
+
+  .cotizador-fix-content {
+    padding: 0 1rem 2rem;
+    margin-top: -3rem;
+  }
+
+  .cotizador-fix-content img {
+    width: 150px;
+  }
+
+  .cotizador-fix-content p.cotizador-title {
+    font-size: 16px !important;
+  }
+
+  .cotizador-fix a.bn {
+    bottom: 2.5rem;
+  }
+
+  .sura-wrap .fixed.affix.affix-top {
+    position: relative !important;
+  }
+}
+
+.legal {
+  margin: 6rem auto 0;
+  background-color: #ecf0f1;
+  position: relative;
+  box-shadow: -1px -10px 20px 0 rgb(0 45 84 / 13%);
+  z-index: 1000;
+}
+
+.contenido.contenido-interior,
+.margin-top-5.sura-box-descarga {
+  display: none !important;
+}
+
+.banner-box-descuento {
+  position: absolute;
+  top: 30rem;
+  right: 27%;
+  width: 300px !important;
+  transform: translateX(-25%);
+}
+@media (max-width: 768px) {
+  .banner-box-descuento {
+    top: initial;
+    right: 1rem;
+    width: 170px !important;
+    transform: translateX(0%);
+    bottom: 3rem;
+  }
+}
+/* DESCUENTO PROMO */
+.bg-blue {
+  background-color: #0033a0;
+  position: relative;
+  z-index: 1;
+}
+.sura-wrap .seguro-pyme p.pyme-descuento {
+  text-align: center;
+  margin: 1rem auto;
+  color: #fff;
+}
+.contratar-pyme {
+  padding: 72px 0;
+}
+.sura-wrap .pyme-descuento a {
+  color: #00aec7 !important;
+  cursor: pointer !important;
+  text-decoration: underline !important;
+}
+@media (max-width: 575px) {
+  .sura-wrap .seguro-pyme p.pyme-descuento {
+    font-size: 12px;
+  }
+}

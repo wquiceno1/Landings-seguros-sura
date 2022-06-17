@@ -1,0 +1,23 @@
+.mt-1-auto {
+  margin: 1rem auto; 
+}
+.mb-2 {
+  margin-bottom: 2rem;
+}
+.w-100 {
+  width: 100%;
+}
+.btn-desk {
+  display: block
+}
+.btn-mob {
+  display: none;
+}
+@media (max-width: 768px) {
+  .btn-desk {
+    display: none;
+  }
+  .btn-mob {
+    display: block;
+  }
+}

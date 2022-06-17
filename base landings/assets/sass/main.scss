@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap");
+
+@font-face {
+    font-family: "FS Joey";
+    src: url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.woff2) format("woff2"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.woff) format("woff"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.eot) format("eot"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.svg) format("svg"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.ttf) format("truetype");
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "FS Joey";
+    src: url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.woff2) format("woff2"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.woff) format("woff"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.eot) format("eot"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.svg) format("svg"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.ttf) format("truetype");
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal
+}
+
+$Fuente1: "FS Joey",
+sans-serif;
+$Fuente2: "Barlow",
+sans-serif;
+
+$color-primario: #0033a0;
+$color-secundario: #00aec7;
+$color-claro: #fff;
+$color-claro-secundario: #edf0f1;
+$color-claro-terciario: #f6f7fa;
+$color-text: #53565a;
+$color-destacado: #e3e829;
+$color-bloque-texto: #E5F7FA;
+$color-fondo-gris: #E5E5E5;
+
+
+
+$border-red: solid 2px red;
+$border-yellow: solid 2px yellow;
+$border-green: solid 2px green;
+$border-rose: solid 2px rgb(255, 17, 191);
+
+
+
+
+
+.sura-wrap .nuevo-wrap {
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    padding: 0;
+    position: relative;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        max-width: 1200px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        // margin-top: 2rem;
+        // background-color: $color-fondo-gris;
+        padding: 10px;
+        // border: $border-green;
+
+    }
+}

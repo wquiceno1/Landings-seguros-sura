@@ -1,0 +1,80 @@
+%btn {
+  width: max-content;
+  // height: 48px;
+  padding: 12px 26px;
+  border-radius: 100px;
+  letter-spacing: 1px;
+  font: normal 700 16px/19px $font-text;
+  text-align: center;
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+  }
+  @media (max-width: 768px) {
+    font-size: 16px;
+    padding: 12px 16px;
+  }
+}
+%btn-arrow {
+  content: '';
+  position: absolute;
+  background: url(https://cdnsegurossuraprd.azureedge.net/sitefinity/docs/default-source/landing-yapp/icon-arrow.svg?sfvrsn=8d55326d_2) no-repeat center center;
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+  @media (max-width: 768px) {
+    background-size: 18px;
+    width: 18px;
+    height: 20px;
+  }
+}
+%btn-call {
+  @extend %btn;
+  color: $blue;
+  background-color: $yellow;
+  transition: $transition;
+  &:hover {
+    color: $white;
+    background-color: $blue;
+    transition: $transition;
+  }
+}
+%btn-call-white {
+  @extend %btn;
+  color: $blue;
+  background-color: $yellow;
+  transition: $transition;
+  border: 2px solid transparent;
+  &:hover {
+    color: $blue;
+    background-color: lighten($white, 10%);
+    transition: $transition;
+    border: 2px solid $white;
+  }
+}
+%btn-border-blue {
+  @extend %btn;
+  color: $blue;
+  background-color: $white;
+  transition: $transition;
+  border: 2px solid $blue;
+  &:hover {
+    transition: $transition;
+  }
+}
+%btn-border-blue-arrow {
+  @extend %btn;
+  color: $blue;
+  background-color: $white;
+  transition: $transition;
+  border: 2px solid $blue;
+  padding-left: 3rem;
+  &:before {
+    @extend %btn-arrow;
+    left: 1rem;
+  }
+  &:hover {
+    transition: $transition;
+    background-color: lighten($blue, 60%);
+  }
+}

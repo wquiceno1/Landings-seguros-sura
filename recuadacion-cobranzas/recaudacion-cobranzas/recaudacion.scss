@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap");
+
+@font-face {
+    font-family: "FS Joey";
+    src: url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.woff2) format("woff2"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.woff) format("woff"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.eot) format("eot"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.svg) format("svg"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.ttf) format("truetype");
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "FS Joey";
+    src: url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.woff2) format("woff2"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.woff) format("woff"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.eot) format("eot"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.svg) format("svg"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.ttf) format("truetype");
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal
+}
+
+$Fuente1: "FS Joey",
+sans-serif;
+$Fuente2: "Barlow",
+sans-serif;
+
+$color-primario: #0033a0;
+$color-secundario: #00aec7;
+$color-claro: #fff;
+$color-claro-secundario: #edf0f1;
+$color-claro-terciario: #f6f7fa;
+$color-text: #53565a;
+$color-destacado: #e3e829;
+$color-bloque-texto: #E5F7FA;
+$color-fondo-gris: #E5E5E5;
+
+
+
+$border-red: solid 2px red;
+$border-yellow: solid 2px yellow;
+$border-green: solid 2px green;
+$border-rose: solid 2px rgb(255, 17, 191);
+
+
+
+
+
+.sura-wrap .nuevo-wrap {
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    padding: 0;
+    position: relative;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        max-width: 1200px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        // margin-top: 2rem;
+        // background-color: $color-fondo-gris;
+        padding: 10px;
+        // border: $border-green;
+
+        .banner {
+            display: flex;
+            align-items: center;
+            // background-color: #e3e829;
+            background-image: url(../images/cobranzas.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 203px;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+
+            h2 {
+                color: $color-claro;
+                font: normal 700 42px/46px $Fuente1;
+                margin: 0 0 0 4rem;
+            }
+
+        }
+
+    }
+
+    section {
+        width: 100%;
+        height: 100%;
+        max-width: 1000px;
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+            font: normal 700 28px/33.6px $Fuente2;
+            color: $color-primario;
+            margin-bottom: 2rem;
+        }
+        .fila {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem;
+            border-radius: 5px;
+            background-color: $color-claro;
+            box-shadow: 0px 15px 51px rgba(0, 45, 84, 0.13);
+            max-width: 792px;
+            height: 100px;
+            margin-bottom: 1.5rem;
+
+            .icono {
+                width: 11%;
+                min-width: 60px;
+                // border: $border-red;
+            }
+            .info {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                width: 70%;
+                min-width: 220px;
+                height: 50px;
+                margin-left: 1rem;
+                // background-color: #e3e829;
+
+                h4 {
+                    color: $color-primario;
+                    font: normal 700 22px/26px $Fuente2;
+                    margin-bottom: 0.5rem; 
+                }
+                p {
+                    color:$color-secundario;
+                    font: normal 700 13px/15.6px $Fuente2;                }
+            }
+            .detalles {
+                // background-color: #53565a;
+                min-width: 165px;
+                
+                a {
+                    width: 120px;
+                    min-width: 120px;
+                    border: solid 2px $color-primario;
+                    font: normal 700 16px/19.2px $Fuente2;
+                    text-transform: uppercase;
+                    letter-spacing: 1.06px;
+                    padding: 10px 15px;
+                    border-radius: 50px;
+
+                }
+                a:hover {
+                    background-color: $color-primario;
+                    color:$color-claro;
+                }
+            }
+        }
+    }
+
+
+}
+
+@media (max-width: 950px) {
+    .banner {
+        margin-top: 5rem !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        min-width: 300px !important;
+    }
+    .banner {
+        background-position: center !important;
+        // min-width: 300px !important;
+        h2 {
+            font: normal 700 28px/36px $Fuente1 !important;
+            margin: 0 0 0 1.5rem !important;
+        }
+    }
+    section {
+        h3 {
+            font: normal 700 24px/26px $Fuente2 !important;
+        }
+    }
+    .fila {
+        flex-direction: column;
+        // align-items: baseline !important;
+        justify-content: center !important;
+        height: 250px !important;
+        min-width: 300px;
+        text-align: center;
+        .icono {
+            margin-top: 1rem ;
+        }
+        
+        .info {
+            margin: 2rem ;
+            
+        }
+        .detalles {
+            margin-bottom: 1rem !important;
+            // border: $border-green;
+            a {
+                font: normal 700 14px/16px $Fuente2 !important;
+                // margin-top: 1rem;
+            }
+        }
+
+        h4 {
+            font: normal 700 18px/26px $Fuente2 !important;
+            // margin-left: 3rem;
+        }
+        p {
+            // margin-left: 3rem;
+            
+        }
+    }
+}

@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: "FS Joey";
+  src: url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.woff2) format("woff2"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.woff) format("woff"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.eot) format("eot"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.svg) format("svg"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.ttf) format("truetype");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FS Joey";
+  src: url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.woff2) format("woff2"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.woff) format("woff"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.eot) format("eot"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.svg) format("svg"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.ttf) format("truetype");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.nuevo-wrap {
+  width: 100%;
+  max-width: 1920px;
+  height: 100%;
+  padding: 0;
+  position: relative;
+}
+
+.nuevo-wrap .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-width: 1230px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.nuevo-wrap .container .titulo-container {
+  text-align: center;
+  position: relative;
+}
+
+.nuevo-wrap .container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 63vh;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #E5E5E5;
+}
+
+.nuevo-wrap .container-fluid::before {
+  content: "";
+  position: absolute;
+  background-image: url(/docs/default-source/landing-accesos-sv/circles.svg?sfvrsn=ad56c_3);
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 120px;
+  top: 19vh;
+  left: 2%;
+}
+
+.nuevo-wrap .container-fluid::after {
+  content: "";
+  position: absolute;
+  background-image: url(/docs/default-source/landing-accesos-sv/circles.svg?sfvrsn=ad56c_3);
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 120px;
+  top: 19vh;
+  right: 2%;
+}
+
+.nuevo-wrap .separador {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 42px;
+  height: 1px;
+  border: solid 2px #00aec7;
+  background-color: #00aec7;
+  border-radius: 10px;
+}
+
+.nuevo-wrap .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 1199px;
+  height: 400px;
+}
+
+.nuevo-wrap .hero .hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  width: 50%;
+  margin: 2rem 2rem 2rem 3rem;
+}
+
+.nuevo-wrap .hero .hero-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nuevo-wrap .hero .hero-img img {
+  width: 100%;
+}
+
+.nuevo-wrap .hero .hero-text::before {
+  content: " ";
+  width: 42px;
+  height: 1px;
+  border: solid 2px #00aec7;
+  background-color: #00aec7;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.nuevo-wrap .container-grid {
+  width: 100%;
+  margin: auto;
+  margin-top: -50vh;
+  margin-bottom: 8rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (380px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 380px);
+  grid-auto-rows: auto;
+  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nuevo-wrap .item-grid {
+  -webkit-box-shadow: 0px 18px 43px rgba(0, 37, 70, 0.159856);
+          box-shadow: 0px 18px 43px rgba(0, 37, 70, 0.159856);
+  background-color: #fff;
+  position: relative;
+  height: 495px;
+}
+
+.nuevo-wrap .item-grid .item-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 255px;
+  overflow: hidden;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+}
+
+.nuevo-wrap .item-grid .item-image img {
+  width: 110%;
+}
+
+.nuevo-wrap .item-grid .item-image-logo {
+  position: absolute;
+  top: 2rem;
+  left: 1rem;
+  max-width: 146px;
+}
+
+.nuevo-wrap .item-grid .item-text-img {
+  position: absolute;
+  left: 0;
+  padding: 7px;
+  width: 155px;
+  height: 30px;
+  text-align: center;
+  background-color: #00aec7;
+  border-bottom-right-radius: 50px;
+}
+
+.nuevo-wrap .item-grid .item-text-img .text-img {
+  font: normal 700 16px/16px "FS Joey", sans-serif;
+  color: #fff;
+}
+
+.nuevo-wrap .item-grid .item-title {
+  padding: 15px 20px;
+  width: 100%;
+  height: 54%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.nuevo-wrap .item-grid:nth-child(5) .item-text-img {
+  background-color: #0033a0;
+}
+
+.nuevo-wrap .titulo-h2 {
+  font: normal 700 60px/60px "FS Joey", sans-serif !important;
+  color: #0033a0;
+  margin: 0px 0px;
+}
+
+.nuevo-wrap .titulo-h3 {
+  font: normal 400 42px/46.2px "FS Joey", sans-serif !important;
+  color: #00aec7;
+  margin: 20px 0px 0 0;
+}
+
+.nuevo-wrap .titulo-h4 {
+  font: normal 700 36px/39.6px "FS Joey", sans-serif !important;
+  color: #0033a0;
+  margin: 20px 20px;
+}
+
+.nuevo-wrap .titulo-h5 {
+  font: normal 700 22px/26.4px "Barlow", sans-serif !important;
+  color: #0033a0;
+  margin-bottom: 25px;
+}
+
+.nuevo-wrap .p-card {
+  font: normal 400 18px/26px "Barlow", sans-serif;
+  color: #53565a;
+  margin-bottom: 25px;
+}
+
+.nuevo-wrap .btn {
+  display: block;
+  width: 100%;
+  height: 48px;
+  margin: auto;
+  padding: 14px 32px;
+  border-radius: 40px;
+  border: 2px solid transparent;
+  font: normal 700 16px/16px "Barlow", sans-serif;
+  line-height: 16px;
+  letter-spacing: 1.08px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.nuevo-wrap .btn.br-primario {
+  border: 2px solid #0033a0;
+  color: #0033a0;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin: 25px auto;
+}
+
+.nuevo-wrap .btn.br-primario:hover {
+  background: rgba(0, 51, 160, 0.15);
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.nuevo-wrap .btn.btn-xs {
+  max-width: 146px;
+}
+
+@media (max-width: 950px) {
+  .nuevo-wrap .hero {
+    margin-top: 12rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nuevo-wrap .hero .hero-text {
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin: 1rem;
+  }
+  .nuevo-wrap .hero .hero-img {
+    margin: 1rem;
+  }
+  .nuevo-wrap .hero .hero-img img {
+    width: 80%;
+  }
+  .nuevo-wrap .titulo-h2 {
+    font: normal 700 52px/46px "FS Joey", sans-serif;
+    margin: 10px 10px;
+    text-align: center;
+  }
+  .nuevo-wrap .titulo-h3 {
+    font: normal 400 34px/38.2px "FS Joey", sans-serif;
+    margin: 10px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
