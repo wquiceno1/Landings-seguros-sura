@@ -376,7 +376,7 @@ body {
 .todas-coberturas {
   width: 100%;
   max-width: 1099px;
-  padding: 0 2rem;
+  padding: 2rem 2rem;
   box-shadow: 0 15px 51px 0 rgba(0, 45, 84, 0.13);
   border-radius: 0.5rem;
   margin: 0 auto 1rem;
@@ -389,7 +389,7 @@ body {
 }
 
 .title-tabla-todas-coberturas {
-  padding: 20px 0;
+  // padding: 20px 0;
 }
 
 .title-tabla-todas-coberturas a.desplegar-todas-coberturas {
@@ -429,6 +429,8 @@ body {
 .paso-a-paso {
   display: flex;
   flex-direction: column;
+  margin-bottom: 40px;
+  margin-top: 40px;
 
   .container-paso-a-paso {
     width: 100%;
@@ -442,12 +444,34 @@ body {
     .icono-paso-a-paso {
       width: 100%;
       max-width: 80px;
+      position: relative;
       img {
         width: 100%;
         max-width: 72px;
+        z-index: 1;
+        position: absolute;
+        top: -5px;
+        left: 5px;
+      }
+      p {
+        opacity: 0;
       }
       
     }
+    .icono-paso-a-paso::before {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 60px;
+      background-color: $color-primario;
+      bottom: -60px;
+      left: 40px;
+      z-index: -1;
+    }
+    .last::before{
+      display: none;
+    }
+    
     .desc-paso-a-paso {
       text-align: left;
       p {
@@ -456,4 +480,8 @@ body {
       }
     }
   }
+}
+.boton-amarillo{
+  position: relative;
+  @extend %btn-yellow-arrow;
 }
