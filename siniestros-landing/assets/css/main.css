@@ -853,6 +853,7 @@ body p {
       -ms-flex-align: center;
           align-items: center;
   gap: 20px;
+  text-align: left;
 }
 
 @media (max-width: 768px) {
@@ -1062,7 +1063,6 @@ body p {
     left: 10%;
   }
   .contenido-todas-coberturas .boton-amarillo::before {
-    display: none;
     background-position: 0px 11px;
     background-size: auto;
     width: 25px;

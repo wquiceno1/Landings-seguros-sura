@@ -404,6 +404,7 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
+  text-align: left;
 }
 
 @media (max-width: 768px) {
@@ -580,7 +581,7 @@ body {
       left: 10%;
       // font-size: 12px;
       &::before {
-        display: none;
+        // display: none;
         background-position: 0px 11px;
         background-size: auto;
         width: 25px;
