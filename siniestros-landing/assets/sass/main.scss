@@ -615,28 +615,55 @@ body {
     display: flex;
     // gap: 50px;
     justify-content: space-between;
+    align-items: center;
     .texto-card{
-      border: solid 1px green;
+      // border: solid 1px green;
       max-width: 60%;
       position: relative;
       .titulo-card{
         font: normal 700 36px/39.6px $Fuente1;
         color: $blue;
         margin-bottom: 50px;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 48px;
+          height: 4px;
+          background-color: $cyan;
+          top: 0px;
+          left: 3%;
+          border-radius: 16px;
+        }
       }
-      .titulo-card::before {
-        content: "";
-        position: absolute;
-        width: 48px;
-        height: 4px;
-        background-color: $cyan;
-        top: 0px;
-        left: 3%;
-        border-radius: 16px;
+      .parrafo-card {
+        font: normal 400 18px/22px $Fuente2;
+        color: $gray;
+        margin-bottom: 50px;
       }
     }
     .imagen-card{
-      border: solid 1px green;
+      // border: solid 1px green;
+      text-align: center;
     }
   }
+}
+
+@media (max-width: 768px) {
+  .card-2-columnas {
+    .container-card {
+    flex-direction: column;
+    align-items: center;
+    // border: solid 1px red;
+    .texto-card {
+      width: 100%;
+      max-width: 100%;
+    }
+    .imagen-card {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 50px;
+    }
+  }
+  }
+  
 }
