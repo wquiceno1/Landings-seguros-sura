@@ -7,7 +7,9 @@
 @import '02-diferencias';
 
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 
 
@@ -321,8 +323,7 @@ body {
   display: flex;
   flex-direction: column;
   // justify-content: center;
-  align-items: center;
-  
+  align-items: center;  
   padding-top: 100px;
   
 
@@ -374,7 +375,7 @@ body {
 }
 
 .todas-coberturas {
-  width: 100%;
+  width: 95%;
   max-width: 1099px;
   padding: 2rem 2rem;
   box-shadow: 0 15px 51px 0 rgba(0, 45, 84, 0.13);
@@ -418,11 +419,19 @@ body {
   transition: all 0.2s ease;
 }
 
-.contenido-tabla-todas-coberturas {
+.arrow-close {
+  content: url(https://cdnsegurossuraprd.azureedge.net/sitefinity/docs/default-source/landing-pyme-2022/path.svg?sfvrsn=d42d946c_3);
+  width: 16px;
+  height: 16px;
+  transition: all 0.2s ease;
+  transform: rotate(180deg);
+}
+
+.close {
   display: none;
 }
 
-.contenido-tabla-todas-coberturas.open {
+.open {
   display: block;
 }
 
@@ -484,4 +493,99 @@ body {
 .boton-amarillo{
   position: relative;
   @extend %btn-yellow-arrow;
+}
+
+@keyframes myFirstAnimation {
+  /* fotograma inicial (from ó 0%) */
+  0% {
+      transform: translateY(0);
+      opacity: 0;
+  }
+  /* fotograma final (to ó 100%) */
+  100% {
+      transform: translateY(2%);
+      opacity: 1;
+  }
+}
+.animate_div{
+    animation-name: myFirstAnimation !important;
+    animation-duration: 1s !important;
+    animation-timing-function: ease-out !important;
+    // /* animation-delay: 0;
+    // animation-iteration-count: 1;
+    // animation-direction: alternate; */
+    animation-fill-mode: both !important;
+    
+} 
+
+.contenido-todas-coberturas {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .ayuda-siniestros {
+    padding-top: 0px;
+  }
+  .todas-coberturas {
+    width: 90%;
+  }
+  .desc-paso-a-paso {
+    margin-right: 25px;
+  }
+  .paso-a-paso{
+    .container-paso-a-paso {
+      padding-left: 5px;
+      .icono-paso-a-paso::before {
+        height: 90px;
+        bottom: -100px;
+      }
+  }
+  }  
+}
+
+@media (max-width: 473px) {
+  .cards-bloque{
+    margin-bottom: 0px;
+  }
+  .siniestro-diferencias-call__desc {
+    margin-bottom: 25px;
+  }
+  .paso-a-paso {
+    margin-top: 0px;
+    .container-paso-a-paso {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0px;
+      margin-bottom: 25px;
+      .icono-paso-a-paso::before {
+        display: none;
+      }
+    }
+  }
+  .contenido-todas-coberturas {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // border: solid 1px green;
+    padding-bottom: 50px;
+    position: relative;
+    .boton-amarillo {
+      // border: solid 1px red;
+      letter-spacing: normal;
+      max-width: 200px;
+      margin-left: 0px;
+      padding-left: 25px;
+      position: absolute;
+      bottom: 0;
+      left: 10%;
+      // font-size: 12px;
+      &::before {
+        display: none;
+        background-position: 0px 11px;
+        background-size: auto;
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
 }

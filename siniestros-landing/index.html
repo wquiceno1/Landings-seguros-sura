@@ -108,7 +108,7 @@
                     </p>
 
                 </div>
-
+                <!-- siniestro mivilidad -->
                 <div class="todas-coberturas">
                     <div class="tabla-todas-coberturas">
                         <div class="title-tabla-todas-coberturas">
@@ -120,7 +120,7 @@
                                 <span class="arrow-todas-coberturas"></span>
                             </a>
                         </div>
-                        <div class="contenido-tabla-todas-coberturas">
+                        <div class="contenido-todas-coberturas close animate_div">
                             <div class="paso-a-paso">
                                 <!-- Antecedentes -->
                                 <div class="container-paso-a-paso">
@@ -214,12 +214,96 @@
                                     </div>
                                 </div>
                             </div>
-                            
-                                <a class="boton-amarillo" href="#">IR A DENUNCIAR SINIESTRO DE AUTO</a>
-                            
+
+                            <a class="boton-amarillo" href="#">IR A DENUNCIAR SINIESTRO DE AUTO</a>
+
                         </div>
                     </div>
                 </div>
+
+                <!-- siniestro hogar -->
+                <div class="todas-coberturas">
+                    <div class="tabla-todas-coberturas">
+                        <div class="title-tabla-todas-coberturas">
+                            <a id="desplegar-todas-coberturas" class="desplegar-todas-coberturas">
+                                <div class="desplegar">
+                                    <img src="./assets/images/hogar.svg" alt="siniestro de hogar">
+                                    Siniestro de Hogar 
+                                </div>
+                                <span class="arrow-todas-coberturas"></span>
+                            </a>
+                        </div>
+                        <div class="contenido-todas-coberturas close animate_div">
+                            <div class="paso-a-paso">
+                                <!-- Datos -->
+                                <div class="container-paso-a-paso">
+                                    <div class="icono-paso-a-paso">
+                                        <p>Datos</p>
+                                        <img class="icon" src="./assets/images/antecedentes.jpg" alt="Datos">
+                                    </div>
+                                    <div class="desc-paso-a-paso">
+                                        <p class="desc-call__desc">
+                                            <strong> 1.- Datos </strong><br>
+                                            Ingresa al formulario de siniestros y rellena con tus datos e información. 
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Inspeccion -->
+                                <div class="container-paso-a-paso">
+                                    <div class="icono-paso-a-paso">
+                                        <p>Inspeccion</p>
+                                        <img class="icon" src="./assets/images/denuncio.jpg" alt="inspeccion">
+                                    </div>
+                                    <div class="desc-paso-a-paso">
+                                        <p class="desc-call__desc">
+                                            <strong>2.- Inspección </strong> <br>
+                                            Coordina la inspección del inmueble con tu liquidador asignado. 
+                                        </p>
+                                    </div>
+                                </div>
+
+                                
+                                <!-- Evaluacion  -->
+                                
+                                <div class="container-paso-a-paso">
+                                    <div class="icono-paso-a-paso">
+                                        <p>Evaluación</p>
+                                        <img class="icon" src="./assets/images/evaluacion.jpg" alt="evaluacion">
+                                    </div>
+                                    <div class="desc-paso-a-paso">
+                                        <p class="desc-call__desc">
+                                            <strong>4.- Evaluación:</strong> <br>
+                                            Espera el resultado de la inspección y cobertura.
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                                <!-- Reparacion  -->
+                                <div class="container-paso-a-paso">
+                                    <div class="icono-paso-a-paso last">
+                                        <p>Reparación</p>
+                                        <img class="icon" src="./assets/images/reparacion hogar.jpg"
+                                            alt="reparacion o indemnizacion">
+                                    </div>
+                                    <div class="desc-paso-a-paso">
+                                        <p class="desc-call__desc">
+                                            <strong>5. Reparación o Indemnización:</strong> <br>
+                                            Recibe la determinación del caso, en la cual el liquidador se pondrá en
+                                            contacto para indemnizar al beneficiario o coordinar la reparación del
+                                            inmueble.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+
+                            <a class="boton-amarillo" href="#">IR A DENUNCIAR SINIESTRO DE HOGAR</a>
+
+                        </div>
+                    </div>
+                </div>  
 
             </div>
 
@@ -227,7 +311,35 @@
 
         </section>
     </div>
-
+    <script type="text/javascript">
+        // funcion ver mas
+        // que oculta un bloque de texto y cambia el nombre al boton
+        let vermasBtn = document.querySelectorAll('.desplegar-todas-coberturas');
+        let capaOculta = document.querySelectorAll('.close');
+        let arrow = document.querySelectorAll('.arrow-todas-coberturas');
+        console.log(vermasBtn.length);
+        console.log(capaOculta);
+        for (let i = 0; i <= vermasBtn.length; i++) {
+            vermasBtn[i].addEventListener("click", () => {
+                console.log("click");
+                if(capaOculta[i].classList.contains('close')){
+                    console.log('estaba cerradp y lo abrio');
+                    capaOculta[i].classList.remove('close');
+                    capaOculta[i].classList.add('open');
+                    arrow[i].classList.remove('arrow-todas-coberturas');
+                    arrow[i].classList.add('arrow-close');
+                }else{
+                    console.log('estaba abierto y lo cerro');
+                    // vermasBtn[i].classList.add('close');
+                    capaOculta[i].classList.remove('open');
+                    capaOculta[i].classList.add('close');
+                    arrow[i].classList.remove('arrow-close');
+                    arrow[i].classList.add('arrow-todas-coberturas');
+                }
+            });
+        }
+        // fin de la funcion ver mas
+    </script>
     <script type="text/javascript">
         window.onload = function () {
             var e = document.querySelectorAll(".detalle nav ul li a");
@@ -247,35 +359,35 @@
 
         }
 
-        $(document).ready(function () {
-            $(".desplegar-todas-coberturas").click(function () {
-                let contenido = $(".contenido-tabla-todas-coberturas");
-                let arrow = $(".arrow-todas-coberturas");
-                // let vermenosbtn = $(".ver-menos-btn");
-                // console.log(contenido);
-                if (contenido.css("display") == "none") { //open		
-                    contenido.slideDown(300);
-                    arrow.addClass("down")
-                    $(this).addClass("open");
-                } else { //close		
-                    contenido.slideUp(500);
-                    arrow.removeClass("down")
-                    $(this).removeClass("open");
-                }
-            });
+        // $(document).ready(function () {
+        //     $(".desplegar-todas-coberturas").click(function () {
+        //         let contenido = $(".contenido-tabla-todas-coberturas");
+        //         let arrow = $(".arrow-todas-coberturas");
+        //         // let vermenosbtn = $(".ver-menos-btn");
+        //         // console.log(contenido);
+        //         if (contenido.css("display") == "none") { //open		
+        //             contenido.slideDown(300);
+        //             arrow.addClass("down")
+        //             $(this).addClass("open");
+        //         } else { //close		
+        //             contenido.slideUp(500);
+        //             arrow.removeClass("down")
+        //             $(this).removeClass("open");
+        //         }
+        //     });
 
-            $(".ver-menos-btn").click(function () {
-                let contenido = $(".contenido-tabla-todas-coberturas");
-                // let arrow = $(".arrow-todas-coberturas");
-                // let vermenosbtn = $(".ver-menos-btn");
-                // console.log(contenido);
-                if (contenido.css("display") == "block") { //open		
-                    contenido.slideUp(500);
-                    // arrow.removeClass("down")
-                    $(this).removeClass("open");
-                }
-            });
-        });
+        //     $(".ver-menos-btn").click(function () {
+        //         let contenido = $(".contenido-tabla-todas-coberturas");
+        //         // let arrow = $(".arrow-todas-coberturas");
+        //         // let vermenosbtn = $(".ver-menos-btn");
+        //         // console.log(contenido);
+        //         if (contenido.css("display") == "block") { //open		
+        //             contenido.slideUp(500);
+        //             // arrow.removeClass("down")
+        //             $(this).removeClass("open");
+        //         }
+        //     });
+        // });
     </script>
 </body>
 

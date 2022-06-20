@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .siniestro-diferencias, .siniestro-diferencias-call, .siniestro-diferencias-call__title, .siniestros-row, .siniestros-col {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,6 +60,7 @@
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  height: auto;
   padding: 12px 26px;
   border-radius: 100px;
   letter-spacing: 1px;
@@ -387,6 +389,10 @@
   .siniestro-diferencias-call__desc {
     font-size: 16px;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body p {
@@ -815,7 +821,7 @@ body p {
 }
 
 .todas-coberturas {
-  width: 100%;
+  width: 95%;
   max-width: 1099px;
   padding: 2rem 2rem;
   -webkit-box-shadow: 0 15px 51px 0 rgba(0, 45, 84, 0.13);
@@ -863,11 +869,21 @@ body p {
   transition: all 0.2s ease;
 }
 
-.contenido-tabla-todas-coberturas {
+.arrow-close {
+  content: url(https://cdnsegurossuraprd.azureedge.net/sitefinity/docs/default-source/landing-pyme-2022/path.svg?sfvrsn=d42d946c_3);
+  width: 16px;
+  height: 16px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.close {
   display: none;
 }
 
-.contenido-tabla-todas-coberturas.open {
+.open {
   display: block;
 }
 
@@ -942,5 +958,115 @@ body p {
 
 .boton-amarillo {
   position: relative;
+}
+
+@-webkit-keyframes myFirstAnimation {
+  /* fotograma inicial (from ó 0%) */
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0;
+  }
+  /* fotograma final (to ó 100%) */
+  100% {
+    -webkit-transform: translateY(2%);
+            transform: translateY(2%);
+    opacity: 1;
+  }
+}
+
+@keyframes myFirstAnimation {
+  /* fotograma inicial (from ó 0%) */
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 0;
+  }
+  /* fotograma final (to ó 100%) */
+  100% {
+    -webkit-transform: translateY(2%);
+            transform: translateY(2%);
+    opacity: 1;
+  }
+}
+
+.animate_div {
+  -webkit-animation-name: myFirstAnimation !important;
+          animation-name: myFirstAnimation !important;
+  -webkit-animation-duration: 1s !important;
+          animation-duration: 1s !important;
+  -webkit-animation-timing-function: ease-out !important;
+          animation-timing-function: ease-out !important;
+  -webkit-animation-fill-mode: both !important;
+          animation-fill-mode: both !important;
+}
+
+.contenido-todas-coberturas {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .ayuda-siniestros {
+    padding-top: 0px;
+  }
+  .todas-coberturas {
+    width: 90%;
+  }
+  .desc-paso-a-paso {
+    margin-right: 25px;
+  }
+  .paso-a-paso .container-paso-a-paso {
+    padding-left: 5px;
+  }
+  .paso-a-paso .container-paso-a-paso .icono-paso-a-paso::before {
+    height: 90px;
+    bottom: -100px;
+  }
+}
+
+@media (max-width: 473px) {
+  .cards-bloque {
+    margin-bottom: 0px;
+  }
+  .siniestro-diferencias-call__desc {
+    margin-bottom: 25px;
+  }
+  .paso-a-paso {
+    margin-top: 0px;
+  }
+  .paso-a-paso .container-paso-a-paso {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 0px;
+    margin-bottom: 25px;
+  }
+  .paso-a-paso .container-paso-a-paso .icono-paso-a-paso::before {
+    display: none;
+  }
+  .contenido-todas-coberturas {
+    padding-bottom: 50px;
+    position: relative;
+  }
+  .contenido-todas-coberturas .boton-amarillo {
+    letter-spacing: normal;
+    max-width: 200px;
+    margin-left: 0px;
+    padding-left: 25px;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+  }
+  .contenido-todas-coberturas .boton-amarillo::before {
+    display: none;
+    background-position: 0px 11px;
+    background-size: auto;
+    width: 25px;
+    height: 25px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
