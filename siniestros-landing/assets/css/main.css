@@ -1183,6 +1183,7 @@ body p {
     width: 100%;
     max-width: 100%;
     font-size: 32px;
+    text-align: center;
   }
   .card-2-columnas .container-card .texto-card .titulo-card {
     font-size: 32px;
@@ -2043,7 +2044,158 @@ body p {
   left: 45%;
 }
 
-.txt-none {
-  display: none;
+.preguntas-frecuentes {
+  width: 100%;
+  max-width: 1199px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+.preguntas-frecuentes .container-preguntas-frecuentes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-faq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-width: 1230px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.faq {
+  min-height: 350px;
+}
+
+.faq-box {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 1230px;
+  position: relative;
+}
+
+.faq-box-title h3 {
+  font: normal 700 28px/30.8px "FS Joey", serif !important;
+  color: #0033a0;
+  text-align: center;
+  margin: 1rem;
+}
+
+.faq-box-desc {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+  position: relative;
+  padding: 1rem;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.faq-box-desc:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.faq-box-desc p,
+.faq-box-desc p strong {
+  font: normal 400 18px/1.3 "Barlow", sans-serif;
+  color: #53565a;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.faq-box-desc p strong {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.faq-box-link {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  max-width: 1920px;
+  position: relative;
+  padding: 2rem;
+}
+
+.faq-box-link img {
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+
+.faq-box-link a.bn-no {
+  font: normal 700 18px/1.3 "Barlow", sans-serif;
+  color: #00aec7;
+  text-align: left;
+  letter-spacing: 1px;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .faq {
+    margin: 2rem auto 0;
+  }
+  .faq-box-desc {
+    padding: 0.5rem 0;
+  }
+  .faq-box-desc p,
+  .faq-box-desc p strong {
+    font-size: 16px !important;
+  }
+  .faq-box-link {
+    padding: 2rem 0 0;
+  }
+  .faq-box-link a.bn-no {
+    font-size: 14px !important;
+  }
+}
+
+.first {
+  margin-top: 25px;
+}
+
+@media (max-width: 473px) {
+  .tabs-down {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
