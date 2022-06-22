@@ -690,6 +690,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 100px;
+  margin-bottom: 50px;
 }
 .card-2-columnas {
   width: 100%;
@@ -1216,7 +1217,7 @@ body {
 .coberturas-box-slider-item {
   display: flex;
   justify-content: center;
-  width: 213px;
+  width: 209px;
   height: 100%;
   margin: 10px;
   border-radius: 8px;
@@ -1242,10 +1243,10 @@ body {
   }
 
 }
-.coberturas-box-slider-item:nth-child(2){
+.coberturas-box-slider-item:nth-child(1){
   // background-color: #00aec7;
   img {
-    // margin-top: 10px;
+    margin-top: 10px;
   }
 }
 .asistencia-card {
@@ -1262,7 +1263,7 @@ body {
   margin: 5px;
   display: flex;
   flex-direction: row;
-  border: $border-red;
+  // border: $border-red;
   margin-bottom: 20px;
   
 }
@@ -1270,18 +1271,18 @@ body {
 .coberturas-card__img img {
   width: 80%;
   max-width: 120px;
-  margin: 0 auto 1rem;
+  margin: 5px 0 0 0;
   position: relative;
 }
 
-// .coberturas-card__img::before {
-//   content: "";
-//   position: absolute;
-//   width: 120px;
-//   height: 120px;
-//   background-color: $light-gray;
-//   border-radius: 50%;
-// }
+.coberturas-card__img::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: $light-gray;
+  border-radius: 50%;
+}
 
 .btn-border-blue {
   @extend %btn-border-blue;
@@ -1297,6 +1298,7 @@ body {
 .coberturas-card span {
   width: 40px;
   border: 2px solid #00aec7;
+  background-color: #00aec7;
   border-radius: 8px;
   margin: 16px auto;
 }
@@ -1316,3 +1318,133 @@ body {
 }
 
 // ******** END DETALLE SECTION ******** 
+
+
+// ********** SECTION SOLICITAR ASISTENCIA *****************
+
+.como-solicitar-asistencia {
+  width: 100%;
+  max-width: 1199px;
+  margin: 0 auto;
+  // border: solid 1px red;
+  display: flex;
+  justify-content: center;
+  // margin-top: 100px;
+  margin-bottom: 50px;
+
+  .container-solicitar-asistencia {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    // border: $border-green;
+    width: 100%;
+    margin: 0 auto;
+    
+
+    .cards-solicitar-asistencia {
+      display: flex;
+      justify-content: space-between;
+      // border: $border-yellow;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      width: 100%;
+      max-width: 1150px;
+      // border: $border-rose;
+      padding: 20px;
+      gap: 10px;
+      
+    }
+  }
+}
+
+.card-asistencia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  // background: salmon;
+  box-shadow: 0px 15px 51px rgba(0, 45, 84, 0.13);
+  margin-bottom: 20px;
+  width: 250px;
+  height: 295px;
+  // max-height: 350px;
+  // margin: 10px;
+  padding: 20px 10px;
+  gap: 10px;
+  border-radius: 8px; 
+
+  .card__img {
+    width: 40%;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    // border: $border-red;
+    margin-bottom: 20px;    
+  }
+  h4 {
+    color: #0033a0;
+    font: normal 700 22px/26.4px $Fuente2;
+    margin: 0;
+    text-align: center;
+  }
+  h5 {
+    color: $cyan;
+    font: normal 700 18px/21.6px $Fuente2;
+    margin: 0;
+  }
+
+  .card__txt {
+    font: normal 400 13px/15.6px $Fuente2;
+    color: $gray;
+    margin: 0px;
+  }
+  
+  .card__img img {
+    width: 100%;
+    max-width: 75px;
+    margin: 5px 0 0 0;
+    position: relative;
+  }
+  span {
+    width: 40px;
+    border: 2px solid #00aec7;
+    background-color: #00aec7;
+    border-radius: 8px;
+    margin: 8px auto;
+  }
+}
+
+
+.solicitar-asistencia-title {
+  padding: 25px;
+  position: relative;
+  // border: solid 1px;
+  h2 {
+    font-family: "FS Joey", serif;
+    font-weight: 700;
+    font-size: 36px !important;
+    text-align: center;
+    color: #0033a0;
+    margin: 0;
+    position: relative;
+  }
+  
+}
+.solicitar-asistencia-title:before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  border: 2px solid #00aec7;
+  background-color: #00aec7;
+  border-radius: 8px;
+  // margin: 16px auto;
+  top: 10px;
+  left: 45%;
+}
+
+.txt-none {
+  display: none;
+}

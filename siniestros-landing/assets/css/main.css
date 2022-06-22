@@ -1208,6 +1208,7 @@ body p {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 .card-2-columnas {
@@ -1792,7 +1793,7 @@ body p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 213px;
+  width: 209px;
   height: 100%;
   margin: 10px;
   border-radius: 8px;
@@ -1821,6 +1822,10 @@ body p {
   color: #0033a0;
 }
 
+.coberturas-box-slider-item:nth-child(1) img {
+  margin-top: 10px;
+}
+
 .asistencia-card {
   max-width: 320px;
 }
@@ -1842,15 +1847,23 @@ body p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border: solid 2px red;
   margin-bottom: 20px;
 }
 
 .coberturas-card__img img {
   width: 80%;
   max-width: 120px;
-  margin: 0 auto 1rem;
+  margin: 5px 0 0 0;
   position: relative;
+}
+
+.coberturas-card__img::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: #ECF0F1;
+  border-radius: 50%;
 }
 
 .coberturas-card h4 {
@@ -1863,6 +1876,7 @@ body p {
 .coberturas-card span {
   width: 40px;
   border: 2px solid #00aec7;
+  background-color: #00aec7;
   border-radius: 8px;
   margin: 16px auto;
 }
@@ -1879,5 +1893,157 @@ body p {
   .coberturas-card__img img {
     max-width: 100px;
   }
+}
+
+.como-solicitar-asistencia {
+  width: 100%;
+  max-width: 1199px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+.como-solicitar-asistencia .container-solicitar-asistencia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.como-solicitar-asistencia .container-solicitar-asistencia .cards-solicitar-asistencia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  max-width: 1150px;
+  padding: 20px;
+  gap: 10px;
+}
+
+.card-asistencia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-shadow: 0px 15px 51px rgba(0, 45, 84, 0.13);
+          box-shadow: 0px 15px 51px rgba(0, 45, 84, 0.13);
+  margin-bottom: 20px;
+  width: 250px;
+  height: 295px;
+  padding: 20px 10px;
+  gap: 10px;
+  border-radius: 8px;
+}
+
+.card-asistencia .card__img {
+  width: 40%;
+  margin: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+
+.card-asistencia h4 {
+  color: #0033a0;
+  font: normal 700 22px/26.4px "Barlow", sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+.card-asistencia h5 {
+  color: #00AEC7;
+  font: normal 700 18px/21.6px "Barlow", sans-serif;
+  margin: 0;
+}
+
+.card-asistencia .card__txt {
+  font: normal 400 13px/15.6px "Barlow", sans-serif;
+  color: #53565A;
+  margin: 0px;
+}
+
+.card-asistencia .card__img img {
+  width: 100%;
+  max-width: 75px;
+  margin: 5px 0 0 0;
+  position: relative;
+}
+
+.card-asistencia span {
+  width: 40px;
+  border: 2px solid #00aec7;
+  background-color: #00aec7;
+  border-radius: 8px;
+  margin: 8px auto;
+}
+
+.solicitar-asistencia-title {
+  padding: 25px;
+  position: relative;
+}
+
+.solicitar-asistencia-title h2 {
+  font-family: "FS Joey", serif;
+  font-weight: 700;
+  font-size: 36px !important;
+  text-align: center;
+  color: #0033a0;
+  margin: 0;
+  position: relative;
+}
+
+.solicitar-asistencia-title:before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  border: 2px solid #00aec7;
+  background-color: #00aec7;
+  border-radius: 8px;
+  top: 10px;
+  left: 45%;
+}
+
+.txt-none {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
