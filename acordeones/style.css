@@ -1,0 +1,241 @@
+.sura-wrap .preguntas-frecuentes {
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+
+.sura-wrap .preguntas-frecuentes section {
+    width: 100%;
+    max-width: 1920px;
+}
+
+.sura-wrap .preguntas-frecuentes .container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+@media(min-width: 769px) {
+    .preguntas-frecuentes .container {
+        width: 100%;
+        max-width: 1024px;
+        height: auto
+    }
+}
+
+@media(min-width: 576px) and (max-width: 768px) {
+    .preguntas-frecuentes .container {
+        max-width: 100%;
+        height: auto
+    }
+}
+
+.banner {
+    width: 100%;
+    height: 370px;
+    background-color: #002A89;
+    background-image: url(https://seguros.sura.cl/docs/default-source/landing-conductor-pro/banner-pf-sombra.png?sfvrsn=2);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 78%;
+}
+
+.sura-wrap .preguntas-frecuentes h2 {
+    font-family: 'FS Joey', sans-serif;
+    font-size: 42px !important;
+    font-weight: bold;
+}
+
+.sura-wrap .preguntas-frecuentes h3 {
+    font-family: 'FS Joey', sans-serif;
+    font-size: 36px !important;
+    font-weight: bold;
+}
+
+.title-box-banner {
+    width: 100%;
+    max-width: 400px;
+    margin: 100px 0 0 60px;
+}
+
+.title-box-banner h2 {
+    color: #ffffff !important;
+    margin: 0 !important;
+}
+
+.title-box-banner img {
+    width: 100%;
+    max-width: 400px;
+}
+
+@media(max-width: 575px) {
+    .banner {
+        background-image: url(https://seguros.sura.cl/docs/default-source/landing-conductor-pro/banner-pf.png?sfvrsn=2);
+        background-size: 180px;
+        background-position-x: center;
+        background-position-y: bottom;
+    }
+
+    .title-box-banner {
+        margin: 40px auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title-box-banner img {
+        max-width: 224px;
+        margin: 8px auto 0;
+    }
+
+    .sura-wrap .preguntas-frecuentes h2, .sura-wrap .preguntas-frecuentes h3 {
+        font-size: 28px !important;
+    }
+}
+
+/***********************
+GRUPO DE PREGUNTAS
+***********************/
+
+.first-group, .second-group, .third-group, .fourth-group, .fifth-group {
+    width: 100%;
+    margin: 30px auto;
+    position: relative;
+}
+
+.first-group::before {
+    content: url(https://seguros.sura.cl/docs/default-source/landing-conductor-pro/circles-cyan-fondo.svg?sfvrsn=2);
+    width: 150px;
+    height: 150px;
+    opacity: .5;
+    position: absolute;
+    left: 30px;
+    bottom: 0px;
+}
+
+.third-group::before {
+    content: url(https://seguros.sura.cl/docs/default-source/landing-conductor-pro/circles-cyan-fondo.svg?sfvrsn=2);
+    width: 150px;
+    height: 150px;
+    opacity: .5;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+
+.first-group .container, .second-group .container, .third-group .container, .fourth-group .container, .fifth-group .container {
+    width: 100%;
+    max-width: 900px;
+}
+
+.first-group h3, .second-group h3, .third-group h3, .fourth-group h3, .fifth-group h3 {
+    color: #0033a0;
+}
+
+.preguntas-frecuentes .acordeon-group .acordeon {
+    width: 100%;
+    max-width: 970px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 16px 56px 0 rgba(0, 45, 84, 0.13);
+    background-color: #ffffff;
+}
+
+.head-acordeon {
+    height: auto;
+    min-height: 64px;
+    padding: 8px 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.head-acordeon a {
+    width: 100%;
+    color: #00aec7 !important;
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px !important;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head-acordeon .arrow {
+    content: url(https://seguros.sura.cl/docs/default-source/landing-conductor-pro/sura-icon-arrow-downba7e339698f76dd49522ff00005ea426.svg?sfvrsn=2);
+    width: 12px;
+    height: 12px;
+    transition: all .2s ease;
+}
+
+.head-acordeon[aria-expanded="true"] .arrow {
+    transform: rotate(180deg);
+    transition: all .2s ease;
+}
+
+.body-acordeon {
+    padding: 8px 24px 16px;
+}
+
+.body-acordeon p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #53565A;
+}
+
+.body-acordeon p a, .body-acordeon ul li a {
+    color: #0033a0;
+}
+
+.body-acordeon ul {
+    padding-left: 16px !important;
+}
+
+.body-acordeon ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #53565A;
+    position: relative;
+}
+
+.body-acordeon ul li::before {
+    content: '•';
+    font-size: 130%;
+    color: #00aec7;
+    position: absolute;
+    top: -4px;
+    left: -16px;
+}
+
+@media(max-width: 575px) {
+    .first-group::before, .third-group::before {
+        left: 250px;
+        bottom: -80px;
+    }
+
+    .second-group::before, .fourth-group::before {
+        right: -25px;
+        bottom: -80px;
+    }
+}
+
+#preheader, .sura-wrap header, footer {
+    display: none !important;
+}
+
+@media screen and (max-width: 950px) {
+    .sura-wrap .preguntas-frecuentes {
+        padding-top: 104px;
+    }
+}
+
+
+
