@@ -1,0 +1,1606 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap);
+
+@font-face {
+    font-family: FS Joey;
+    src: url(/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.woff2) format("woff2"), url(/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.woff) format("woff"), url(/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.eot) format("eot"), url(/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.svg) format("svg"), url(/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.svg) format("truetype");
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: FS Joey;
+    src: url(/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.woff2) format("woff2"), url(/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.woff) format("woff"), url(/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.eot) format("eot"), url(/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.svg) format("svg"), url(/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.svg) format("truetype");
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal
+}
+
+.sura-wrap .h1,
+.sura-wrap .h2,
+.sura-wrap .h3,
+.sura-wrap .h4,
+.sura-wrap .h5,
+.sura-wrap .h6,
+.sura-wrap .sura-info h4,
+.sura-wrap .sura-medium,
+.sura-wrap h1,
+.sura-wrap h2,
+.sura-wrap h3,
+.sura-wrap h4,
+.sura-wrap h5,
+.sura-wrap h6 {
+    font-weight: 700;
+    font-family: 'FS Joey', sans-serif
+}
+
+.sura-wrap input.input-patente:-moz-placeholder,
+.sura-wrap input.input-patente:-ms-input-placeholder,
+.sura-wrap input.input-patente::-moz-placeholder,
+.sura-wrap input.input-patente::-webkit-input-placeholder,
+.sura-wrap select::-webkit-input-placeholder,
+.sura-wrap textarea::-webkit-input-placeholder {
+    color: #ecf0f1 !important
+}
+
+.sura-wrap input.input-patente:-moz-placeholder,
+.sura-wrap input.input-patente:-ms-input-placeholder,
+.sura-wrap input.input-patente::-moz-placeholder,
+.sura-wrap input.input-patente::-webkit-input-placeholder,
+.sura-wrap input.input-patente::placeholder,
+.sura-wrap select::placeholder,
+.sura-wrap textarea::placeholder {
+    color: #ecf0f1 !important
+}
+
+.sura-wrap .btn {
+    min-width: 200px;
+    -webkit-box-shadow: 1px 5px 20px rgba(0, 0, 0, .3);
+    box-shadow: 1px 5px 20px rgba(0, 0, 0, .3)
+}
+
+.msgFeedback1,
+.msgFeedback2,
+.msgFeedback3 {
+    width: 200px;
+    color: red;
+    background: #e3eaf5;
+    padding: 2px 0;
+    font-size: 12px;
+    border-radius: 5px;
+    display: none;
+    margin: 2rem auto 0;
+    text-align: center;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out
+}
+
+.btn {
+    min-width: 200px !important;
+    margin: 0 auto;
+    display: block;
+    max-width: 200px
+}
+
+input.input-patente::-webkit-input-placeholder {
+    color: #ecf0f1
+}
+
+input.input-patente:-ms-input-placeholder {
+    color: #ecf0f1
+}
+
+input.input-patente::-ms-input-placeholder {
+    color: #ecf0f1
+}
+
+input.input-patente::placeholder {
+    color: #ecf0f1
+}
+
+.sr-soap {
+    margin: 0 auto;
+    position: relative;
+    height: 100%
+}
+
+.sr-soap-banner {
+    position: absolute;
+    display: block;
+    height: 500px;
+    width: 100%
+}
+
+.sr-soap-banner .banner__img {
+    width: 100%;
+    max-width: 1920px;
+    height: 500px;
+    display: block;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin: 0 auto
+}
+
+.sr-soap-header {
+    position: relative;
+    width: 100%;
+    max-width: 1199px;
+    height: auto;
+    margin: 1rem auto 4rem;
+    padding: 3rem 0;
+    display: grid;
+    grid-template-columns: minmax(370px, 1fr) .5fr .5fr;
+    grid-template-rows: 1fr 2fr
+}
+
+@media screen and (max-width: 1366px) {
+
+    .sr-soap-banner,
+    .sr-soap-banner .banner__img {
+        height: 470px
+    }
+}
+
+@media screen and (max-width:768px) {
+    .sr-soap-header {
+        grid-template-columns: minmax(370px, 1fr) 1fr;
+        grid-template-rows: 3fr;
+        width: 100%;
+        margin: 0 auto
+    }
+
+    .sr-soap-banner .banner__img {
+        height: auto
+    }
+}
+
+@media screen and (max-width:420px) {
+    .sr-soap-banner .banner__img {
+        height: 80%
+    }
+}
+
+.sr-soap-header-title {
+    grid-column: 1/span 1;
+    grid-row: 1/span 1;
+    color: #fff;
+    border-left: 2px solid #fff;
+    padding-left: 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: 100px;
+    margin-left: 1.5rem
+}
+
+@media screen and (max-width:768px) {
+    .sr-soap-header-title {
+        grid-column: 1/span 2
+    }
+}
+
+.sr-soap-header-title h1 {
+    line-height: 1;
+    text-shadow: 1px 3px 10px rgba(0, 0, 0, .5)
+}
+
+@media screen and (max-width:580px) {
+    .sr-soap-header-title h1 {
+        font-size: 26px !important
+    }
+}
+
+.sr-soap-header-title strong {
+    font-size: 48px;
+    text-shadow: 1px 3px 10px rgba(0, 0, 0, .5)
+}
+
+@media screen and (max-width:580px) {
+    .sr-soap-header-title {
+        height: auto
+    }
+
+    .sr-soap-header-title strong {
+        font-size: 40px
+    }
+}
+
+.sr-soap-header-title img {
+    position: relative;
+    top: 20px;
+    width: 50px
+}
+
+.sr-soap-header-precio {
+    grid-column: 2/span 1;
+    grid-row: 1/span 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    width: 100%
+}
+
+.sr-soap-header-precio img {
+    width: 100%;
+    max-width: 200px
+}
+
+@media screen and (max-width:768px) {
+    .sr-soap-header-precio {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        grid-column: 1/span 1;
+        grid-row: 2/span 1;
+        margin-top: 1rem;
+        padding-left: 2rem;
+        display: none
+    }
+
+    .sr-soap-header-precio img {
+        max-width: 150px
+    }
+}
+
+.sr-soap-header-valores {
+    display: grid;
+    grid-column: 1/span 1;
+    grid-row: 2/span 1;
+    grid-template-columns: 1fr 1fr;
+    width: 320px;
+    height: 240px;
+    margin-top: -20px
+}
+
+@media screen and (max-width:768px) {
+    .sr-soap-header-valores {
+        display: none
+    }
+}
+
+.sr-soap-header-valores-autos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 90px
+}
+
+.sr-soap-header-valores-autos:first-child {
+    grid-column: 1/span 2;
+    width: 100%
+}
+
+.sr-soap-header-valores-autos:nth-child(2),
+.sr-soap-header-valores-autos:nth-child(4) {
+    grid-column: 1/span 1;
+    width: 100%
+}
+
+.sr-soap-header-valores-autos:nth-child(3),
+.sr-soap-header-valores-autos:nth-child(5) {
+    grid-column: 2/span 1;
+    width: 100%
+}
+
+.sr-soap-header-valores-autos__img {
+    width: auto;
+    height: auto;
+    max-height: 30px;
+    display: block;
+    margin: 10px auto 0
+}
+
+.sr-soap-header-valores-autos__text {
+    color: #fff;
+    display: block
+}
+
+.sr-soap-header-valores-autos__precio {
+    color: #fff;
+    display: block;
+    font-weight: 600
+}
+
+.sr-soap-header-patente {
+    grid-column: 2/span 1;
+    grid-row: 2/span 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-radius: 20px;
+    background: #fff;
+    -webkit-box-shadow: 1px 3px 10px rgba(0, 0, 0, .3);
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, .3);
+    text-align: center;
+    width: 300px;
+    position: relative;
+    margin-top: 2rem;
+    margin-left: -32rem
+}
+
+@media screen and (max-width:768px) {
+    .sr-soap-header-patente {
+        grid-column: 1/span 3;
+        grid-row: 3/span 1;
+        position: relative;
+        margin: 40rem auto 0;
+        width: 100%;
+        max-width: 350px
+    }
+}
+
+@media screen and (max-width:380px) {
+    .sr-soap-header-patente {
+        max-width: 320px
+    }
+}
+
+.sr-soap-header-patente__img {
+    width: 70px;
+    height: 70px;
+    margin: 5px auto 20px;
+    display: block;
+    border-radius: 50%;
+    background: #fff;
+    -webkit-box-shadow: 1px 3px 10px rgba(0, 0, 0, .3);
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, .3);
+    padding: 10px 0;
+    position: absolute;
+    top: -40px
+}
+
+.sr-soap-header-patente__img img {
+    width: 100%;
+    max-width: 45px;
+    margin: 10px auto
+}
+
+.sr-soap-header-patente__text {
+    line-height: 1;
+    margin-top: 40px
+}
+
+.sr-soap-header-patente__text span {
+    color: #0033a0;
+    line-height: 1
+}
+
+.sr-soap-header-patente__text h3 {
+    color: #00d7e5;
+    line-height: 1;
+    margin: 5px auto
+}
+
+.sr-soap-header-patente__input {
+    margin: 0 auto
+}
+
+.sr-soap-header-patente__input .form-control.input-patente {
+    font-family: 'Ubuntu Mono', monospace !important;
+    border-radius: 5px !important;
+    width: 280px !important;
+    height: 72px;
+    font-size: 48px;
+    padding: 0;
+    letter-spacing: 7px;
+    font-weight: 700;
+    position: relative;
+    border: 2px solid transparent !important;
+    color: #0033a0;
+    background: url(https://www.segurossura.cl/docs/default-source/soap19/patente-bg.png) no-repeat center center;
+    background-size: cover;
+    text-align: left;
+    padding-bottom: 18px;
+    padding-left: 36px;
+    float: initial;
+    margin: 0 auto;
+    margin-bottom: 10px
+}
+
+.sr-soap-header-patente__btn {
+    margin: 1rem auto 3rem;
+    display: block;
+    width: 280px;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    padding-bottom: 3rem
+}
+
+@media screen and (max-width:768px) {
+    .sr-soap-header-patente__btn {
+        border-bottom: 1px solid #dedede;
+        margin-bottom: 2rem;
+        padding-bottom: 5rem
+    }
+}
+
+.sr-soap-header-patente__btn button#btnPatenteParticular {
+    padding: 6px 15px;
+    background-color: #e4e829;
+    color: #0033a0;
+    border-radius: 25px;
+    transition: all .3 ease;
+    min-width: 200px;
+    box-shadow: none;
+    font: normal 700 18px/1.2 Barlow, sans-serif !important;
+    letter-spacing: 1px;
+    height: 48px
+}
+
+.sr-soap-header-patente__btn button#btnPatenteParticular:hover,
+.sura-wrap .btn-secondary:hover {
+    color: #fff
+}
+
+.sura-wrap .btn-secondary {
+    font: normal 700 18px/1.2 Barlow, sans-serif !important;
+    letter-spacing: 1px;
+    height: 48px
+}
+
+.sr-soap-header-patente__btn .msgFeedback1 {
+    display: none;
+    margin-top: 1rem;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+@media screen and (max-width:768px) {
+    .sr-soap-header-patente__btn .msgFeedback1 {
+        bottom: initial
+    }
+}
+
+.sr-soap-header-patente-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 270px;
+    margin-bottom: 15px
+}
+
+@media screen and (min-width:769px) {
+    .sr-soap-header-patente-mobile {
+        display: none
+    }
+}
+
+.sr-soap-header-patente-mobile__car {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0
+}
+
+.sr-soap-header-patente-mobile__description,
+.sr-soap-header-patente-mobile__value {
+    color: #0033a0
+}
+
+.sr-soap-header-patente-mobile__description {
+    text-align: left
+}
+
+.sr-soap-header-patente-mobile__value {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: 700;
+    margin: 0
+}
+
+.sr-soap-header-patente-mobile__legal {
+    border-top: 1px solid #dedede;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    line-height: .9;
+    text-align: center;
+    font-size: 12px
+}
+
+.sr-soap-descripcion {
+    margin: 7rem auto 0
+}
+
+.sr-soap-descripcion .logo-soap-2020 {
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem auto 3rem
+}
+
+@media screen and (max-width:768px) {
+    .sr-soap-descripcion .logo-soap-2020 {
+        margin: 2rem auto 0
+    }
+}
+
+@media screen and (max-width:768px) {
+    .sr-soap-descripcion .img-responsive {
+        margin: 2rem auto
+    }
+}
+
+.sr-soap-montos {
+    background: url(/docs/default-source/landing-soap-2020/sura-bg-monto.svg) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 580px;
+    position: relative;
+    margin-bottom: 5rem
+}
+
+@media screen and (max-width:768px) {
+    .sr-soap-montos {
+        height: auto;
+        padding-bottom: 5rem
+    }
+}
+
+.sr-soap-montos-title {
+    text-align: center
+}
+
+.sr-soap-montos-title h2 {
+    color: #fff;
+    width: 50%;
+    margin: 4rem auto;
+    font-family: 'FS Joey', serif
+}
+
+@media screen and (max-width:480px) {
+    .sr-soap-montos-title h2 {
+        width: 100%
+    }
+}
+
+.sr-soap-montos-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 2rem auto;
+    padding-bottom: 2rem
+}
+
+.sr-soap-montos-box__icon {
+    border-radius: 50%;
+    background-color: #fff;
+    width: 130px;
+    height: 130px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 20px;
+    margin: 1rem auto
+}
+
+.sr-soap-montos-box__icon img {
+    width: 100%;
+    max-height: 80px
+}
+
+@media screen and (max-width:480px) {
+    .sr-soap-montos-box__icon {
+        width: 100px;
+        height: 100px
+    }
+
+    .sr-soap-montos-box__icon img {
+        width: 50px
+    }
+}
+
+.sr-soap-montos-box__description,
+.sr-soap-montos-box__uf {
+    color: #fff;
+    width: 100%;
+    text-align: center
+}
+
+.sr-soap-montos-box__uf {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100px
+}
+
+.sr-soap-montos-box__uf span {
+    position: relative;
+    top: 20px
+}
+
+.sr-soap-montos-box__uf h2 {
+    font-size: 36px !important
+}
+
+.sr-soap-patentes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    scroll-snap-align: start;
+    padding-top: 4rem;
+    padding-bottom: 5rem
+}
+
+@media screen and (max-width:580px) {
+    .sr-soap-patentes {
+        padding-top: 0
+    }
+}
+
+.sr-soap-patentes-title {
+    text-align: center;
+    width: 50%;
+    margin-bottom: 5rem
+}
+
+@media screen and (max-width:580px) {
+    .sr-soap-patentes-title {
+        width: 100%;
+        margin-bottom: 1rem
+    }
+}
+
+.sr-soap-patentes-title h2 {
+    color: #0033a0;
+    margin: 3rem auto
+}
+
+.sr-soap-patentes-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #fff;
+    width: 100%;
+    max-width: 330px;
+    height: 680px;
+    border-radius: 25px;
+    border: 1px solid #dfe1e6;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    position: relative;
+    bottom: 0
+}
+
+@media screen and (max-width:920px) {
+    .sr-soap-patentes-box {
+        width: 330px;
+        scroll-snap-align: center
+    }
+}
+
+.sr-soap-patentes-box:hover {
+    -webkit-box-shadow: 1px 5px 20px rgba(0, 0, 0, .3);
+    box-shadow: 1px 5px 20px rgba(0, 0, 0, .3);
+    position: relative;
+    bottom: 1rem;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+@media screen and (max-width:580px) {
+    .sr-soap-patentes-box.mobile-no {
+        display: none
+    }
+
+    .sr-soap-patentes-box {
+        width: 290px
+    }
+}
+
+@media screen and (max-width:360px) {
+    .sr-soap-patentes-box {
+        width: 270px
+    }
+
+    .sr-container-3-2-1 {
+        grid-gap: 10px;
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px
+    }
+}
+
+.sr-soap-patentes-box-header {
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 140%;
+    height: 220px;
+    border-radius: 25px 25px 50% 50%;
+    -webkit-box-shadow: 3px 3px 6px rgba(0, 0, 0, .19);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, .19);
+    margin-bottom: 10rem;
+    padding: 1rem 0 0
+}
+
+.sr-soap-patentes-box-header.bg-primary {
+    background: #0033a0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#0062ce), to(#0033a0));
+    background-image: linear-gradient(180deg, #0062ce 0, #0033a0 100%)
+}
+
+.sr-soap-patentes-box-header.bg-lighter {
+    background: #e2f0f8;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#e2f0f8), to(#fff));
+    background-image: linear-gradient(0deg, #e2f0f8 0, #fff 100%)
+}
+
+.sr-soap-patentes-box-header__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+    max-width: 180px;
+    margin: 4rem auto 6rem;
+    height: 20px
+}
+
+.sr-soap-patentes-box-header__icon img {
+    width: 100%;
+    max-height: 40px;
+    max-width: 70px
+}
+
+.sr-soap-patentes-box-header__icon h3 {
+    font-size: 18px;
+    font-weight: 700
+}
+
+.sr-soap-patentes-box-header__icon h3.color-white {
+    color: #fff
+}
+
+.sr-soap-patentes-box-header__icon h3.color-primary {
+    color: #0033a0;
+    font-size: 22px !important;
+    line-height: 1
+}
+
+.sr-soap-patentes-box-header__input {
+    margin: 0 auto 2rem
+}
+
+.sr-soap-patentes-box-header__input .form-control.input-patente {
+    font-family: 'Ubuntu Mono', monospace !important;
+    border-radius: 5px !important;
+    width: 250px !important;
+    height: 64px;
+    font-size: 36px;
+    padding: 0;
+    letter-spacing: 9px;
+    font-weight: 700;
+    position: relative;
+    border: 2px solid transparent !important;
+    color: #0033a0;
+    background: url(https://www.segurossura.cl/docs/default-source/soap19/patente-bg.png) no-repeat center center;
+    background-size: cover;
+    text-align: left;
+    padding-bottom: 18px;
+    padding-left: 36px;
+    float: initial;
+    margin: 0 auto;
+    margin-bottom: 10px
+}
+
+.sr-soap-patentes-box-header__btn {
+    display: block;
+    margin: 1rem auto 7rem
+}
+
+.sr-soap-patentes-box-header__btn a,
+.sr-soap-patentes-box-header__btn button#btnPatentePesada,
+.sr-soap-patentes-box-header__btn button#btnPatentePublico {
+    width: 150px !important;
+    margin: 0 auto;
+    -webkit-box-shadow: 1px 3px 10px rgba(0, 0, 0, .3);
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, .3)
+}
+
+.sr-soap-patentes-box-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: 270px;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #dedede
+}
+
+@media screen and (max-width:920px) {
+    .sr-soap-patentes-box-details {
+        width: 250px
+    }
+}
+
+.sr-soap-patentes-box-details__car {
+    width: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.sr-soap-patentes-box-details__car img {
+    width: 30px
+}
+
+.sr-soap-patentes-box-details__description {
+    width: 180px;
+    text-align: left;
+    padding-left: 10px
+}
+
+.sr-soap-patentes-box-details__description.l-height p {
+    line-height: .7
+}
+
+.sr-soap-patentes-box-details__value {
+    font-weight: 700;
+    width: 50px;
+    text-align: right
+}
+
+.sr-soap-patentes-box-legal {
+    padding: 2rem;
+    text-align: center;
+    font-size: 12px
+}
+
+.sr-soap-patentes-box-legal strong {
+    color: #0033a0
+}
+
+.sr-soap-patentes-box-legal.last-legal {
+    margin-top: 12rem
+}
+
+.sr-soap-siniestro {
+    margin: 30px auto;
+    border-radius: 100%/60% 60% 60% 60%;
+    padding: 60px 0;
+    position: relative;
+    width: 150%;
+    display: block;
+    right: 25%;
+    background: #f4f5f7
+}
+
+@media screen and (max-width:580px) {
+    .sr-soap-siniestro {
+        border-radius: 100%/35% 35% 35% 35%
+    }
+}
+
+.sr-soap-siniestro a.toggle-content {
+    font-size: 22px;
+    font-family: 'FS Joey', serif !important;
+    font-weight: 600;
+    color: #0033a0 !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+@media screen and (max-width:480px) {
+    .sr-soap-siniestro a.toggle-content {
+        font-size: 18px
+    }
+}
+
+.sr-soap-siniestro a.toggle-content .icon-plus::before {
+    content: "";
+    background: url(https://www.segurossura.cl/docs/default-source/landing-seguroxkm-2019/sura-icon-plus-circle.svg?sfvrsn=2) no-repeat center center;
+    background-size: auto;
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+    left: 10px;
+    position: relative;
+    top: 3px;
+    display: inline-block
+}
+
+.sr-soap-siniestro a.toggle-content .icon-minus::before {
+    content: "";
+    background: url(https://www.segurossura.cl/docs/default-source/landing-seguroxkm-2019/sura-icon-minus-circle.svg?sfvrsn=2) no-repeat center center;
+    background-size: auto;
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+    left: 10px;
+    position: relative;
+    display: none;
+    top: 3px
+}
+
+.sr-soap-siniestro a.toggle-content.aria-expanded .icon-plus::before {
+    display: none
+}
+
+.sr-soap-siniestro a.toggle-content.aria-expanded .icon-minus::before {
+    display: inline-block
+}
+
+.sr-soap-siniestro-lista {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 3rem !important
+}
+
+@media screen and (max-width:768px) {
+    .sr-soap-siniestro-lista {
+        width: 100%;
+        max-width: 50%;
+        margin: 0 auto !important
+    }
+}
+
+.sr-soap-siniestro-lista li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 2rem auto;
+    width: 100%
+}
+
+.sr-soap-siniestro-lista li .li-icon {
+    width: 100%;
+    max-width: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.sr-soap-siniestro-lista li .li-icon img {
+    padding: 0 5rem 0 0
+}
+
+@media screen and (max-width:520px) {
+    .sr-soap-siniestro-lista li .li-icon {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        width: 70px
+    }
+}
+
+.sr-soap-siniestro-lista li span {
+    padding-left: .5rem
+}
+
+.sr-soap-siniestro-lista a.btn {
+    margin: 0 auto;
+    background-color: #36aec7;
+    color: #fff
+}
+
+.sr-soap-siniestro-lista a.btn:hover {
+    color: #fff;
+    background-color: #36aec7;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    position: relative
+}
+
+.sr-soap-siniestro-lista a.btn:before {
+    content: "";
+    background-color: #122a63;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50% 0;
+    transform-origin: 0 50% 0;
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+    z-index: -1
+}
+
+.sr-soap-webpay {
+    margin: 10rem auto
+}
+
+.sr-soap-webpay h2 {
+    color: #0033a0;
+    font-family: 'FS Joey', serif
+}
+
+.sr-soap-webpay .img-webpay {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 365px
+}
+
+.sr-soap-rrss {
+    margin: 3rem auto
+}
+
+.sr-soap-rrss-box {
+    background-color: var(--color-white);
+    border-radius: 25px;
+    -webkit-box-shadow: 2px 10px 15px rgba(0, 0, 0, .05), 1px 30px 20px rgba(0, 0, 0, .15), -1px -1px 5px rgba(0, 0, 0, .1);
+    box-shadow: 2px 10px 15px rgba(0, 0, 0, .05), 1px 30px 20px rgba(0, 0, 0, .15), -1px -1px 5px rgba(0, 0, 0, .1);
+    width: 400px;
+    padding: 0 15px;
+    position: relative;
+    margin: 50px auto;
+    padding: 10px 0 20px
+}
+
+.sr-soap-rrss-box .img-corazon {
+    padding-top: 10px;
+    width: 65px;
+    margin: -35px auto 0;
+    position: relative
+}
+
+.sr-soap-rrss-box img.sr-logo-soap {
+    width: 100%;
+    max-width: 300px;
+    padding: 20px 0 0;
+    margin: 1rem auto
+}
+
+.sr-soap-rrss-box h3 {
+    color: #0033a0
+}
+
+@media screen and (max-width:420px) {
+    .sr-soap-rrss-box {
+        width: 320px
+    }
+
+    .sr-soap-rrss-box img.sr-logo-soap {
+        width: 100%;
+        max-width: 230px;
+        padding: 20px 0 0;
+        margin: .5rem auto
+    }
+}
+
+.sr-soap-rrss-box-share {
+    width: 100%;
+    max-width: 230px;
+    margin: 15px auto;
+    padding: 5px 0 5px;
+    text-align: center;
+    border: 1px solid #0033a0;
+    border-radius: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.sr-soap-rrss-box-share .box-inner-share {
+    width: 50px;
+    display: inline-block;
+    min-height: 38px;
+    cursor: pointer;
+    margin: 0 7px
+}
+
+.sr-soap-rrss-box-share .box-inner-share .facebook,
+.sr-soap-rrss-box-share .box-inner-share .twitter,
+.sr-soap-rrss-box-share .box-inner-share .whatsapp {
+    width: 35px;
+    margin: 5px auto;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    opacity: .5;
+    -webkit-filter: brightness(0);
+    filter: brightness(0)
+}
+
+.sr-soap-rrss-box-share .box-inner-share .facebook {
+    width: 20px
+}
+
+.sr-soap-rrss-box-share .box-inner-share .facebook:hover,
+.sr-soap-rrss-box-share .box-inner-share .twitter:hover,
+.sr-soap-rrss-box-share .box-inner-share .whatsapp:hover {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    opacity: 1;
+    -webkit-filter: brightness(1);
+    filter: brightness(1)
+}
+
+.sr-soap-rrss .footerdocs {
+    width: 100%;
+    max-width: 65%
+}
+
+@media screen and (max-width:580px) {
+    .sr-soap-rrss .sr-rrss-box {
+        width: 300px
+    }
+
+    .sr-soap-rrss .sr-logo-skm-rrss {
+        width: 100%
+    }
+
+    .sr-soap-rrss img.sr-logo-skm-rrss {
+        max-width: 150px
+    }
+
+    .sr-soap-rrss .sr-img-corazon {
+        width: 55px
+    }
+}
+
+.sr-soap-rrss .redes-s-txt {
+    color: #0033a0
+}
+
+.sr-soap-rrss .faqnew {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 70px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease
+}
+
+.sr-soap-rrss .faqnew:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease
+}
+
+.sr-soap-rrss .faqnew .ico-left,
+.sr-soap-rrss .faqnew .ico-right {
+    position: absolute
+}
+
+.sr-soap-rrss .faqnew .ico-left {
+    top: 0;
+    left: 45px
+}
+
+.sr-soap-rrss .faqnew .ico-left:hover .ico-left {
+    -webkit-animation: heartBeat 1s ease;
+    animation: heartBeat 1s ease
+}
+
+.sr-soap-rrss .faqnew .ico-right {
+    right: 45px;
+    top: -10px
+}
+
+.sr-soap-rrss .faqnew .ico-right:hover .ico-right {
+    -webkit-animation: heartBeat 1s ease;
+    animation: heartBeat 1s ease;
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s
+}
+
+.sr-container-3-2-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    width: 98%;
+    max-width: 1024px
+}
+
+@media screen and (max-width:991px) {
+    .sr-container-3-2-1 {
+        padding-top: 2rem;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        -webkit-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
+        -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory
+    }
+}
+
+@media screen and (max-width:768px) {
+    .sr-container-3-2-1 {
+        padding-left: 15px;
+        padding-right: 15px
+    }
+}
+
+.section-expand {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #ebebeb;
+    margin: 100px auto;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease
+}
+
+.section-expand:before {
+    content: "";
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: -50px;
+    background: url(https://www.segurossura.cl/docs/default-source/landing-auto-protegido-uber/sura-bg-gray-curved-top.png?sfvrsn=2) no-repeat center top;
+    display: block;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease
+}
+
+.section-expand:after {
+    content: "";
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: -50px;
+    background: url(https://www.segurossura.cl/docs/default-source/landing-auto-protegido-uber/sura-bg-gray-curved-bottom.png?sfvrsn=2) no-repeat center bottom;
+    display: block;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease
+}
+
+.container-fluid.sr-legal.section-expand.expanded::after,
+.container-fluid.sr-legal.section-expand.expanded::before {
+    content: "";
+    background: 0 0
+}
+
+.container-fluid.sr-legal.section-expand.expanded {
+    margin-bottom: 0
+}
+
+.section-expand a {
+    font-size: 22px;
+    margin: 0;
+    line-height: 16px;
+    color: #0033a0;
+    font-family: 'FS Joey', serif;
+    font-weight: 500
+}
+
+.section-expand li a {
+    font-size: 14px
+}
+
+.sr-title-list {
+    font-size: 16px
+}
+
+.section-expand a:hover {
+    cursor: pointer
+}
+
+.section-expand ul {
+    width: 90%;
+    max-width: 690px;
+    margin: 30px auto 0;
+    display: none
+}
+
+.section-expand ul li {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    margin-bottom: 30px
+}
+
+.section-expand ul li span {
+    width: 75%;
+    display: block;
+    float: right
+}
+
+@media (min-width:768px) {
+    .section-expand ul li span {
+        width: 85%
+    }
+}
+
+.section-expand ul li .li-icon {
+    width: 60px;
+    height: 60px;
+    display: block;
+    border-radius: 3px;
+    float: left;
+    margin-right: 10px;
+    text-align: center
+}
+
+.section-expand ul li .li-icon img {
+    max-width: 100%;
+    margin: 0 auto;
+    max-height: 45px
+}
+
+.section-expand.expanded {
+    background: #ebebeb;
+    height: auto
+}
+
+.section-expand.expanded ul {
+    display: block
+}
+
+.section-expand .toggle-content .expand-content {
+    display: inline-block
+}
+
+.section-expand .toggle-content .close-content {
+    display: none
+}
+
+.lnr-plus-circle:before {
+    content: "";
+    background: url(https://www.segurossura.cl/docs/default-source/landing-seguroxkm-2019/sura-icon-plus-circle.svg?sfvrsn=2) no-repeat center center;
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+    left: 10px;
+    position: relative;
+    display: inline-block;
+    top: 3px
+}
+
+.lnr-circle-minus:before {
+    content: "";
+    background: url(https://www.segurossura.cl/docs/default-source/landing-seguroxkm-2019/sura-icon-minus-circle.svg?sfvrsn=2) no-repeat center center;
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+    left: 10px;
+    position: relative;
+    display: inline-block;
+    top: 3px
+}
+
+.section-expand.expanded:after,
+.section-expand.expanded:before {
+    opacity: 1;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease
+}
+
+.section-expand .toggle-content i {
+    position: relative;
+    top: -2px;
+    font-size: 26px
+}
+
+.footer-bases {
+    background: #ebebeb
+}
+
+.sr-legal .footerdocs {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    display: block;
+    text-align: center
+}
+
+.sr-legal .footerdocs img {
+    display: initial;
+    margin-right: 5px
+}
+
+.compra-segura {
+    margin: 20px auto -5px;
+    border-radius: 200%/50% 50% 0 0;
+    padding: 30px 0;
+    position: relative;
+    width: 200%;
+    display: block;
+    right: 50%;
+    background-size: 400% 400%;
+    background: #fff;
+    background: #fff;
+    background: -moz-linear-gradient(0deg, rgba(255, 255, 255, 1) 0, rgba(226, 240, 248, 1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 1) 0, rgba(226, 240, 248, 1) 100%);
+    background: linear-gradient(-180deg, rgba(255, 255, 255, 1) -20%, rgba(226, 240, 248, 1) 100%)
+}
+
+@media screen and (max-width:768px) {
+    .compra-segura article {
+        margin-top: 3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 40%;
+        margin: 0 auto;
+        display: block
+    }
+}
+
+.compra-segura img.info {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    display: block;
+    margin: 0 auto 1rem
+}
+
+.compra-segura p a {
+    color: #0033a0;
+    cursor: pointer !important;
+}
+
+.contenido.contenido-interior {
+    padding: 0
+}
+
+.sr-soap-focus-camion h2 {
+    font-size: 26px !important;
+    margin: 0 0 3rem 0
+}
+
+.sr-soap-focus-camion h2 a {
+    color: #00aec7;
+    text-decoration: underline
+}
+
+@media screen and (min-width:769px) {
+    .sr-soap-focus-camion {
+        display: none
+    }
+}
+
+.iframe-cognitive-assistant-container.notification {
+    height: 190px !important;
+    width: 170px !important;
+    max-width: 365px;
+    box-shadow: none;
+    right: -15px !important;
+    bottom: -10px !important
+}
