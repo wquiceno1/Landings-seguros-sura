@@ -1,0 +1,1453 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap");
+.card-2-columnas .container-card .texto-card .boton-azul {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: auto;
+  padding: 12px 26px;
+  border-radius: 100px;
+  letter-spacing: 1px;
+  font: normal 700 16px/19px "Barlow", sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
+
+.card-2-columnas .container-card .texto-card .boton-azul:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .card-2-columnas .container-card .texto-card .boton-azul {
+    font-size: 16px;
+    padding: 12px 16px;
+  }
+}
+
+.card-2-columnas .container-card .texto-card .boton-azul {
+  color: #FFF;
+  background-color: #0033A0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.card-2-columnas .container-card .texto-card .boton-azul:hover {
+  color: #0033A0;
+  background-color: #E3E829;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* ESTILOS GENERALES */
+.sura-wrap .nuevo-wrap {
+  width: 100%;
+  max-width: 1920px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  /* TEXT */
+}
+
+.sura-wrap .nuevo-wrap .container {
+  width: 100%;
+  max-width: 1199px;
+  height: 100%;
+  position: relative;
+}
+
+.sura-wrap .nuevo-wrap .container-fluid {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.sura-wrap .nuevo-wrap section {
+  width: 100%;
+  max-width: 1920px;
+}
+
+.sura-wrap .nuevo-wrap h1 {
+  font: 700 72px "FS Joey", sans-serif !important;
+}
+
+.sura-wrap .nuevo-wrap h2 {
+  font: 700 42px "FS Joey", sans-serif !important;
+}
+
+.sura-wrap .nuevo-wrap h3 {
+  font: 700 36px "FS Joey", sans-serif !important;
+}
+
+.sura-wrap .nuevo-wrap h4 {
+  font: 700 28px "FS Joey", sans-serif !important;
+}
+
+.sura-wrap .nuevo-wrap h5 {
+  font: 700 22px "Barlow", sans-serif !important;
+}
+
+.sura-wrap .nuevo-wrap h6 {
+  font: 700 18px "Barlow", sans-serif !important;
+}
+
+.sura-wrap .nuevo-wrap p {
+  font: 400 16px "Barlow", sans-serif !important;
+}
+
+.sura-wrap .nuevo-wrap p.bg {
+  font: 400 18px "Barlow", sans-serif !important;
+}
+
+.sura-wrap .nuevo-wrap p.sm {
+  font: 400 14px "Barlow", sans-serif !important;
+}
+
+.sura-wrap .nuevo-wrap ul {
+  padding: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  list-style: none;
+}
+
+.sura-wrap .nuevo-wrap a {
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.sura-wrap .nuevo-wrap a:hover {
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+  .sura-wrap .nuevo-wrap .container {
+    width: 1199px !important;
+  }
+  .sura-wrap .nuevo-wrap .container-fluid {
+    width: 1320px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .sura-wrap .nuevo-wrap h1 {
+    font: 700 42px "FS Joey", sans-serif !important;
+  }
+  .sura-wrap .nuevo-wrap h2 {
+    font: 700 36px "FS Joey", sans-serif !important;
+  }
+  .sura-wrap .nuevo-wrap h3 {
+    font: 700 28px "FS Joey", sans-serif !important;
+  }
+  .sura-wrap .nuevo-wrap h4 {
+    font: 700 22px "FS Joey", sans-serif !important;
+  }
+  .sura-wrap .nuevo-wrap h5 {
+    font: 700 18px "Barlow", sans-serif !important;
+  }
+  .sura-wrap .nuevo-wrap h6 {
+    font: 700 16px "Barlow", sans-serif !important;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.bn {
+  display: block;
+  width: 100%;
+  height: 48px;
+  padding: 14px 16px;
+  border-radius: 40px;
+  font: 700 16px "Barlow", sans-serif;
+  line-height: 20px;
+  letter-spacing: 1.08px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.bn:focus {
+  outline: none;
+}
+
+.bn.bn-sm {
+  max-width: 152px;
+}
+
+.bn.bn-primario {
+  background: #0033a0;
+  color: #fff;
+}
+
+.bn.bn-primario:hover {
+  background: #e3e829;
+  color: #0033a0;
+}
+
+.bn.bn-secundario {
+  background: #00aec7;
+  color: #fff;
+}
+
+.bn.bn-secundario:hover {
+  background: #0033a0;
+}
+
+.bn.bn-yellow {
+  background: #e3e829;
+  color: #0033a0;
+}
+
+.bn.bn-yellow:hover {
+  background: #0033a0;
+  color: #fff;
+}
+
+.bn.bn-br-primario {
+  border: 2px solid #0033a0;
+  color: #0033a0;
+}
+
+.bn.bn-br-primario:hover {
+  background: rgba(0, 51, 160, 0.15);
+}
+
+.bn.bn-br-secundario {
+  border: 2px solid #00aec7;
+  color: #00aec7;
+}
+
+.bn.bn-br-secundario:hover {
+  background: rgba(0, 174, 199, 0.15);
+}
+
+.bn.bn-br-white {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.bn.bn-br-white:hover {
+  background: #fff;
+  color: #0033a0;
+}
+
+.descripcion {
+  padding: 56px 0 40px;
+}
+
+.descripcion__wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.descripcion__info {
+  max-width: 488px;
+}
+
+.descripcion__wrap .descripcion__info .descripcion-pretitle {
+  color: #0033a0;
+  padding-left: 48px;
+  position: relative;
+  font: normal 300 28px/1 "Barlow", sans-serif !important;
+}
+
+.descripcion__info .descripcion-pretitle::before {
+  content: "";
+  width: 40px;
+  border-radius: 2rem;
+  border-top: 4px solid #00aec7;
+  position: absolute;
+  top: -20px;
+  left: 0;
+}
+
+.descripcion__info .descripcion-pretitle::after {
+  content: url(https://seguros.sura.cl/docs/default-source/sucursal-virtual-vida/sura-icon-salud.svg?sfvrsn=2);
+  position: absolute;
+  left: 4px;
+  top: -1px;
+}
+
+.descripcion__info .descripcion-title {
+  color: #0033a0;
+  margin: 0 !important;
+}
+
+.descripcion__info .descripcion-subtitle {
+  color: #00aec7;
+  font: 600 48px "Barlow", sans-serif;
+  font-style: italic !important;
+}
+
+.descripcion__info p.bg.descripcion-parrafo {
+  max-width: 368px;
+  line-height: 26px !important;
+  margin-top: 40px;
+}
+
+.descripcion__image {
+  max-width: 600px;
+}
+
+.descripcion__image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1199px) {
+  .descripcion__info,
+  .descripcion__image {
+    margin: 3rem auto;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .descripcion__info .descripcion-subtitle {
+    font: 600 36px "Barlow", sans-serif;
+  }
+  .descripcion__info p.bg.descripcion-parrafo {
+    margin-top: 16px;
+  }
+}
+
+.servicios {
+  padding: 40px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#edf0f1), color-stop(80%, #edf0f1), color-stop(80%, #fff), to(#fff));
+  background: linear-gradient(to bottom, #edf0f1 0%, #edf0f1 80%, #fff 80%, #fff 100%);
+  position: relative;
+}
+
+.servicios::before {
+  content: "";
+  position: absolute;
+  width: 149px;
+  height: 116px;
+  background-image: url(/docs/default-source/sucursal-virtual-vida/circles5x4.svg?sfvrsn=be607c52_2);
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0.4;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.servicios__title {
+  width: 100%;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.servicios__title .servicios-title {
+  color: #0033a0;
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.servicios__title .servicios-title::before {
+  content: "";
+  width: 40px;
+  border-radius: 2rem;
+  border-top: 4px solid #00aec7;
+  position: absolute;
+  top: -3rem;
+}
+
+.servicios__title .servicios-bajada {
+  color: #0033a0;
+}
+
+.servicios__title .servicios-bajada .destacado {
+  color: #00aec7;
+}
+
+.servicios__wrap {
+  padding: 40px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow-x: scroll;
+  position: relative;
+  z-index: 1;
+}
+
+.servicios__item {
+  min-width: 368px;
+  max-width: 368px;
+  min-height: 472px;
+  margin: 1rem auto;
+  padding: 24px 16px;
+  width: 100%;
+  -webkit-box-shadow: 0px 15px 51px rgba(0, 45, 84, 0.13);
+          box-shadow: 0px 15px 51px rgba(0, 45, 84, 0.13);
+  background-color: #fff;
+}
+
+.servicios__item:nth-child(3) {
+  position: relative;
+}
+
+.servicios__item:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  width: 132px;
+  height: 33px;
+  background: url(/docs/default-source/sucursal-virtual-vida/nuevo-before.svg?sfvrsn=202f6452_2) no-repeat center center;
+  top: 0;
+}
+
+.servicios__item .item-image {
+  width: 100%;
+  height: 256px;
+}
+
+.servicios__item .item-image img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 auto;
+}
+
+.servicios__item .item-info {
+  padding: 16px 8px;
+  min-height: 152px;
+  max-height: 152px;
+}
+
+.servicios__item .item-info h5 {
+  color: #0033a0;
+  text-transform: uppercase;
+}
+
+.servicios__item .item-info p.bg {
+  line-height: 26px !important;
+}
+
+@media screen and (max-width: 1199px) {
+  .servicios__wrap {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .servicios__item {
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .servicios__wrap {
+    padding: 40px 24px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .servicios__wrap {
+    padding: 40px 8px;
+  }
+  .servicios__item {
+    margin: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .servicios__item {
+    min-width: 320px;
+    margin: 1rem 1rem;
+  }
+  .servicios__item .item-image {
+    height: 200px;
+  }
+}
+
+.video {
+  padding: 40px 0;
+  position: relative;
+}
+
+.video::before {
+  content: "";
+  width: 760px;
+  height: 272px;
+  background: #edf0f1;
+  position: absolute;
+  right: 0;
+  top: 20%;
+}
+
+.video::after {
+  content: url(https://seguros.sura.cl//docs/default-source/landing-hogar/sura-dots-bg.svg);
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  z-index: 0;
+}
+
+.video__wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video__info {
+  max-width: 400px;
+}
+
+.video__info .info-title {
+  color: #0033a0;
+  position: relative;
+}
+
+.video__info .info-title::before {
+  content: "";
+  width: 40px;
+  border-radius: 2rem;
+  border-top: 4px solid #00aec7;
+  position: absolute;
+  top: -24px;
+}
+
+.video__info p.bg {
+  max-width: 340px;
+}
+
+.video__card {
+  max-width: 486px;
+  width: 100%;
+  -webkit-box-shadow: 0px 15px 51px rgba(0, 45, 84, 0.13);
+          box-shadow: 0px 15px 51px rgba(0, 45, 84, 0.13);
+  background-color: #fff;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.video__card .video-icon {
+  max-width: 56px;
+  height: 56px;
+  margin: 0 auto;
+  background: #fff;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-shadow: 0px 15px 51px rgba(0, 45, 84, 0.13);
+          box-shadow: 0px 15px 51px rgba(0, 45, 84, 0.13);
+  background-color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: -32px;
+  z-index: 2;
+}
+
+.video__card .video-image {
+  max-height: 240px;
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video__card .video-image::before {
+  content: url(https://seguros.sura.cl/docs/default-source/landing-hogar/sura-icon-play.svg);
+  position: absolute;
+}
+
+.video__card .video-image img {
+  width: 100%;
+  max-width: 348px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 auto;
+}
+
+.video__card .video-info {
+  padding: 32px 24px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.video__card .video-info h5 {
+  padding-left: 32px;
+  color: #0033a0;
+  position: relative;
+}
+
+.video__card .video-info h5::before {
+  content: "";
+  height: 56px;
+  border-left: 4px solid #00aec7;
+  border-radius: 2rem;
+  position: absolute;
+  left: 8px;
+}
+
+@media screen and (max-width: 1199px) {
+  .video::before {
+    width: 680px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .video::before {
+    width: 640px;
+  }
+  .video__info {
+    max-width: 560px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .video__info p.bg {
+    max-width: 480px;
+    margin: 16px auto;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .video__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .video::before {
+    width: 90%;
+    top: 40%;
+  }
+  .video::after {
+    left: 0;
+    top: 50%;
+  }
+  .video__info .info-title {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .video__info p.bg {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .video__card {
+    max-width: 368px;
+  }
+  .video__card .video-image {
+    height: auto;
+  }
+  .video__card .video-info h5 {
+    margin-left: -16px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .video__info {
+    padding: 0 16px;
+  }
+}
+
+.asistencia {
+  padding: 4rem 0;
+}
+
+.asistencia__card {
+  max-width: 1008px;
+  min-height: 420px;
+  margin: 1rem auto;
+  padding: 32px 40px;
+  -webkit-box-shadow: 0px 15px 51px rgba(0, 45, 84, 0.13);
+          box-shadow: 0px 15px 51px rgba(0, 45, 84, 0.13);
+  background-color: #fff;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  height: 100%;
+}
+
+.asistencia__card::before {
+  content: "";
+  position: absolute;
+  width: 149px;
+  height: 116px;
+  background-image: url(/docs/default-source/sucursal-virtual-vida/circles5x4.svg?sfvrsn=be607c52_2);
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: calc((100% - 149px)/2);
+  left: -149px;
+  opacity: 0.4;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.asistencia__card-image {
+  max-width: 488px;
+}
+
+.asistencia__card-image img {
+  width: 100%;
+}
+
+.asistencia__card-info {
+  max-width: 408px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: right;
+}
+
+.asistencia__card-info .info-title {
+  color: #0033a0;
+  position: relative;
+}
+
+.asistencia__card-info .info-title::before {
+  content: "";
+  width: 40px;
+  border-radius: 2rem;
+  border-top: 4px solid #00aec7;
+  position: absolute;
+  top: -24px;
+  right: 0;
+}
+
+.asistencia__card-info .bn {
+  max-width: 240px;
+}
+
+@media screen and (max-width: 1024px) {
+  .asistencia__card {
+    max-width: 640px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .asistencia__card-info {
+    margin-top: 24px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+  }
+  .asistencia__card-info .info-title::before {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .asistencia__small-card {
+    padding: 16px;
+    margin: 152px auto 0;
+  }
+  .asistencia__small-card .card-title {
+    margin-bottom: 16px;
+  }
+  .asistencia__small-card .card-image {
+    top: -128px;
+  }
+}
+
+.como-funciona-deducible {
+  width: 100%;
+  max-width: 1199px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+}
+
+.card-2-columnas {
+  width: 100%;
+  max-width: 1230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background-color: #FFF;
+  -webkit-box-shadow: 0px 15px 51px rgba(0, 45, 84, 0.13);
+          box-shadow: 0px 15px 51px rgba(0, 45, 84, 0.13);
+  border-radius: 8px;
+  padding: 50px;
+  margin: 3em auto 0;
+}
+
+.card-2-columnas .container-card {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-2-columnas .container-card .texto-card {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.card-2-columnas .container-card .texto-card .titulo-card {
+  font: normal 700 36px/39.6px "Barlow", sans-serif !important;
+  color: #0033A0;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.card-2-columnas .container-card .texto-card .titulo-card::before {
+  content: "";
+  position: absolute;
+  width: 132px;
+  height: 33px;
+  background: url(/docs/default-source/sucursal-virtual-vida/nuevo-before.svg?sfvrsn=202f6452_2) no-repeat center center;
+  top: 0;
+}
+
+.card-2-columnas .container-card .texto-card .parrafo-card {
+  font: normal 400 18px/26px "Barlow", sans-serif !important;
+  color: #53565A;
+  margin-bottom: 30px;
+  max-width: 395px;
+}
+
+.card-2-columnas .container-card .imagen-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card-2-columnas .container-card .imagen-card img {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .descripcion {
+    padding: 1em;
+  }
+  .card-2-columnas {
+    padding: 30px 20px 20px 20px;
+  }
+  .card-2-columnas .container-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card-2-columnas .container-card .texto-card {
+    width: 100%;
+    max-width: 100%;
+    font-size: 32px;
+    text-align: center;
+  }
+  .card-2-columnas .container-card .texto-card .titulo-card {
+    font-size: 32px !important;
+  }
+  .card-2-columnas .container-card .texto-card .titulo-card::before {
+    left: calc(50% - 66px);
+  }
+  .card-2-columnas .container-card .texto-card .parrafo-card {
+    font-size: 16px !important;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .card-2-columnas .container-card .texto-card .boton-azul {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .card-2-columnas .container-card .imagen-card {
+    margin-top: 2em;
+  }
+}
+
+.coberturas-card__img,
+.coberturas-card,
+.coberturas-box-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.container-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  position: relative;
+  margin: 4em auto 0;
+  background-color: #FFF;
+  -webkit-box-shadow: 0px 2px 30px #E0E5F0;
+          box-shadow: 0px 2px 30px #E0E5F0;
+  border-radius: 8px;
+  padding-top: 3em;
+}
+
+.container-tab::before {
+  content: "";
+  position: absolute;
+  width: 132px;
+  height: 33px;
+  background: url(/docs/default-source/sucursal-virtual-vida/nuevo-before.svg?sfvrsn=202f6452_2) no-repeat center center;
+  top: 0;
+  left: calc(50% - 66px);
+}
+
+.coberturas-box {
+  padding: 50px 25px 0px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.coberturas-box-slider {
+  width: 100%;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.coberturas-box-slider-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 204px;
+  height: 100%;
+  margin: 10px;
+}
+
+.coberturas-card {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  max-width: 360px;
+  height: 254px;
+}
+
+.coberturas-card b {
+  margin-top: 10px;
+  font: normal 400 18px/22px "Barlow", sans-serif !important;
+  color: #0033a0;
+}
+
+.coberturas-box-slider-item:nth-child(1) img {
+  margin-top: 10px;
+}
+
+.asistencia-card {
+  max-width: 320px;
+}
+
+.coberturas-imagenes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.coberturas-card__img {
+  width: 40%;
+  margin: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+.coberturas-card__img img {
+  width: 80%;
+  max-width: 120px;
+  margin: 5px 0 0 0;
+  position: relative;
+}
+
+.coberturas-card__img::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: #ecf0f1;
+  border-radius: 50%;
+}
+
+.coberturas-box .coberturas-box-slider .coberturas-box-slider-item .coberturas-card h4 {
+  font: normal 700 18px/1.3 "Barlow", sans-serif !important;
+  color: #0033a0;
+  text-align: center;
+  margin: 0;
+  height: 105px;
+}
+
+.coberturas-card span {
+  width: 40px;
+  border: 2px solid #00aec7;
+  background-color: #00aec7;
+  border-radius: 8px;
+  margin: 16px auto;
+}
+
+@media (max-width: 868px) {
+  .coberturas-box {
+    padding: 30px 5px 0px 5px;
+  }
+  .coberturas-box .coberturas-box-slider .coberturas-box-slider-item {
+    width: 180px;
+    margin-bottom: 30px;
+  }
+  .coberturas-card__img img {
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  .coberturas-box .coberturas-box-slider .coberturas-box-slider-item {
+    width: 140px;
+  }
+}
+
+.recorrido-sucursal {
+  background: -webkit-gradient(linear, right top, left top, from(#edf0f1), color-stop(50%, #edf0f1), color-stop(50%, #fff), to(#fff));
+  background: linear-gradient(to left, #edf0f1 0%, #edf0f1 50%, #fff 50%, #fff 100%);
+}
+
+.recorrido-sucursal .box-recorrido {
+  width: 100%;
+  max-width: 1230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 9em auto 9em;
+}
+
+.recorrido-sucursal .box-recorrido .container-recorrido {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 270px;
+  overflow: visible;
+}
+
+.recorrido-sucursal .box-recorrido .container-recorrido .texto-card {
+  position: relative;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.recorrido-sucursal .box-recorrido .container-recorrido .texto-card .titulo-card {
+  font: normal 700 36px/39.6px "Barlow", sans-serif !important;
+  color: #0033A0;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.recorrido-sucursal .box-recorrido .container-recorrido .texto-card .titulo-card::before {
+  content: "";
+  position: absolute;
+  width: 132px;
+  height: 33px;
+  background: url(/docs/default-source/sucursal-virtual-vida/nuevo-before.svg?sfvrsn=202f6452_2) no-repeat center center;
+  top: 0;
+}
+
+.recorrido-sucursal .box-recorrido .container-recorrido .texto-card .titulo-card-recorrido {
+  font: normal 700 36px/39.6px "FS Joey", sans-serif !important;
+  color: #0033A0;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  max-width: 360px;
+}
+
+.recorrido-sucursal .box-recorrido .container-recorrido .texto-card .titulo-card-recorrido::before {
+  content: "";
+  width: 40px;
+  border-radius: 2rem;
+  border-top: 4px solid #00aec7;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.recorrido-sucursal .box-recorrido .container-recorrido .texto-card .parrafo-card {
+  font: normal 400 18px/26px "Barlow", sans-serif !important;
+  color: #53565A;
+  margin-bottom: 30px;
+  max-width: 395px;
+}
+
+.recorrido-sucursal .box-recorrido .container-recorrido .texto-card .parrafo-card-recorrido {
+  font: normal 400 18px/26px "Barlow", sans-serif !important;
+  color: #53565A;
+  margin-bottom: 30px;
+  max-width: 375px;
+}
+
+.recorrido-sucursal .box-recorrido .container-recorrido .texto-card .parrafo-card-recorrido::before {
+  content: "";
+  position: absolute;
+  width: 149px;
+  height: 116px;
+  background-image: url(/docs/default-source/sucursal-virtual-vida/circles5x4.svg?sfvrsn=be607c52_2);
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 2em;
+  right: 0;
+  opacity: 0.4;
+}
+
+.recorrido-sucursal .box-recorrido .container-recorrido .imagen-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 40%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background: #FFF;
+  -webkit-box-shadow: 0px 9px 31px rgba(0, 45, 84, 0.13);
+          box-shadow: 0px 9px 31px rgba(0, 45, 84, 0.13);
+  height: 400px;
+  padding: 10px 40px 40px;
+  position: relative;
+}
+
+.recorrido-sucursal .box-recorrido .container-recorrido .imagen-card img {
+  width: 90%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.recorrido-sucursal .box-recorrido .container-recorrido .imagen-card .title-img-sucursal {
+  font: normal 700 22px/29px "Barlow", sans-serif !important;
+  color: #0033A0;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  position: relative;
+  padding-left: 2em;
+  max-width: 270px;
+}
+
+.recorrido-sucursal .box-recorrido .container-recorrido .imagen-card .title-img-sucursal::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 56px;
+  background: #00AEC7;
+  border-radius: 2px;
+  left: 1em;
+  top: 0;
+}
+
+.recorrido-sucursal .box-recorrido .container-recorrido .imagen-card::before {
+  content: "";
+  position: absolute;
+  width: 66px;
+  height: 65px;
+  background-image: url(/docs/default-source/sucursal-virtual-vida/play-video.svg?sfvrsn=63867f52_2);
+  background-repeat: no-repeat;
+  background-position: center center;
+  top: calc((100% - 65px)/2);
+  left: calc(50% - 33px);
+}
+
+.recorrido-sucursal .box-recorrido .container-recorrido .imagen-card::after {
+  content: "";
+  position: absolute;
+  width: 57px;
+  height: 58px;
+  background-color: #FFF;
+  background-image: url(/docs/default-source/sucursal-virtual-vida/youtube.svg?sfvrsn=91477f52_2);
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-box-shadow: 0px 9px 31px rgba(0, 45, 84, 0.13);
+          box-shadow: 0px 9px 31px rgba(0, 45, 84, 0.13);
+  top: -2em;
+  left: calc(50% - 29px);
+}
+
+@media (max-width: 1100px) {
+  .recorrido-sucursal .box-recorrido .container-recorrido .imagen-card {
+    padding: 10px 10px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .recorrido-sucursal {
+    background: -webkit-gradient(linear, left bottom, left top, from(#edf0f1), color-stop(100%, #edf0f1), color-stop(100%, #fff), to(#fff));
+    background: linear-gradient(to top, #edf0f1 0%, #edf0f1 100%, #fff 100%, #fff 100%);
+  }
+  .recorrido-sucursal .box-recorrido {
+    padding: 30px 20px 20px 20px;
+    margin: 2em auto 2em;
+  }
+  .recorrido-sucursal .box-recorrido .container-recorrido {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  .recorrido-sucursal .box-recorrido .container-recorrido .texto-card {
+    width: 100%;
+    max-width: 100%;
+    font-size: 32px;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .recorrido-sucursal .box-recorrido .container-recorrido .texto-card .titulo-card {
+    font-size: 32px !important;
+  }
+  .recorrido-sucursal .box-recorrido .container-recorrido .texto-card .titulo-card-recorrido {
+    font-size: 32px !important;
+  }
+  .recorrido-sucursal .box-recorrido .container-recorrido .texto-card .titulo-card-recorrido::before {
+    left: calc((100% - 20px)/2);
+  }
+  .recorrido-sucursal .box-recorrido .container-recorrido .texto-card .parrafo-card {
+    font-size: 16px !important;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .recorrido-sucursal .box-recorrido .container-recorrido .texto-card .parrafo-card-recorrido {
+    font-size: 16px !important;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .recorrido-sucursal .box-recorrido .container-recorrido .texto-card .parrafo-card-recorrido::before {
+    display: none;
+  }
+  .recorrido-sucursal .box-recorrido .container-recorrido .texto-card .boton-azul {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .recorrido-sucursal .box-recorrido .container-recorrido .imagen-card {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 2em;
+    height: auto;
+    padding: 10px 10px 10px;
+  }
+  .recorrido-sucursal .box-recorrido .container-recorrido .imagen-card .title-img-sucursal {
+    padding-left: 1em;
+  }
+  .recorrido-sucursal .box-recorrido .container-recorrido .imagen-card .title-img-sucursal::before {
+    left: 0.5em;
+  }
+}
+/*# sourceMappingURL=style.css.map */

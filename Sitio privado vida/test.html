@@ -1,0 +1,176 @@
+<!-- ANCLA-->
+<section class="ancla" id="tracking">
+    <!-- SURA TRACKING PATENTE V1-->
+    <style media="all" type="text/css">
+        /*## TRACKING VERSION 1    ----------------------------*/
+        .tracking {
+            width: 100%;
+            min-height: 270px;
+            background: url(https://www.segurossura.cl/docs/default-source/conductor-pro/bg-tracking.png) no-repeat center center;
+            display: block;
+            background-size: cover;
+        }
+
+        /* SURA LOADER */
+        .sura-loader {
+            border: 3px solid #F3F3F3;
+            border-top-color: rgb(243, 243, 243);
+            border-top-style: solid;
+            border-top-width: 3px;
+            border-top: 3px solid #00AEC7;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            animation: spin 2s linear infinite;
+            position: absolute;
+            top: 20px;
+            right: 70px;
+            transform: translateX(0%)
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @media screen and (max-width: 1199px) {
+            .sura-loader {
+                top: 18px;
+                right: 45px;
+                width: 25px;
+                height: 25px;
+            }
+        }
+
+        /* END SURA LOADER */
+        @media screen and (max-width: 991px) {
+            .btn-maps {
+                margin-top: 20px;
+            }
+
+            .sura-loader {
+                top: 80px;
+                right: 40%;
+                width: 22px;
+                height: 22px;
+                transform: translateX(0%);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .sura-loader {
+                top: 140px;
+                right: 37%;
+                transform: translateX(0%);
+            }
+        }
+
+        .tracking .form-inline {
+            width: 300px;
+        }
+
+        @media (min-width:768px) {
+            .tracking .form-inline {
+                width: auto;
+            }
+        }
+
+        .tracking .form-control {
+            background: #FFFFFF;
+            border: 1px solid rgba(112, 115, 114, 0.40);
+            box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.02);
+            border-radius: 25px;
+            font-size: 14px;
+            color: #333333;
+            padding: 10px 20px;
+            height: auto;
+            margin-bottom: 0;
+        }
+
+        .tracking .form-control::-webkit-input-placeholder,
+        .tracking .form-control:-ms-input-placeholder,
+        .tracking .form-control::placeholder {
+            /* Edge */
+            color: red;
+        }
+
+        .inputrut {
+            width: 230px;
+            float: left;
+        }
+
+        .inputrut .form-control {
+            width: 100%
+        }
+
+        .inputdv {
+            width: 50px;
+            float: left;
+            margin-left: 20px;
+        }
+
+        .inputdv .form-control {
+            width: 100%
+        }
+
+        .inputpatente {
+            width: 300px;
+        }
+
+        @media (min-width: 768px) {
+            .inputpatente {
+                margin-left: 40px;
+                margin-right: 40px;
+            }
+        }
+
+        .inputpatente .form-control {
+            width: 100%
+        }
+
+        .tracking .form-inline {
+            margin: 10px auto;
+            text-align: center;
+        }
+
+        /*** END STYLE TRACKING VERSION 1 ***/
+    </style>
+    <!-- TRACKING PATENTE-->
+    <div class="tracking px-3">
+        <div class="container">
+            <div class="col-xs-12 text-center">
+                <h2 class="sr-h2 px-2 sr-txt-blue">Ingresa tus datos y<br />
+                    <strong>revisa el estado del env&iacute;o de tu
+                        dispositivo (Dongle)</strong></h2>
+            </div>
+            <div class="col-xs-12"><img
+                    src="https://www.segurossura.cl/docs/default-source/conductor-pro/map-tracking.png?sfvrsn=2"
+                    style="margin: 0 auto;" alt="map tracking" /></div>
+            <div class="col-xs-12">
+                <div class="form-inline">
+                    <div class="form-group inputrut"><input onkeypress="javascript:return isNumber(event)" minlength="7"
+                            maxlength="8" placeholder="Rut: 12.345.678" type="text" id="rut-search"
+                            class="form-control" />
+                    </div>
+                    <div class="form-group inputdv"><input readonly="readonly" maxlength="1" placeholder="5" type="text"
+                            id="dv-search" class="form-control" /></div>
+                    <div class="form-group inputpatente"><input minlength="6" maxlength="6"
+                            onkeyup="this.value = this.value.toUpperCase();" placeholder="Patente" type="text"
+                            id="patente-search" class="form-control" /></div>
+                    <label style="cursor: pointer;" type="button" id="tracking-seguroxkm"
+                        class="btn-maps sr-btn-cyan"><em style="display: none;" class="sura-loader"></em>Buscar</label>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="error">&nbsp;</div>
+            </div>
+        </div>
+    </div>
+    <!-- END TRACKING PATENTE-->
+</section>
+<!-- FIN ANCLA-->
