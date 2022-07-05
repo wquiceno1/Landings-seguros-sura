@@ -1,210 +1,332 @@
-$blue: #0033A0;
-$cyan: #00AEC7;
-$yellow: #E3E829;
-$white: #FFF;
-$gray: #53565A;
-$light-gray: #ECF0F1;
-$shadow: 0px 2px 30px #E0E5F0;
+$blue: #0033a0;
+$cyan: #00aec7;
+$yellow: #e3e829;
+$white: #fff;
+$gray: #53565a;
+$light-gray: #ecf0f1;
+$shadow: 0px 2px 30px #e0e5f0;
 $transition: all 0.3s ease;
-$Fuente1: "FS Joey",
-sans-serif;
-$Fuente2: "Barlow",
-sans-serif;
+$Fuente1: "FS Joey", sans-serif;
+$Fuente2: "Barlow", sans-serif;
 
 @import "buttons";
 
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap");
 
 .tracking {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  background: linear-gradient(
+    to right,
+    #edf0f1 0%,
+    #edf0f1 40%,
+    #fff 40%,
+    #fff 100%
+  );
+
+  .container-tracking {
     width: 100%;
-    max-width: 1920px;
-    margin: 2em auto;
-    background: linear-gradient(to right, #edf0f1 0%, #edf0f1 40%, #fff 40%, #fff 100%);
+    max-width: 1200px;
+    margin: 0 auto;
+    // background-color: salmon;
+    background: linear-gradient(
+      to right,
+      #edf0f1 0%,
+      #edf0f1 50%,
+      #fff 50%,
+      #fff 100%
+    );
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
 
-    .container-tracking {
+    // padding: 2em 2em 2em 8em;
+
+    .container-texto {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      max-width: 350px;
+      padding: 2rem;
+
+      .titulo-tracking {
+        font: normal 700 36px/39.6px $Fuente1 !important;
+        color: $blue;
+        margin: 1em 0 0 0;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 40px;
+          border-radius: 2rem;
+          border-top: 4px solid $cyan;
+          width: 40px;
+          top: -2rem;
+          background-color: $cyan;
+          //   margin: 0.5em 0;
+        }
+      }
+
+      .parrafo-tracking {
+        font: normal 500 18px/20px $Fuente2;
+        color: #53565a;
+        margin: 1em 0;
+      }
+
+      .box-formulario {
         width: 100%;
-        max-width: 1200px;
-        margin: 2em auto;
-        // background-color: salmon;
-        background: linear-gradient(to right, #edf0f1 0%, #edf0f1 50%, #fff 50%, #fff 100%);
-        display: flex;
-        justify-content: space-evenly;
-        align-items: flex-start;
+        max-width: 330px;
 
-        // padding: 2em 2em 2em 8em;
-
-        .container-texto {
-            display: flex;
-            flex-direction: column;
-            width: 50%;
-            max-width: 350px;
-
-            .titulo-tracking {
-                font: normal 700 36px/39.6px $Fuente1 !important;
-                color: $blue;
-                margin: 1em 0;
-            }
-
-            .parrafo-tracking {
-                font: normal 500 18px/20px $Fuente2;
-                color: #53565A;
-                margin: 1em 0
-            }
-
-            .box-formulario {
-                width: 100%;
-                max-width: 330px;
-
-                .label-rut {
-                    color: #0033a0;
-                    font: normal 400 12px/14.4px $Fuente2;
-                    margin-left: 32px;
-                    // display: flex;
-                }
-
-                .box-input-rut {
-                    display: flex;
-                    justify-content: space-between;
-                    margin: 1em 0;
-
-                    .input-rut {
-                        width: 250px;
-                        height: 55px;
-                        padding-left: 25px;
-                        font-size: 16px;
-                        font-family: "Barlow", sans-serif;
-                        border-radius: 100px;
-                        background-color: #fff;
-                        border: 1px solid #ecf0f1 !important;
-                        // padding: 0 20px;
-
-                    }
-
-                    span {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        height: 52px;
-                        margin: 0 5px;
-                    }
-
-                    .dv-rut {
-                        width: 80px;
-                        height: 55px;
-                        padding-left: 35px;
-                        font-size: 16px;
-                        font-family: "Barlow", sans-serif;
-                        border-radius: 100px;
-                        background-color: #fff;
-                        border: 1px solid #ecf0f1 !important;
-                    }
-                }
-
-                .label-patente {
-                    color: #0033a0;
-                    font: normal 400 12px/14.4px $Fuente2;
-                    margin-left: 32px;
-                }
-
-                .input-patente {
-                    display: block;
-                    // margin: 1em 0;
-                    font-family: 'Ubuntu Mono', monospace !important;
-                    border-radius: 5px;
-                    width: 280px;
-                    height: 72px;
-                    font-size: 48px;
-                    padding: 0;
-                    letter-spacing: 7px;
-                    font-weight: 700;
-                    position: relative;
-                    border: 2px solid transparent !important;
-                    color: #0033a0;
-                    background: url(https://www.segurossura.cl/docs/default-source/soap19/patente-bg.png) no-repeat center center;
-                    background-size: contain;
-                    text-align: left;
-                    padding-bottom: 18px;
-                    padding-left: 25px;
-                    float: initial;
-                    // margin: 0 auto;
-                    margin-bottom: 10px;
-                }
-
-                .boton-amarillo {
-                    @extend %btn-call-yellow;
-                    margin: 3rem 0;
-                    padding: 12px 45px;
-                    position: relative;
-                }
-            }
+        .label-rut {
+          color: #0033a0;
+          font: normal 400 12px/14.4px $Fuente2;
+          margin-left: 32px;
+          margin-bottom: 0px;
+          // display: flex;
         }
 
-        .container-img {
+        .box-input-rut {
+          display: flex;
+          justify-content: space-between;
+          margin: 0.5em 0 1em 0;
+
+          .input-rut {
+            width: 250px;
+            height: 55px;
+            padding-left: 25px;
+            font-size: 16px;
+            font-family: "Barlow", sans-serif;
+            border-radius: 100px;
+            color: $gray;
+            background-color: #fff;
+            border: 1px solid #ecf0f1 !important;
+            // padding: 0 20px;
+          }
+
+          span {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 40%;
-            max-width: 600px;
-            background-color: cornflowerblue;
-            // --------------------------------------------------
-            min-height: 400px;
+            height: 52px;
+            margin: 0 5px;
+          }
+
+          .dv-rut {
+            width: 80px;
+            height: 55px;
+            padding-left: 35px;
+            font-size: 16px;
+            font-family: "Barlow", sans-serif;
+            color: $gray;
+            border-radius: 100px;
+            background-color: #fff;
+            border: 1px solid #ecf0f1 !important;
+          }
         }
+
+        .label-patente {
+          color: #0033a0;
+          font: normal 400 12px/14.4px $Fuente2;
+          margin-left: 32px;
+        }
+
+        .input-patente {
+          display: block;
+          // margin: 1em 0;
+          font-family: "Ubuntu Mono", monospace !important;
+          border-radius: 5px;
+          width: 280px;
+          height: 72px;
+          font-size: 48px;
+          padding: 0;
+          letter-spacing: 4px;
+          font-weight: 700;
+          position: relative;
+          border: 2px solid transparent !important;
+          color: #0033a0;
+          background: url(https://www.segurossura.cl/docs/default-source/soap19/patente-bg.png)
+            no-repeat center center;
+          background-size: contain;
+          text-align: left;
+          padding-bottom: 18px;
+          padding-left: 25px;
+          float: initial;
+          // margin: 0 auto;
+          margin-bottom: 10px;
+
+          &::placeholder {
+            color: #ecf0f1 !important;
+            // font-family: "Ubuntu Mono", monospace !important;
+          }
+        }
+
+        .boton-amarillo {
+          @extend %btn-call-yellow;
+          margin: 3rem 0;
+          padding: 12px 45px;
+          position: relative;
+        }
+      }
     }
+
+    .container-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 45%;
+      max-width: 600px;
+      // background-color: cornflowerblue;
+      // --------------------------------------------------
+    //   min-height: 400px;
+      align-self: center;
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
 
 .sura-loader {
-    border: 3px solid #F3F3F3;
-    border-top-color: rgb(243, 243, 243);
-    border-top-style: solid;
-    border-top-width: 3px;
-    border-top: 3px solid #00AEC7;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    animation: spin 2s linear infinite;
-    position: absolute;
-    top: 25%;
-    right: 5%;
-    transform: translateX(0%)
+  border: 3px solid #f3f3f3;
+  border-top-color: rgb(243, 243, 243);
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-top: 3px solid #00aec7;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  transform: translateX(0%);
 }
 
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    100% {
-        transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @media screen and (max-width: 1199px) {
-    .sura-loader {
-        top: 18px;
-        right: 45px;
-        width: 25px;
-        height: 25px;
-    }
+  .sura-loader {
+    top: 18px;
+    right: 45px;
+    width: 25px;
+    height: 25px;
+  }
 }
 
-
 @media screen and (max-width: 991px) {
-
-    .sura-loader {
-        top: 80px;
-        right: 40%;
-        width: 22px;
-        height: 22px;
-        transform: translateX(0%);
-    }
+  .sura-loader {
+    top: 80px;
+    right: 40%;
+    width: 22px;
+    height: 22px;
+    transform: translateX(0%);
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .sura-loader {
-        top: 140px;
-        right: 37%;
-        transform: translateX(0%);
-    }
+  .sura-loader {
+    top: 140px;
+    right: 37%;
+    transform: translateX(0%);
+  }
 }
 
 /* END SURA LOADER */
+@media screen and (min-width: 840px) {
+  .tracking {
+    .container-tracking {
+      background: linear-gradient(
+        to right,
+        #edf0f1 0%,
+        #edf0f1 45%,
+        #fff 45%,
+        #fff 100%
+      );
+    }
+  }
+}
+
+@media screen and (max-width: 654px) {
+  .tracking {
+    .container-tracking {
+      flex-direction: column;
+      align-items: center;
+      background: linear-gradient(
+        to bottom,
+        #edf0f1 0%,
+        #edf0f1 58%,
+        #fff 63%,
+        #fff 100%
+      );
+      .container-texto {
+        align-items: center;
+        width: 100%;
+        max-width: 400px;
+        .titulo-tracking {
+            text-align: center;
+            &::before {
+                left: calc(50% - 20px);
+            }
+        }
+        .parrafo-tracking {
+          text-align: center;
+        }
+        .box-formulario {
+            display: flex;
+            flex-direction: column;
+            // max-width: 270px;
+            .box-input-rut {
+                max-width: 280px;
+                align-self: center;
+                .input-rut {
+                    width: 100%;
+                }
+            }
+            .input-patente {
+                align-self: center;
+            }
+            .boton-amarillo{
+                align-self: center;
+            }
+        }
+      }
+      .container-img {
+        width: 100%;
+        max-width: 500px;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 468px) {
+    .tracking {
+      .container-tracking {        
+        background: linear-gradient(
+          to bottom,
+          #edf0f1 0%,
+          #edf0f1 65%,
+          #fff 70%,
+          #fff 100%
+        );
+        .container-texto {
+          .box-formulario {    
+              .boton-amarillo{
+                  margin: 1rem 0;
+              }
+          }
+        }
+      }
+    }
+  }
+    

@@ -1,19 +1,25 @@
 /*## SCRIPT DAR FORMATO A PATENTE
 se debe agregar el jquery.mask tambien
--------------------------------*/
-$('.input-patente').mask('AAAA AA');
+-------------------------------
+*/
+
 
 
 /*## SCRIPT TRACKING PATENTE
 -------------------------------*/
 $(document).ready(function () {
-  
-    $('.sura-loader').hide();    
+    $('.input-patente').mask('AAAA AA');
+    $('.sura-loader').hide();
     $("#tracking-seguroxkm").click(function () {
+        
         _Rut = $('#rut-search').val();
         _Dv = $('#dv-search').val();
+        $('#patente-search').unmask();
         _Patente = $('#patente-search').val();
-        console.log(_Rut + '/' + _Dv + '/' + _Patente);
+        
+        console.log("esta es la patente: " + _Patente);
+        // test = $('#patente-search').mask('AAAAAA');
+        // console.log("esta es la patente: " + test.val());
         $('.sura-loader').show();
         $.ajax({
             url: 'https://seguros.sura.cl/ConsultaKudzu/ConsultaDispositivo',
@@ -47,7 +53,7 @@ $(document).ready(function () {
     });
 })
 
-$(document).ready(function() {
+$(document).ready(function () {
     shareThis();
     dgv();
     isNumber();
@@ -222,7 +228,7 @@ function mayus(e) {
             }
         }
     }
-    
+
     var mailRegexp = /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
 
     function highlightError(element, message) {
@@ -301,7 +307,7 @@ $("#seguroxkm-mail").keypress(function (event) {
 
 
 
-!function (a) {
+! function (a) {
     function b(a, b) {
         a.closest(".rut-container").append(b)
     }
@@ -386,41 +392,41 @@ $(".btn-close-lead").click(function (e) {
 /*## AFFIX LEAD 0 SEGUN VIEWPORT
 ---------------------------------*/
 var onresize = function (e) {
-	width = e.target.outerWidth;
-	height = e.target.outerHeight;
+    width = e.target.outerWidth;
+    height = e.target.outerHeight;
 
-	if (width > 768) {
-		$('.leadZero').affix({
-			offset: {
-				top: 70,
-				bottom: 750
-			}
-		});
-	} else {
-		$('.leadZero').affix({
-			offset: {
-				top: 70,
-				bottom: 1600
-			}
-		});
-	}
+    if (width > 768) {
+        $('.leadZero').affix({
+            offset: {
+                top: 70,
+                bottom: 750
+            }
+        });
+    } else {
+        $('.leadZero').affix({
+            offset: {
+                top: 70,
+                bottom: 1600
+            }
+        });
+    }
 }
 window.addEventListener("resize", onresize);
 
 if (jQuery(window).width() > 768) {
-	$('.leadZero').affix({
-		offset: {
-			top: 70,
-			bottom: 750
-		}
-	});
+    $('.leadZero').affix({
+        offset: {
+            top: 70,
+            bottom: 750
+        }
+    });
 } else {
-	$('.leadZero').affix({
-		offset: {
-			top: 70,
-			bottom: 1600
-		}
-	});
+    $('.leadZero').affix({
+        offset: {
+            top: 70,
+            bottom: 1600
+        }
+    });
 }
 /* LEAD COTIZADOR */
 
