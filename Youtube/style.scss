@@ -4,6 +4,7 @@
 body {
   overflow-x: hidden;
 }
+
 .yapp-col,
 .yapp-row,
 .yapp-dudas-img,
@@ -40,36 +41,28 @@ body {
 
 @font-face {
   font-family: FS Joey;
-  src: url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.woff2)
-      format("woff2"),
-    url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.woff)
-      format("woff"),
-    url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.eot)
-      format("eot"),
-    url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.svg)
-      format("svg"),
-    url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.svg)
-      format("truetype");
+  src: url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.woff2) format("woff2"),
+    url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.woff) format("woff"),
+    url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.eot) format("eot"),
+    url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.svg) format("svg"),
+    url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.svg) format("truetype");
   font-display: swap;
   font-weight: 700;
   font-style: normal;
 }
+
 @font-face {
   font-family: FS Joey;
-  src: url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.woff2)
-      format("woff2"),
-    url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.woff)
-      format("woff"),
-    url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.eot)
-      format("eot"),
-    url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.svg)
-      format("svg"),
-    url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.svg)
-      format("truetype");
+  src: url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.woff2) format("woff2"),
+    url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.woff) format("woff"),
+    url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.eot) format("eot"),
+    url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.svg) format("svg"),
+    url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.svg) format("truetype");
   font-display: swap;
   font-weight: 500;
   font-style: normal;
 }
+
 .ymt-1-auto {
   margin: 1rem auto;
 }
@@ -99,6 +92,7 @@ body {
     display: block;
   }
 }
+
 .yapp-comprar-btn,
 .yapp-header-call__btn {
   width: max-content;
@@ -110,11 +104,14 @@ body {
   text-align: center;
   text-decoration: none;
 }
+
 .yapp-comprar-btn:hover,
 .yapp-header-call__btn:hover {
   cursor: pointer;
 }
+
 @media (max-width: 768px) {
+
   .yapp-comprar-btn,
   .yapp-header-call__btn {
     font-size: 16px;
@@ -125,12 +122,12 @@ body {
 .yapp-comprar-btn:before {
   content: "";
   position: absolute;
-  background: url(/docs/default-source/landing-yapp/icon-arrow.svg?sfvrsn=8d55326d_2)
-    no-repeat center center;
+  background: url(/docs/default-source/landing-yapp/icon-arrow.svg?sfvrsn=8d55326d_2) no-repeat center center;
   background-size: 24px;
   width: 24px;
   height: 24px;
 }
+
 @media (max-width: 768px) {
   .yapp-comprar-btn:before {
     background-size: 18px;
@@ -145,6 +142,7 @@ body {
   transition: all 0.3s ease;
   border: 2px solid transparent;
 }
+
 .yapp-header-call__btn:hover {
   color: #0033a0;
   background-color: white;
@@ -159,9 +157,11 @@ body {
   border: 2px solid #0033a0;
   padding-left: 3rem;
 }
+
 .yapp-comprar-btn:before {
   left: 1rem;
 }
+
 .yapp-comprar-btn:hover {
   transition: all 0.3s ease;
   background-color: #d3e1ff;
@@ -179,6 +179,7 @@ body {
   margin: 40px 0;
   box-shadow: 0px 2px 30px #e0e5f0;
 }
+
 @media (max-width: 768px) {
   .tab-wrap {
     margin: 1rem auto;
@@ -195,8 +196,7 @@ body {
   &::before {
     content: "";
     position: absolute;
-    background: url(/docs/default-source/landing-yapp/icon-circle-cyan.svg?sfvrsn=d255326d_2)
-      no-repeat center center;
+    background: url(/docs/default-source/landing-yapp/icon-circle-cyan.svg?sfvrsn=d255326d_2) no-repeat center center;
     background-size: auto;
     width: 90px;
     height: 120px;
@@ -208,8 +208,7 @@ body {
   &::after {
     content: "";
     position: absolute;
-    background: url(/docs/default-source/landing-yapp/icon-circle-cyan.svg?sfvrsn=d255326d_2)
-      no-repeat center center;
+    background: url(/docs/default-source/landing-yapp/icon-circle-cyan.svg?sfvrsn=d255326d_2) no-repeat center center;
     background-size: auto;
     width: 90px;
     height: 120px;
@@ -221,6 +220,7 @@ body {
   .yapp-details-call {
     flex-direction: column;
     width: 100%;
+
     .yapp-details-call__title {
       position: relative;
       flex-direction: column;
@@ -230,6 +230,7 @@ body {
       color: #0033a0;
       font: normal 700 36px/39.6px "FS Joey", serif !important;
       text-align: center;
+
       &::before {
         content: "";
         position: absolute;
@@ -248,6 +249,7 @@ body {
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 3em;
+  width: 100%;
   height: 100%;
   max-width: 1199px;
   position: relative;
@@ -258,12 +260,13 @@ body {
     background-color: #fff;
     border-radius: 4px;
     box-shadow: 0px 2px 30px #e0e5f0;
-    max-width: 373px;
+    max-width: 350px;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     cursor: pointer;
-  
+
     .imagen-card {
       display: flex;
       flex-direction: column;
@@ -273,11 +276,12 @@ body {
       background: $white;
       box-shadow: 0px 9px 31px rgba(0, 45, 84, 0.13);
       position: relative;
-      
+
       .head-card {
-        width: 353px;
+        width: 100%;
         height: 250px;
         position: relative;
+
         &::before {
           content: "";
           position: absolute;
@@ -296,6 +300,7 @@ body {
           align-self: center;
         }
       }
+
       .foot-card {
         width: 100%;
         display: flex;
@@ -311,7 +316,7 @@ body {
           position: relative;
           // padding: 2em;
           max-width: 270px;
-    
+
           &::before {
             content: "";
             position: absolute;
@@ -329,6 +334,7 @@ body {
           @extend %btn-call-blue;
         }
       }
+
       &::after {
         content: "";
         position: absolute;
@@ -341,13 +347,111 @@ body {
         box-shadow: 0px 9px 31px rgba(0, 45, 84, 0.13);
         top: -2em;
         left: calc(50% - 29px);
+      }
+
+
+
+
+
+
     }
-  
-      
-  
-      
-  
-      
+  }
+}
+
+.yapp-empresas {
+  display: flex;
+  max-width: 1000px;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+  margin: 4em auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url(/docs/default-source/landing-yapp/icon-circle-cyan.svg?sfvrsn=d255326d_2) no-repeat center center;
+    background-size: auto;
+    width: 90px;
+    height: 120px;
+    top: 3em;
+    left: -13em;
+    opacity: 0.6;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: url(/docs/default-source/landing-yapp/icon-circle-cyan.svg?sfvrsn=d255326d_2) no-repeat center center;
+    background-size: auto;
+    width: 90px;
+    height: 120px;
+    top: 3em;
+    right: -12em;
+    opacity: 0.6;
+  }
+
+  .empresas-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    // border: solid 1px green;
+    position: relative;
+    margin-bottom: 5em;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 48px;
+      height: 4px;
+      background-color: #00aec7;
+      top: 0;
+      border-radius: 16px;
+    }
+
+    .empresas-content__img {
+      margin-top: 3rem;
+      width: 100%;
+      max-width: 300px;
+      min-height: 102px;
+      // border: solid 1px red;
+    }
+
+    .empresas-content__text {
+      font: normal 400 18px/21.6px $Fuente2 !important;
+      max-width: 342px;
+      color: $gray;
+      margin: 3rem 0
+    }
+  }
+
+  .empresas-video {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 120%;
+    height: 350px;
+    max-width: 600px;
+    position: relative;
+    cursor: pointer;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      width: 66px;
+      height: 65px;
+      background-image: url(/docs/default-source/sucursal-virtual-vida/play-video.svg?sfvrsn=63867f52_2);
+      background-repeat: no-repeat;
+      background-position: center center;
+      top: calc((100% - 65px) / 2);
+      left: calc(50% - 33px);
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      align-self: center;
     }
   }
 }
@@ -365,6 +469,7 @@ body {
     font-size: 32px;
     margin: 1rem 0;
   }
+
   .yapp-details-call__title:before {
     bottom: 3rem;
   }
@@ -379,10 +484,12 @@ body {
   margin: 0 auto 3rem;
   padding-bottom: 2rem;
 }
+
 .yapp-comprar-call {
   flex-direction: column;
   width: 100%;
 }
+
 .yapp-comprar-call__title {
   position: relative;
   flex-direction: column;
@@ -393,6 +500,7 @@ body {
   font: normal 700 42px/1 "FS Joey", serif;
   text-align: center;
 }
+
 .yapp-comprar-call__title:before {
   content: "";
   position: absolute;
@@ -402,6 +510,7 @@ body {
   bottom: 3.5rem;
   border-radius: 16px;
 }
+
 .yapp-comprar-box {
   justify-content: space-between;
   flex-direction: column;
@@ -416,21 +525,25 @@ body {
   border-radius: 4px;
   box-shadow: 0px 2px 30px #e0e5f0;
 }
+
 .yapp-comprar-box-desc {
   align-items: flex-start;
   flex-direction: column;
   max-width: 55%;
 }
+
 .yapp-comprar-box-desc li {
   margin-bottom: 1rem;
   position: relative;
   color: #53565a;
   font-family: "Barlow", sans-serif;
 }
+
 .yapp-comprar-box-desc li::marker {
   color: #00aec7;
   font-weight: 700;
 }
+
 .yapp-comprar-info {
   width: 100%;
   max-width: 768px;
@@ -439,45 +552,56 @@ body {
   background-color: rgba(0, 174, 199, 0.1);
   border-radius: 4px;
 }
+
 .yapp-comprar-info img {
   width: 18px;
 }
+
 .yapp-comprar-info p {
   color: #0033a0;
   font: normal 400 12px/1 "Barlow", sans-serif;
   text-align: left;
 }
+
 .yapp-comprar-btn {
   position: relative;
 }
+
 .yapp-comprar-box-img img {
   width: 100%;
 }
+
 @media (max-width: 991px) {
   .yapp-comprar .yapp-row {
     flex-direction: column;
     width: 100%;
   }
+
   .yapp-comprar-call__title {
     margin: 1rem auto;
     padding: 1rem 0 0;
     font-size: 32px;
   }
+
   .yapp-comprar-box {
     padding: 2rem;
   }
+
   .yapp-comprar-box-desc {
     max-width: 100%;
     padding-left: 2rem;
   }
 }
+
 @media (max-width: 575px) {
   .yapp-comprar-box {
     padding: 2rem 1rem;
   }
+
   .yapp-comprar-box-desc li {
     font-size: 16px;
   }
+
   .yapp-comprar-info {
     padding: 0.5rem;
     gap: 0.5rem;
@@ -487,27 +611,38 @@ body {
 .yapp {
   width: 100%;
   height: 100%;
+
+  .container-fluid {
+    padding: 0 1rem;
+  }
+
+  .bg-gray {
+    background-color: #ecf0f1;
+    margin-bottom: 5em;
+  }
 }
-.yapp .container-fluid {
-  padding: 0 1rem;
-}
+
 @media (max-width: 768px) {
   .yapp .container-fluid {
     padding: 0 0.5rem;
   }
 }
+
 .yapp-row {
   gap: 2rem;
 }
+
 .yapp-col {
   flex-direction: column;
   gap: 2rem;
 }
+
 .yapp .container {
   width: 100%;
   max-width: 1199px;
   padding: 0;
   margin: auto;
+
   .yapp-ahorra {
     max-width: 1000px;
     align-items: flex-start;
@@ -518,8 +653,7 @@ body {
     &::before {
       content: "";
       position: absolute;
-      background: url(/docs/default-source/landing-yapp/icon-circle-cyan.svg?sfvrsn=d255326d_2)
-        no-repeat center center;
+      background: url(/docs/default-source/landing-yapp/icon-circle-cyan.svg?sfvrsn=d255326d_2) no-repeat center center;
       background-size: auto;
       width: 90px;
       height: 120px;
@@ -579,6 +713,7 @@ body {
         display: flex;
         width: 90%;
         justify-content: space-evenly;
+
         .boton-suscribete {
           @extend %btn-youtube;
         }
@@ -595,6 +730,7 @@ body {
       width: 100%;
       height: 100%;
       position: relative;
+
       img {
         width: 100%;
       }
@@ -616,14 +752,17 @@ body {
 
           .yapp-ahorra-call__subtitle {
             font-size: 22px;
+
             &::before {
               left: calc(50% - 24px);
             }
           }
+
           #yapp-ahorra-call__title {
             text-align: center;
             align-items: center;
           }
+
           .yapp-ahorra-call__desc {
             text-align: center;
           }
@@ -633,11 +772,34 @@ body {
             gap: 25px;
           }
         }
+
         .yapp-ahorra-img {
           max-width: 575px;
           margin-bottom: 2rem;
+          margin-top: 4rem;
         }
       }
+
+      
+    }
+  }
+
+  .yapp-empresas {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+    .empresas-content {
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1em;
+      .empresas-content__text {
+        max-width: 500px;
+        text-align: center
+      }
+    }
+    .empresas-video {
+      width: 100%;
+      height: auto;
     }
   }
 }
@@ -654,19 +816,23 @@ body {
           .yapp-ahorra-call__subtitle {
             font-size: 22px;
           }
+
           #yapp-ahorra-call__title {
             font-size: 32px !important;
             margin-bottom: 1rem;
           }
+
           .yapp-ahorra-call__desc {
             font-size: 16px !important;
           }
+
           .box-botones {
             gap: 25px;
             flex-direction: column;
             align-items: center;
           }
         }
+
         .yapp-ahorra-img {
           max-width: 575px;
           margin-bottom: 2rem;
@@ -674,6 +840,26 @@ body {
       }
     }
   }
+
+  .yapp-details {
+    .yapp-details-call {
+      .yapp-ahorra-call__title {
+        font: normal 700 32px/35px $Fuente1;
+      }
+    }
+    .yapp-details-box {
+      .yapp-details-box__item {
+        .imagen-card {
+          .foot-card {
+            .title-img-sucursal {
+              font: normal 700 18px/25px $Fuente2 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
 
 @media (max-width: 1199px) {
@@ -681,32 +867,32 @@ body {
     padding: 0 1rem;
   }
 }
+
 @media (max-width: 575px) {
   .yapp .container {
     padding: 0 0.5rem;
   }
 }
+
 .yapp .bg-banner {
   background: #00aec7;
   background: linear-gradient(250deg, #00aec7 0%, #0033a0 44%);
 }
+
 .bg-light {
-  background: linear-gradient(
-    to top,
-    #fff 0,
-    #fff 25%,
-    #ecf0f1 25%,
-    #ecf0f1 100%
-  );
+  background: linear-gradient(to top,
+      #fff 0,
+      #fff 25%,
+      #ecf0f1 25%,
+      #ecf0f1 100%);
 }
+
 .yapp .bg-light-invert {
-  background: linear-gradient(
-    to bottom,
-    #fff 0,
-    #fff 65%,
-    #ecf0f1 65%,
-    #ecf0f1 100%
-  );
+  background: linear-gradient(to bottom,
+      #fff 0,
+      #fff 65%,
+      #ecf0f1 65%,
+      #ecf0f1 100%);
 }
 
 @media (max-width: 950px) {
@@ -714,11 +900,13 @@ body {
     padding-top: 104px;
   }
 }
+
 .cotizador-online {
   display: none !important;
 }
 
 @media (max-width: 950px) {
+
   .yapp-details:before,
   .yapp-ahorra:before,
   .yapp-farmacias:before,

@@ -5,7 +5,9 @@ footer {
   display: none !important;
 }
 
-.yapp .container .yapp-ahorra .yapp-ahorra-call .box-botones .boton-suscribete, .yapp .container .yapp-ahorra .yapp-ahorra-call .box-botones .boton-borde-azul, .yapp-details-box .yapp-details-box__item .imagen-card .foot-card .boton-azul {
+.yapp-details-box .yapp-details-box__item .imagen-card .foot-card .boton-azul, .yapp .container .yapp-ahorra .yapp-ahorra-call .box-botones .boton-borde-azul, .yapp .container .yapp-ahorra .yapp-ahorra-call .box-botones .boton-suscribete {
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   height: auto;
   padding: 12px 26px;
@@ -15,11 +17,13 @@ footer {
   text-align: center;
   text-decoration: none;
 }
-.yapp .container .yapp-ahorra .yapp-ahorra-call .box-botones .boton-suscribete:hover, .yapp .container .yapp-ahorra .yapp-ahorra-call .box-botones .boton-borde-azul:hover, .yapp-details-box .yapp-details-box__item .imagen-card .foot-card .boton-azul:hover {
+
+.yapp-details-box .yapp-details-box__item .imagen-card .foot-card .boton-azul:hover, .yapp .container .yapp-ahorra .yapp-ahorra-call .box-botones .boton-borde-azul:hover, .yapp .container .yapp-ahorra .yapp-ahorra-call .box-botones .boton-suscribete:hover {
   cursor: pointer;
 }
+
 @media (max-width: 768px) {
-  .yapp .container .yapp-ahorra .yapp-ahorra-call .box-botones .boton-suscribete, .yapp .container .yapp-ahorra .yapp-ahorra-call .box-botones .boton-borde-azul, .yapp-details-box .yapp-details-box__item .imagen-card .foot-card .boton-azul {
+  .yapp-details-box .yapp-details-box__item .imagen-card .foot-card .boton-azul, .yapp .container .yapp-ahorra .yapp-ahorra-call .box-botones .boton-borde-azul, .yapp .container .yapp-ahorra .yapp-ahorra-call .box-botones .boton-suscribete {
     font-size: 16px;
     padding: 12px 16px;
   }
@@ -28,22 +32,28 @@ footer {
 .yapp-details-box .yapp-details-box__item .imagen-card .foot-card .boton-azul {
   color: #fff;
   background-color: #0033a0;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .yapp-details-box .yapp-details-box__item .imagen-card .foot-card .boton-azul:hover {
   color: #0033a0;
   background-color: #e3e829;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .yapp .container .yapp-ahorra .yapp-ahorra-call .box-botones .boton-borde-azul {
   color: #0033a0;
   background-color: #fff;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   border: 2px solid #0033a0;
   height: 48px;
 }
+
 .yapp .container .yapp-ahorra .yapp-ahorra-call .box-botones .boton-borde-azul:hover {
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background-color: #d3e1ff;
 }
@@ -52,11 +62,14 @@ footer {
   color: #fff;
   border-radius: 8px;
   background-color: #E4002B;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   border: 2px solid #E4002B;
   height: 48px;
 }
+
 .yapp .container .yapp-ahorra .yapp-ahorra-call .box-botones .boton-suscribete:hover {
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: #fff;
   background-color: #bb0023;
@@ -96,9 +109,15 @@ body {
 .yapp-header-call,
 .yapp-header,
 .tab__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @font-face {
@@ -108,6 +127,7 @@ body {
   font-weight: 700;
   font-style: normal;
 }
+
 @font-face {
   font-family: FS Joey;
   src: url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.woff2) format("woff2"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.woff) format("woff"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.eot) format("eot"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.svg) format("svg"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.svg) format("truetype");
@@ -115,6 +135,7 @@ body {
   font-weight: 500;
   font-style: normal;
 }
+
 .ymt-1-auto {
   margin: 1rem auto;
 }
@@ -139,13 +160,15 @@ body {
   .btn-desk {
     display: none;
   }
-
   .btn-mob {
     display: block;
   }
 }
+
 .yapp-comprar-btn,
 .yapp-header-call__btn {
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   height: 48px;
   padding: 12px 26px;
@@ -163,11 +186,12 @@ body {
 
 @media (max-width: 768px) {
   .yapp-comprar-btn,
-.yapp-header-call__btn {
+  .yapp-header-call__btn {
     font-size: 16px;
     padding: 12px 16px;
   }
 }
+
 .yapp-comprar-btn:before {
   content: "";
   position: absolute;
@@ -184,9 +208,11 @@ body {
     height: 20px;
   }
 }
+
 .yapp-header-call__btn {
   color: #0033a0;
   background-color: #e3e829;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   border: 2px solid transparent;
 }
@@ -194,6 +220,7 @@ body {
 .yapp-header-call__btn:hover {
   color: #0033a0;
   background-color: white;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   border: 2px solid #fff;
 }
@@ -201,6 +228,7 @@ body {
 .yapp-comprar-btn {
   color: #0033a0;
   background-color: #fff;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   border: 2px solid #0033a0;
   padding-left: 3rem;
@@ -211,21 +239,29 @@ body {
 }
 
 .yapp-comprar-btn:hover {
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background-color: #d3e1ff;
 }
 
 .tab-wrap {
+  -webkit-transition: 0.3s -webkit-box-shadow ease;
+  transition: 0.3s -webkit-box-shadow ease;
   transition: 0.3s box-shadow ease;
+  transition: 0.3s box-shadow ease, 0.3s -webkit-box-shadow ease;
   border-radius: 6px;
   max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   position: relative;
   list-style: none;
   background-color: #fff;
   margin: 40px 0;
-  box-shadow: 0px 2px 30px #e0e5f0;
+  -webkit-box-shadow: 0px 2px 30px #e0e5f0;
+          box-shadow: 0px 2px 30px #e0e5f0;
 }
 
 @media (max-width: 768px) {
@@ -233,13 +269,18 @@ body {
     margin: 1rem auto;
   }
 }
+
 .yapp-details {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   max-width: 1199px;
   position: relative;
   margin: 0 auto 3rem;
 }
+
 .yapp-details::before {
   content: "";
   position: absolute;
@@ -251,6 +292,7 @@ body {
   left: -9rem;
   opacity: 0.6;
 }
+
 .yapp-details::after {
   content: "";
   position: absolute;
@@ -262,13 +304,21 @@ body {
   right: -9rem;
   opacity: 0.6;
 }
+
 .yapp-details .yapp-details-call {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
 }
+
 .yapp-details .yapp-details-call .yapp-details-call__title {
   position: relative;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   margin: 4rem 0 6rem;
   padding: 2rem 0 0;
@@ -276,6 +326,7 @@ body {
   font: normal 700 36px/39.6px "FS Joey", serif !important;
   text-align: center;
 }
+
 .yapp-details .yapp-details-call .yapp-details-call__title::before {
   content: "";
   position: absolute;
@@ -287,41 +338,68 @@ body {
 }
 
 .yapp-details-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 3em;
+  width: 100%;
   height: 100%;
   max-width: 1199px;
   position: relative;
   margin: 0 auto;
   padding: 3rem 2rem 4rem;
 }
+
 .yapp-details-box .yapp-details-box__item {
   background-color: #fff;
   border-radius: 4px;
-  box-shadow: 0px 2px 30px #e0e5f0;
-  max-width: 373px;
+  -webkit-box-shadow: 0px 2px 30px #e0e5f0;
+          box-shadow: 0px 2px 30px #e0e5f0;
+  max-width: 350px;
+  width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   cursor: pointer;
 }
+
 .yapp-details-box .yapp-details-box__item .imagen-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 100%;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   background: #fff;
-  box-shadow: 0px 9px 31px rgba(0, 45, 84, 0.13);
+  -webkit-box-shadow: 0px 9px 31px rgba(0, 45, 84, 0.13);
+          box-shadow: 0px 9px 31px rgba(0, 45, 84, 0.13);
   position: relative;
 }
+
 .yapp-details-box .yapp-details-box__item .imagen-card .head-card {
-  width: 353px;
+  width: 100%;
   height: 250px;
   position: relative;
 }
+
 .yapp-details-box .yapp-details-box__item .imagen-card .head-card::before {
   content: "";
   position: absolute;
@@ -333,18 +411,30 @@ body {
   top: calc((100% - 65px) / 2);
   left: calc(50% - 33px);
 }
+
 .yapp-details-box .yapp-details-box__item .imagen-card .head-card img {
   width: 100%;
   height: 100%;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
+
 .yapp-details-box .yapp-details-box__item .imagen-card .foot-card {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 3rem 4rem;
 }
+
 .yapp-details-box .yapp-details-box__item .imagen-card .foot-card .title-img-sucursal {
   font: normal 700 22px/29px "Barlow", sans-serif !important;
   color: #0033a0;
@@ -353,6 +443,7 @@ body {
   position: relative;
   max-width: 270px;
 }
+
 .yapp-details-box .yapp-details-box__item .imagen-card .foot-card .title-img-sucursal::before {
   content: "";
   position: absolute;
@@ -363,6 +454,7 @@ body {
   left: -1em;
   top: 0;
 }
+
 .yapp-details-box .yapp-details-box__item .imagen-card::after {
   content: "";
   position: absolute;
@@ -372,9 +464,127 @@ body {
   background-image: url(/docs/default-source/sucursal-virtual-vida/youtube.svg?sfvrsn=91477f52_2);
   background-repeat: no-repeat;
   background-position: center center;
-  box-shadow: 0px 9px 31px rgba(0, 45, 84, 0.13);
+  -webkit-box-shadow: 0px 9px 31px rgba(0, 45, 84, 0.13);
+          box-shadow: 0px 9px 31px rgba(0, 45, 84, 0.13);
   top: -2em;
   left: calc(50% - 29px);
+}
+
+.yapp-empresas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1000px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  position: relative;
+  margin: 4em auto;
+}
+
+.yapp-empresas::before {
+  content: "";
+  position: absolute;
+  background: url(/docs/default-source/landing-yapp/icon-circle-cyan.svg?sfvrsn=d255326d_2) no-repeat center center;
+  background-size: auto;
+  width: 90px;
+  height: 120px;
+  top: 3em;
+  left: -13em;
+  opacity: 0.6;
+}
+
+.yapp-empresas::after {
+  content: "";
+  position: absolute;
+  background: url(/docs/default-source/landing-yapp/icon-circle-cyan.svg?sfvrsn=d255326d_2) no-repeat center center;
+  background-size: auto;
+  width: 90px;
+  height: 120px;
+  top: 3em;
+  right: -12em;
+  opacity: 0.6;
+}
+
+.yapp-empresas .empresas-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  position: relative;
+  margin-bottom: 5em;
+}
+
+.yapp-empresas .empresas-content::before {
+  content: "";
+  position: absolute;
+  width: 48px;
+  height: 4px;
+  background-color: #00aec7;
+  top: 0;
+  border-radius: 16px;
+}
+
+.yapp-empresas .empresas-content .empresas-content__img {
+  margin-top: 3rem;
+  width: 100%;
+  max-width: 300px;
+  min-height: 102px;
+}
+
+.yapp-empresas .empresas-content .empresas-content__text {
+  font: normal 400 18px/21.6px "Barlow", sans-serif !important;
+  max-width: 342px;
+  color: #53565a;
+  margin: 3rem 0;
+}
+
+.yapp-empresas .empresas-video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 120%;
+  height: 350px;
+  max-width: 600px;
+  position: relative;
+  cursor: pointer;
+}
+
+.yapp-empresas .empresas-video::before {
+  content: "";
+  position: absolute;
+  width: 66px;
+  height: 65px;
+  background-image: url(/docs/default-source/sucursal-virtual-vida/play-video.svg?sfvrsn=63867f52_2);
+  background-repeat: no-repeat;
+  background-position: center center;
+  top: calc((100% - 65px) / 2);
+  left: calc(50% - 33px);
+}
+
+.yapp-empresas .empresas-video img {
+  width: 100%;
+  height: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 @media (max-width: 768px) {
@@ -382,13 +592,16 @@ body {
     font-size: 32px;
     margin: 1rem 0;
   }
-
   .yapp-details-call__title:before {
     bottom: 3rem;
   }
 }
+
 .yapp-comprar {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   max-width: 1199px;
   position: relative;
@@ -397,13 +610,19 @@ body {
 }
 
 .yapp-comprar-call {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
 }
 
 .yapp-comprar-call__title {
   position: relative;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   margin: 2rem 0 2rem;
   padding: 2rem 0 0;
@@ -423,8 +642,13 @@ body {
 }
 
 .yapp-comprar-box {
-  justify-content: space-between;
-  flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 2rem;
   width: 100%;
   height: 100%;
@@ -434,12 +658,18 @@ body {
   padding: 3rem 3rem 2rem;
   background-color: #fff;
   border-radius: 4px;
-  box-shadow: 0px 2px 30px #e0e5f0;
+  -webkit-box-shadow: 0px 2px 30px #e0e5f0;
+          box-shadow: 0px 2px 30px #e0e5f0;
 }
 
 .yapp-comprar-box-desc {
-  align-items: flex-start;
-  flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 55%;
 }
 
@@ -484,39 +714,39 @@ body {
 
 @media (max-width: 991px) {
   .yapp-comprar .yapp-row {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
   }
-
   .yapp-comprar-call__title {
     margin: 1rem auto;
     padding: 1rem 0 0;
     font-size: 32px;
   }
-
   .yapp-comprar-box {
     padding: 2rem;
   }
-
   .yapp-comprar-box-desc {
     max-width: 100%;
     padding-left: 2rem;
   }
 }
+
 @media (max-width: 575px) {
   .yapp-comprar-box {
     padding: 2rem 1rem;
   }
-
   .yapp-comprar-box-desc li {
     font-size: 16px;
   }
-
   .yapp-comprar-info {
     padding: 0.5rem;
     gap: 0.5rem;
   }
 }
+
 .yapp {
   width: 100%;
   height: 100%;
@@ -526,17 +756,26 @@ body {
   padding: 0 1rem;
 }
 
+.yapp .bg-gray {
+  background-color: #ecf0f1;
+  margin-bottom: 5em;
+}
+
 @media (max-width: 768px) {
   .yapp .container-fluid {
     padding: 0 0.5rem;
   }
 }
+
 .yapp-row {
   gap: 2rem;
 }
 
 .yapp-col {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 2rem;
 }
 
@@ -546,13 +785,17 @@ body {
   padding: 0;
   margin: auto;
 }
+
 .yapp .container .yapp-ahorra {
   max-width: 1000px;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 100%;
   position: relative;
   margin: 3rem auto;
 }
+
 .yapp .container .yapp-ahorra::before {
   content: "";
   position: absolute;
@@ -564,21 +807,32 @@ body {
   left: -15rem;
   opacity: 0.6;
 }
+
 .yapp .container .yapp-ahorra .yapp-ahorra-call {
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
 }
+
 .yapp .container .yapp-ahorra .yapp-ahorra-call .yapp-ahorra-call__subtitle {
   font: normal 700 22px/26.4px "Barlow", sans-serif !important;
   color: #0033a0;
   position: relative;
   margin: 2rem 0 0;
 }
+
 .yapp .container .yapp-ahorra .yapp-ahorra-call .yapp-ahorra-call__subtitle span {
   color: #00aec7;
 }
+
 .yapp .container .yapp-ahorra .yapp-ahorra-call .yapp-ahorra-call__subtitle::before {
   content: "";
   position: absolute;
@@ -588,9 +842,15 @@ body {
   top: -1rem;
   border-radius: 16px;
 }
+
 .yapp .container .yapp-ahorra .yapp-ahorra-call #yapp-ahorra-call__title {
-  align-items: flex-start;
-  flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   max-width: 425px;
   margin: 2rem 0 3rem;
@@ -598,6 +858,7 @@ body {
   font: normal 700 42px/46px "FS Joey", sans-serif !important;
   text-align: left;
 }
+
 .yapp .container .yapp-ahorra .yapp-ahorra-call .yapp-ahorra-call__desc {
   font: normal 400 18px/26px "Barlow", sans-serif;
   color: #53565a;
@@ -606,31 +867,51 @@ body {
   width: 100%;
   margin-bottom: 2rem;
 }
+
 .yapp .container .yapp-ahorra .yapp-ahorra-call .box-botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 90%;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
+
 .yapp .container .yapp-ahorra .yapp-ahorra-img {
-  justify-content: flex-end;
-  align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   width: 100%;
   height: 100%;
   position: relative;
 }
+
 .yapp .container .yapp-ahorra .yapp-ahorra-img img {
   width: 100%;
 }
 
 @media (max-width: 850px) {
   .yapp .container .yapp-ahorra {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0 auto;
   }
   .yapp .container .yapp-ahorra .yapp-ahorra-call {
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .yapp .container .yapp-ahorra .yapp-ahorra-call .yapp-ahorra-call__subtitle {
     font-size: 22px;
@@ -640,24 +921,62 @@ body {
   }
   .yapp .container .yapp-ahorra .yapp-ahorra-call #yapp-ahorra-call__title {
     text-align: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .yapp .container .yapp-ahorra .yapp-ahorra-call .yapp-ahorra-call__desc {
     text-align: center;
   }
   .yapp .container .yapp-ahorra .yapp-ahorra-call .box-botones {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 25px;
   }
   .yapp .container .yapp-ahorra .yapp-ahorra-img {
     max-width: 575px;
     margin-bottom: 2rem;
+    margin-top: 4rem;
+  }
+  .yapp-empresas {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 10px;
+  }
+  .yapp-empresas .empresas-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 1em;
+  }
+  .yapp-empresas .empresas-content .empresas-content__text {
+    max-width: 500px;
+    text-align: center;
+  }
+  .yapp-empresas .empresas-video {
+    width: 100%;
+    height: auto;
   }
 }
+
 @media (max-width: 575px) {
   .yapp .container .yapp-ahorra {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0 auto;
   }
   .yapp .container .yapp-ahorra .yapp-ahorra-call .yapp-ahorra-call__subtitle {
@@ -672,34 +991,50 @@ body {
   }
   .yapp .container .yapp-ahorra .yapp-ahorra-call .box-botones {
     gap: 25px;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .yapp .container .yapp-ahorra .yapp-ahorra-img {
     max-width: 575px;
     margin-bottom: 2rem;
   }
+  .yapp-details .yapp-details-call .yapp-ahorra-call__title {
+    font: normal 700 32px/35px "FS Joey", sans-serif;
+  }
+  .yapp-details .yapp-details-box .yapp-details-box__item .imagen-card .foot-card .title-img-sucursal {
+    font: normal 700 18px/25px "Barlow", sans-serif !important;
+  }
 }
+
 @media (max-width: 1199px) {
   .yapp .container {
     padding: 0 1rem;
   }
 }
+
 @media (max-width: 575px) {
   .yapp .container {
     padding: 0 0.5rem;
   }
 }
+
 .yapp .bg-banner {
   background: #00aec7;
   background: linear-gradient(250deg, #00aec7 0%, #0033a0 44%);
 }
 
 .bg-light {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #fff), color-stop(25%, #fff), color-stop(25%, #ecf0f1), to(#ecf0f1));
   background: linear-gradient(to top, #fff 0, #fff 25%, #ecf0f1 25%, #ecf0f1 100%);
 }
 
 .yapp .bg-light-invert {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(65%, #fff), color-stop(65%, #ecf0f1), to(#ecf0f1));
   background: linear-gradient(to bottom, #fff 0, #fff 65%, #ecf0f1 65%, #ecf0f1 100%);
 }
 
@@ -708,15 +1043,17 @@ body {
     padding-top: 104px;
   }
 }
+
 .cotizador-online {
   display: none !important;
 }
 
 @media (max-width: 950px) {
   .yapp-details:before,
-.yapp-ahorra:before,
-.yapp-farmacias:before,
-.yapp-farmacias:after {
+  .yapp-ahorra:before,
+  .yapp-farmacias:before,
+  .yapp-farmacias:after {
     display: none !important;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
