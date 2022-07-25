@@ -1,0 +1,236 @@
+.yapp .container {
+    width: 100%;
+    max-width: 1199px;
+    padding: 0;
+    margin: auto;
+  
+    .yapp-ahorra {
+      max-width: 1000px;
+      align-items: flex-start;
+      width: 100%;
+      position: relative;
+      margin: 3rem auto;
+  
+      &::before {
+        content: "";
+        position: absolute;
+        background: url(/docs/default-source/landing-yapp/icon-circle-cyan.svg?sfvrsn=d255326d_2) no-repeat center center;
+        background-size: auto;
+        width: 90px;
+        height: 120px;
+        top: 0;
+        left: -15rem;
+        opacity: 0.6;
+      }
+  
+      .yapp-ahorra-call {
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+  
+        .yapp-ahorra-call__subtitle {
+          font: normal 700 22px/26.4px $Fuente2 !important;
+          color: $blue;
+          position: relative;
+          margin: 2rem 0 0;
+  
+          span {
+            color: $cyan;
+          }
+  
+          &::before {
+            content: "";
+            position: absolute;
+            width: 48px;
+            height: 4px;
+            background-color: #00aec7;
+            top: -1rem;
+            border-radius: 16px;
+          }
+        }
+  
+        #yapp-ahorra-call__title {
+          align-items: flex-start;
+          flex-direction: column;
+          width: 100%;
+          max-width: 425px;
+          margin: 2rem 0 3rem;
+          color: $blue;
+          font: normal 700 42px/46px $Fuente1 !important;
+          text-align: left;
+        }
+  
+        .yapp-ahorra-call__desc {
+          font: normal 400 18px/26px $Fuente2;
+          color: $gray;
+          max-width: 458px;
+          display: block;
+          width: 100%;
+          margin-bottom: 2rem;
+        }
+  
+        .box-botones {
+          display: flex;
+          width: 90%;
+          justify-content: space-evenly;
+  
+          .boton-suscribete {
+            @extend %btn-youtube;
+          }
+  
+          .boton-borde-azul {
+            @extend %btn-border-blue;
+          }
+        }
+      }
+  
+      .yapp-ahorra-img {
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 100%;
+        height: 100%;
+        position: relative;
+  
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 850px) {
+    .yapp {
+      .container {
+        .yapp-ahorra {
+          flex-direction: column;
+          align-items: center;
+          margin: 0 auto;
+  
+          .yapp-ahorra-call {
+            justify-content: center;
+            align-items: center;
+  
+            .yapp-ahorra-call__subtitle {
+              font-size: 22px;
+  
+              &::before {
+                left: calc(50% - 24px);
+              }
+            }
+  
+            #yapp-ahorra-call__title {
+              text-align: center;
+              align-items: center;
+            }
+  
+            .yapp-ahorra-call__desc {
+              text-align: center;
+            }
+  
+            .box-botones {
+              justify-content: center;
+              gap: 25px;
+            }
+          }
+  
+          .yapp-ahorra-img {
+            max-width: 575px;
+            margin-bottom: 2rem;
+            margin-top: 4rem;
+          }
+        }
+  
+        
+      }
+    }
+  
+    .yapp-empresas {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 10px;
+      .empresas-content {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1em;
+        .empresas-content__text {
+          max-width: 500px;
+          text-align: center
+        }
+      }
+      .empresas-video {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .yapp {
+      .container {
+        .yapp-ahorra {
+          flex-direction: column;
+          align-items: center;
+          margin: 0 auto;
+  
+          .yapp-ahorra-call {
+            .yapp-ahorra-call__subtitle {
+              font-size: 22px;
+            }
+  
+            #yapp-ahorra-call__title {
+              font-size: 32px !important;
+              margin-bottom: 1rem;
+            }
+  
+            .yapp-ahorra-call__desc {
+              font-size: 16px !important;
+            }
+  
+            .box-botones {
+              gap: 25px;
+              flex-direction: column;
+              align-items: center;
+            }
+          }
+  
+          .yapp-ahorra-img {
+            max-width: 575px;
+            margin-bottom: 2rem;
+          }
+        }
+      }
+    }
+  
+    .yapp-details {
+      .yapp-details-call {
+        .yapp-ahorra-call__title {
+          font: normal 700 32px/35px $Fuente1;
+        }
+      }
+      .yapp-details-box {
+        .yapp-details-box__item {
+          .imagen-card {
+            .foot-card {
+              .title-img-sucursal {
+                font: normal 700 18px/25px $Fuente2 !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+  }
+  
+  @media (max-width: 1199px) {
+    .yapp .container {
+      padding: 0 1rem;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .yapp .container {
+      padding: 0 0.5rem;
+    }
+  }

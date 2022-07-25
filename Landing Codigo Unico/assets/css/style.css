@@ -1,0 +1,242 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: "FS Joey";
+  src: url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.woff2) format("woff2"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.woff) format("woff"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.eot) format("eot"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.svg) format("svg"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.ttf) format("truetype");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FS Joey";
+  src: url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.woff2) format("woff2"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.woff) format("woff"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.eot) format("eot"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.svg) format("svg"), url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.ttf) format("truetype");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+#preheader,
+.sura-wrap header,
+footer {
+  display: none !important;
+}
+
+#preheader,
+.sura-wrap header,
+footer {
+  display: none !important;
+}
+
+@media screen and (max-width: 950px) {
+  .nuevo-wrap {
+    padding-top: 104px !important;
+  }
+}
+
+.sura-wrap .nuevo-wrap {
+  width: 100%;
+  max-width: 1920px;
+  height: 100%;
+  padding: 0;
+  position: relative;
+  margin: 0 auto;
+  /* TEXT */
+}
+
+.sura-wrap .nuevo-wrap .container {
+  width: 100%;
+  max-width: 1199px;
+  height: 100%;
+  position: relative;
+}
+
+.sura-wrap .nuevo-wrap section {
+  width: 100%;
+  height: 630px;
+  margin: 0 auto;
+  max-width: 1920px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(58.68%, rgba(33, 42, 51, 0.15)), to(rgba(39, 49, 60, 0.6))), -webkit-gradient(linear, right top, left top, color-stop(64.05%, rgba(39, 49, 60, 0.15)), to(rgba(39, 49, 60, 0.6))), -webkit-gradient(linear, left top, left bottom, color-stop(67.64%, rgba(39, 49, 60, 0.15)), color-stop(100%, rgba(0, 0, 0, 0.5)), to(rgba(39, 49, 60, 0.6)));
+  background: linear-gradient(90deg, rgba(33, 42, 51, 0.15) 58.68%, rgba(39, 49, 60, 0.6) 100%), linear-gradient(270deg, rgba(39, 49, 60, 0.15) 64.05%, rgba(39, 49, 60, 0.6) 100%), linear-gradient(180deg, rgba(39, 49, 60, 0.15) 67.64%, rgba(0, 0, 0, 0.5) 100%, rgba(39, 49, 60, 0.6) 100%);
+}
+
+.sura-wrap .nuevo-wrap section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sura-wrap .nuevo-wrap ul {
+  padding: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  list-style: none;
+}
+
+.sura-wrap .nuevo-wrap a {
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.sura-wrap .nuevo-wrap a:hover {
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 1200px) {
+  .nuevo-wrap .container {
+    width: 1199px !important;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* HEADER */
+.codigo-header {
+  height: 630px;
+  position: relative;
+}
+
+.codigo-header picture {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 630px;
+  position: absolute;
+  z-index: -1;
+}
+
+.codigo-header picture source,
+.codigo-header picture img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 630px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.codigo-header__box {
+  max-width: 500px;
+  min-height: 630px;
+  padding: 2rem;
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.codigo-header__box h3 {
+  font: normal 500 32px/38.4px "Barlow", sans-serif !important;
+  color: #fff;
+  margin: 3rem 0 1rem;
+  position: relative;
+}
+
+.codigo-header__box h3::before {
+  content: " ";
+  width: 42px;
+  height: 1px;
+  border: solid 2px #00aec7;
+  background-color: #00aec7;
+  border-radius: 10px;
+  position: absolute;
+  top: -2rem;
+}
+
+.codigo-header__box h2 {
+  font: normal 700 80px/80px "FS Joey", sans-serif !important;
+  color: #fff;
+  margin: 0;
+}
+
+.codigo-header__box p {
+  font: normal 400 22px/28px "Barlow", sans-serif !important;
+  color: #fff;
+  margin: 3rem 0;
+}
+
+.codigo-header__box .codigo-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(/docs/default-source/landing-código-único-2022/bg-codigo.svg?sfvrsn=ef65d452_2);
+  background-repeat: no-repeat;
+  width: 310px;
+  height: 124px;
+  border-left: solid 5px #fff;
+}
+
+.codigo-header__box .codigo-box span {
+  font: normal 700 16px/19.2px "Barlow", sans-serif;
+  color: #fff;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.codigo-header__box .codigo-box .codigo {
+  font: normal 700 60px/60px "FS Joey", sans-serif;
+  color: #e3e829;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 575px) {
+  .container .codigo-header__box h3 {
+    font: normal 500 28px/33.6px "Barlow", sans-serif !important;
+  }
+  .container .codigo-header__box h2 {
+    font: normal 700 60px/56px "FS Joey", sans-serif !important;
+  }
+  .container .codigo-header__box p {
+    font: normal 400 18px/24px "Barlow", sans-serif !important;
+  }
+  .container .codigo-header__box .codigo-box {
+    background-size: 265px;
+    width: 270px;
+    height: 106px;
+  }
+  .codigo-header picture img {
+    -o-object-position: -90rem;
+       object-position: -90rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .codigo-header__box {
+    min-height: 200px;
+    padding: 2rem 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

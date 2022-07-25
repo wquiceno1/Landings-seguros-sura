@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap");
+
+@font-face {
+   font-family: "FS Joey";
+   src: url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.woff2) format("woff2"),
+      url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.woff) format("woff"),
+      url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.eot) format("eot"),
+      url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.svg) format("svg"),
+      url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Bold.ttf) format("truetype");
+   font-display: swap;
+   font-weight: 700;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "FS Joey";
+   src: url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.woff2) format("woff2"),
+      url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.woff) format("woff"),
+      url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.eot) format("eot"),
+      url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.svg) format("svg"),
+      url(https://seguros.sura.cl/App_Themes/MainNuevoPortal/assets/fonts/FSJoey-Medium.ttf) format("truetype");
+   font-display: swap;
+   font-weight: 500;
+   font-style: normal;
+}
+
+
+$blue: #0033a0;
+$cyan: #00aec7;
+$yellow: #e3e829;
+$white: #fff;
+$gray: #53565a;
+$light-gray: #ecf0f1;
+$red: #E4002B;
+$shadow: 0px 2px 30px #e0e5f0;
+$transition: all 0.3s ease;
+$Fuente1: "FS Joey",
+sans-serif;
+$Fuente2: "Barlow",
+sans-serif;
+
+
+
+#preheader,
+.sura-wrap header,
+footer {
+   display: none !important;
+}
+
+// *{
+//    box-sizing: border-box;
+//    border: solid 1px red;
+// }

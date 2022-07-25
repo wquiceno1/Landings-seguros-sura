@@ -1,0 +1,256 @@
+<div class="sura-main">
+    <div class="sura-container">
+        <h1 class="sura-title">Formulario de contacto</h1>
+        <form class="sura-form" method="post">
+            <div class="switch-item">
+                <label class="switch-item__title">¿Eres cliente o corredor?</label>
+                <div class="switch switch-2">
+                    <input class="switch-input" id="typeCliente" name="typeUser" value="1" type="radio" />
+                    <label class="switch-label" for="typeCliente">SOY CLIENTE</label>
+                    <input class="switch-input" id="typeCorredor" name="typeUser" value="2" type="radio" />
+                    <label class="switch-label" for="typeCorredor">SOY CORREDOR</label><span
+                        class="switch-outside"></span><span class="switch-inside"></span>
+                </div>
+
+            </div>
+            <div class="sura-form-wrap rut-wrap row" >
+                <div class="sura-form-group" id="rut-corredor">
+                    <label class="sura-form-label">Rut corredor*</label>
+                    <div class="sura-form-group-rut">
+                        <input class="sura-form-input rut" id="rut-corredor" type="text" name="rut-corredor" autocomplete="off"
+                            placeholder="12345678" required maxlength="8" /><span class="sp">-</span>
+                        <input class="sura-form-input dv" id="dv-corredor" type="text" name="dv-corredor" autocomplete="off" readonly/>
+                    </div>
+                    <small class="sura-form-message">El rut ingresado no es correcto</small>
+                </div>
+
+                <div class="sura-form-group" id="rut-cliente">
+                    <label class="sura-form-label">Rut cliente*</label>
+                    <div class="sura-form-group-rut">
+                        <input class="sura-form-input rut" id="rut-cliente" type="text" name="rut-cliente" autocomplete="off"
+                            placeholder="12345678" required maxlength="8" /><span class="sp">-</span>
+                        <input class="sura-form-input dv" id="dv-cliente" type="text" name="dv-cliente" autocomplete="off" readonly />
+                    </div>
+                    <small class="sura-form-message">El rut ingresado no es correcto</small>
+                </div>
+
+            </div>
+            <div class="sura-form-wrap row">
+                <div class="sura-form-group">
+                    <label class="sura-form-label">Nombres*</label>
+                    <input class="sura-form-input" id="nombres" type="text" name="nombres"
+                        placeholder="Ingresa tus nombres" autocomplete="off" required maxlength="75" minlength="3"/>
+                    <small class="sura-form-message">
+                        Debes ingresar tus nombres
+                    </small>
+                </div>
+                <div class="sura-form-group">
+                    <label class="sura-form-label">Apellidos*</label>
+                    <input class="sura-form-input" id="apellidos" type="text" name="apellidos"
+                        placeholder="Ingresa tu apellidos" autocomplete="off" required maxlength="75" minlength="3" />
+                    <small class="sura-form-message">
+                        Debes ingresar tus apellidos
+                    </small>
+                </div>
+            </div>
+            <div class="sura-form-wrap row">
+                <div class="sura-form-group">
+                    <label class="sura-form-label">Email*</label>
+                    <input class="sura-form-input" id="email" type="email" name="email" 
+                        placeholder="Ingresa tu email" required/>
+                        <small class="sura-form-message">Debes ingresar tu
+                        email</small>
+                </div>
+                <div class="sura-form-group">
+                    <label class="sura-form-label">Celular*</label>
+                    <input class="sura-form-input" id="celular" type="tel" name="telefono" autocomplete="off"
+                        placeholder="Ingresa tu celular" required /><small class="sura-form-message">Debes ingresar tu
+                        celular</small>
+                </div>
+            </div>
+            <h3 class="sura-subtitle">Cu&eacute;ntanos por qu&eacute; nos contactas</h3>
+            <div class="switch-item">
+                <label class="switch-item__title">Tipo de caso*</label>
+                <div class="switch switch-2">
+                    <input class="switch-input" id="typeNewCase" name="typeCase" value="1" type="radio" />
+                    <label class="switch-label" for="typeNewCase">NUEVO CASO</label>
+                    <input class="switch-input" id="typeCaseJoined" name="typeCase" value="2" type="radio" checked />
+                    <label class="switch-label" for="typeCaseJoined">CASO INGRESADO</label><span
+                        class="switch-outside"></span><span class="switch-inside"></span>
+                </div>
+            </div>
+            <div class="select-box select-xs" id="select-cat">
+                <label class="sura-form-label">Categoría del caso</label>
+                <select id="categoria-caso" name="categoria-caso"
+                    data-val-required="Elegir una categoria es obligatorio" data-val="true" class="form-input" required>
+                    <option value="0" >
+                        Selecciona una categoria
+                    </option>
+                    <option value="1">
+                        Categoria del caso #1
+                    </option>
+                    <option value="2">
+                        Categoria del caso #2
+                    </option>
+                    <option value="3">
+                        Categoria del caso #3
+                    </option>
+
+                </select>
+            </div>
+
+            <div class="select-box select-xl" id="select-opc">
+                <label class="sura-form-label">¿Qué necesitas?*</label>
+                <select id="categoria-caso" name="categoria-caso"
+                    data-val-required="Elegir una categoria es obligatorio" data-val="true" class="form-input">
+                    <option value="0" selected>
+                        Selecciona una opcion
+                    </option>
+                    <option value="1">
+                        Opcion #1
+                    </option>
+                    <option value="2">
+                        Opcion #2
+                    </option>
+                    <option value="3">
+                        Opcion #3
+                    </option>
+
+                </select>
+            </div>
+
+            <h3 class="case-admitted__title"> <strong>Tienes (X) casos ingresados.</strong> Selecciona los casos para
+                revisar su estado.</h3>
+            <div class="select-box select-xl-finder" id="view-case">
+                <label class="sura-form-label">Selecciona el o los casos que quieres revisar</label>
+                <select id="categoria-caso" name="categoria-caso"
+                    data-val-required="Elegir una categoria es obligatorio" data-val="true" class="form-input">
+                    <option value="1">
+                        Nº 7291 - Lorem ipsun dolor aterm sino
+                    </option>
+                    <option value="2">
+                        Nº 7292 - Lorem ipsun dolor aterm sino
+                    </option>
+                    <option value="3">
+                        Nº 7293 - Lorem ipsun dolor aterm sino
+                    </option>
+
+                </select>
+            </div>
+            <!-- --------------------- cards cases state ----------------- -->
+            <div class="sura-form-wrap wrap-xl" id="state-case">
+                <!-- ------------------- process ------------------------ -->
+                <div class="case-box case-box__process">
+                    <div class="case-box__numCase">
+                        <p class="numCase-id">
+                            Nº 7291
+                        </p>
+                        <span class="numCase-state__process">
+                            EN PROCESO
+                        </span>
+                    </div>
+
+                    <div class="case-box__detailCase">
+                        <p class="detailCase-title">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <div class="detailCase-description">
+                            <span class="detailCase-description__label">
+                                CATEGORIA
+                            </span>
+                            <p class="detailCase-description__date">
+                                Fecha estimada de resolución: dd/mm/aaaa
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ------------------- success ------------------------ -->
+                <div class="case-box case-box__success">
+                    <div class="case-box__numCase">
+                        <p class="numCase-id">
+                            Nº 7292
+                        </p>
+                        <span class="numCase-state__success">
+                            EN PROCESO
+                        </span>
+                    </div>
+
+                    <div class="case-box__detailCase">
+                        <p class="detailCase-title">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <div class="detailCase-description">
+                            <span class="detailCase-description__label">
+                                CATEGORIA
+                            </span>
+                            <p class="detailCase-description__date">
+                                Fecha estimada de resolución: dd/mm/aaaa
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- text area comentario -->
+            <div class="sura-form-wrap">
+                <div class="sura-form-group  m-txtarea">
+                    <label class="sura-form-label">Cu&eacute;ntanos en qu&eacute; podemos ayudarte*</label>
+                    <textarea class="sura-form-textarea" id="message" rows="4"
+                        placeholder="Descríbenos tu caso" name="mensaje" maxlength="200">
+                    </textarea>
+                    <span class="sura-form-counter" id="counter">0/200
+                    </span>
+                    <small class="sura-form-message">Debes ingresar un
+                        caso</small>
+                </div>
+            </div>
+
+            
+
+            <div class="sura-form-wrap" id="zona-carga">
+                <h3 class="sura-subtitle">Adjunta los documentos necesarios (opcional)</h3>
+                <div class="sura-form-group">
+                    <div class="drop-area">
+                        <img class="drop-area__img"
+                            src="/docs/default-source/landing-formulario-de-contacto-2022/cargar-archivos.png?sfvrsn=21df252_2"
+                            alt="Carga tus archivos aqui">
+
+                        <h3 class="drop-area__title">Puedes <strong> arrastrar tus archivos</strong> aquí o</h3>
+                        <a class="drop-area__button">ADJUNTAR ARCHIVO</a>
+                        <input type="file" name="" id="input-file" multiple>
+                        <span class="drop-area__note">
+                            El tamaño máximo de cada archivo es de 10MB. Máximo 10 archivos para adjuntar.
+                            Puedes subirlos en los siguientes formatos: .jpg, .jpeg, .png y .pdf.
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sura-form-wrap-btn f-left">
+                <a class="sura-form-wrap-btn__button btn-back" href="http://"
+                    target="_blank" rel="noopener noreferrer">VOLVER</a>
+                <input class="sura-form-wrap-btn__button btn-action" type="submit" value="ENVIAR FORMULARIO"
+                    title="ENVIAR" />
+            </div>
+        </form>
+        <div class="sura-detail">
+            <h3 class="sura-detail__title">Datos del <span id="perfil">Perfil</span> :</h3>
+            <div class="sura-detail-desc"><img
+                    src="/docs/default-source/landing-formulario-contacto/sura-icon-user.svg?sfvrsn=d2077c6d_2"
+                    alt="SURA ICON PERFIL" />
+                <div class="sura-detail-desc-perfil">
+                    <p><strong id="nombrePerfil">Nombre Nombre</strong></p>
+                    <p><strong id="apellidoPerfil">Apellido Apellido</strong></p>
+                    <p><span id="rutPerfil">12.345.678-9</span></p>
+                    <p><span id="celularPerfil">987654329</span></p>
+                    <p><span id="mailPerfil">maildelcontacto@sura.com</span></p>
+                </div>
+            </div>
+            <h3 class="sura-detail__title">Motivo del contacto:</h3>
+            <div class="sura-detail-desc">
+                <p><strong id="motivoPerfil">[que_necesitas]</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
