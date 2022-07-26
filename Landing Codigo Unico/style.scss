@@ -1,7 +1,9 @@
 @import "variables";
+@import "buttons";
 
 #preheader,
 .sura-wrap header,
+.cotizador-online,
 footer {
     display: none !important;
 }
@@ -153,8 +155,9 @@ body {
         align-items: center;
         background-image: url(/docs/default-source/landing-código-único-2022/bg-codigo.svg?sfvrsn=ef65d452_2);
         background-repeat: no-repeat;
-        width: 310px;
-        height: 124px;
+        background-size: contain;
+        width: 292px;
+        height: 115px;
         border-left: solid 5px $white;
 
         span {
@@ -215,4 +218,8 @@ body {
     }
 
 
+}
+
+.boton-cancelar {
+    @extend %btn-call-yellow;
 }

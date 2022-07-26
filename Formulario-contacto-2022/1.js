@@ -44,7 +44,7 @@ function marcarCliente() {
     });
 
     corredor.addEventListener('change', function (e) {
-        // rutCliente.style.display = 'none';
+        rutCliente.style.display = 'flex';
 
         rutCorredor.style.display = 'flex';
 

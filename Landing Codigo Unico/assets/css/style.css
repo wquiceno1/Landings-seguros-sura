@@ -22,8 +22,48 @@ footer {
   display: none !important;
 }
 
+.boton-cancelar {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: auto;
+  padding: 12px 26px;
+  border-radius: 100px;
+  letter-spacing: 1px;
+  font: normal 700 14px/19px "Barlow", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+}
+
+.boton-cancelar:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .boton-cancelar {
+    font-size: 13px;
+    padding: 12px 16px;
+  }
+}
+
+.boton-cancelar {
+  color: #0033a0;
+  background-color: #e3e829;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.boton-cancelar:hover {
+  color: #fff;
+  background-color: #0033a0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 #preheader,
 .sura-wrap header,
+.cotizador-online,
 footer {
   display: none !important;
 }
@@ -194,8 +234,9 @@ body {
           align-items: center;
   background-image: url(/docs/default-source/landing-código-único-2022/bg-codigo.svg?sfvrsn=ef65d452_2);
   background-repeat: no-repeat;
-  width: 310px;
-  height: 124px;
+  background-size: contain;
+  width: 292px;
+  height: 115px;
   border-left: solid 5px #fff;
 }
 
